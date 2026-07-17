@@ -1,0 +1,34 @@
+---
+import "../styles/global.css";
+
+const pageTitle = "TinKode | Base del sitio en construccion";
+const pageDescription =
+	"Base tecnica inicial de la pagina institucional de TinKode construida con Astro.";
+
+---
+
+<html lang="es">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="description" content={pageDescription} />
+		<meta name="generator" content={Astro.generator} />
+		<title>{pageTitle}</title>
+	</head>
+	<body>
+		<main class="site-shell" aria-labelledby="page-title">
+			<section class="status-panel" aria-describedby="site-description">
+				<p class="status-pill" aria-label="Estado del entorno">
+					<span aria-hidden="true"></span>
+					Entorno Astro listo
+				</p>
+				<h1 id="page-title">TinKode</h1>
+				<p class="eyebrow">Base del sitio en construccion</p>
+				<p id="site-description" class="statement">
+					Diseñamos tecnología para que los negocios funcionen mejor.
+				</p>
+			</section>
+		</main>
+	</body>
+</html>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="TinKode">
+	<rect width="64" height="64" rx="12" fill="#050608" />
+	<path d="M14 18h36v7H36v21h-8V25H14z" fill="#F7FAFC" />
+	<path d="M42 30l8 8-8 8-5-5 3-3-3-3z" fill="#18F28A" />
+	<path d="M22 30l-8 8 8 8 5-5-3-3 3-3z" fill="#279BFF" />
+</svg>
