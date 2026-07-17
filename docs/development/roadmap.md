@@ -7,15 +7,16 @@
 3. Fase 3 — Navegación y hero: completada.
 4. Fase 4 — Problemas y soluciones: completada.
 5. Fase 5 — Forma de trabajo: completada.
-6. Proyectos: pendiente.
-7. Fundadores: pendiente.
+6. Fase 6 — Proyectos reales: completada.
+7. Fase 7 — Fundadores: pendiente.
 8. Contacto: pendiente.
-9. Responsive y accesibilidad: pendiente.
-10. Optimización: pendiente.
-11. GitHub: pendiente.
-12. Publicación en Cloudflare Pages: pendiente.
-13. Dominio propio: pendiente.
-14. Evolución futura: pendiente.
+9. Footer definitivo: pendiente.
+10. Responsive y accesibilidad: pendiente.
+11. Optimización: pendiente.
+12. GitHub: pendiente.
+13. Publicación en Cloudflare Pages: pendiente.
+14. Dominio propio: pendiente.
+15. Evolución futura: pendiente.
 
 ## Estado de la fase 1
 
@@ -35,4 +36,16 @@ La fase 4 incorporó y refinó las secciones reales de problemas y soluciones: d
 
 ## Estado de la fase 5
 
-La fase 5 incorporó la sección real de forma de trabajo con cuatro etapas: entender, diseñar, construir y evolucionar. El proceso se presenta como un recorrido ligero, sin tiempos comerciales, garantías ni condiciones contractuales inventadas. La fase de proyectos permanece pendiente.
+La fase 5 incorporó la sección real de forma de trabajo con cuatro etapas: entender, diseñar, construir y evolucionar. El proceso se presenta como un recorrido ligero, sin tiempos comerciales, garantías ni condiciones contractuales inventadas.
+
+## Estado de la fase 6
+
+La fase 6 incorporó la sección real de proyectos con LPT, Plataforma Robot Explota Globos y Experiencias NFC para negocios. La presentación distingue proyectos desarrollados, proyectos en pruebas y conceptos en desarrollo, sin publicar código privado, enlaces no confirmados, capturas no autorizadas, métricas ni resultados inventados.
+
+Antes del cierre formal se realizó una revisión estructural: el inicio se redujo a una presentación breve y el detalle se reorganizó en rutas internas `/soluciones` y `/proyectos`.
+
+También se realizó un refinamiento visual y comercial de `/proyectos`: se eliminaron placeholders grandes sin evidencia real, se compactó la presentación de cada proyecto y se incorporó un cierre de asesoría con orientación, cotización o presentación de planes.
+
+Revisión urgente para publicación: compactación multipágina, identidad de marca y contacto por Instagram. Se separó `/proceso`, se redujeron `/soluciones` y `/proyectos`, se centralizaron los CTAs comerciales en Instagram y se incorporó una versión transparente del logo para el header.
+
+Iteración visual de cierre: se integraron imágenes conceptuales locales y optimizadas para el bloque de conexiones del negocio en home y para Experiencias NFC para negocios. Las imágenes no se presentan como productos comerciales activos ni casos de éxito publicados.

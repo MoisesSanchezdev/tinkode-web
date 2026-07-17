@@ -1,0 +1,65 @@
+---
+import Button from "../components/ui/Button.astro";
+import { INSTAGRAM_LABEL, INSTAGRAM_URL } from "../data/contact";
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const solutionAreas = [
+	{
+		title: "Organizar el negocio",
+		description: "Centralizamos información clave para que clientes, servicios, reservas o inventarios sean más fáciles de consultar y administrar.",
+		examples: "Inventarios · clientes · reservas",
+	},
+	{
+		title: "Automatizar tareas",
+		description: "Creamos flujos que reducen acciones repetitivas y conectan mejor formularios, notificaciones o solicitudes internas.",
+		examples: "Formularios · avisos · seguimientos",
+	},
+	{
+		title: "Mejorar experiencias",
+		description: "Diseñamos puntos de contacto digitales para que las personas encuentren información, pidan servicios o interactúen desde el celular.",
+		examples: "Páginas · catálogos · menús",
+	},
+];
+---
+
+<BaseLayout title="Soluciones — TinKode" description="Soluciones de TinKode para organizar información, automatizar tareas y mejorar experiencias digitales.">
+	<section class="page-intro section" aria-labelledby="solutions-page-title">
+		<div class="container page-intro__inner">
+			<p class="eyebrow">Soluciones</p>
+			<h1 id="solutions-page-title">Tecnología para negocios que quieren trabajar mejor.</h1>
+			<p>Ayudamos a ordenar información, reducir tareas manuales y crear experiencias digitales útiles.</p>
+		</div>
+	</section>
+
+	<section class="solutions-compact section" aria-labelledby="solutions-areas-title">
+		<div class="container">
+			<div class="section-header solutions-compact__header">
+				<h2 id="solutions-areas-title">Qué podemos construir</h2>
+				<p>Soluciones claras para necesidades operativas, comerciales y de atención.</p>
+			</div>
+
+			<div class="solutions-compact__grid">
+				{
+					solutionAreas.map((area) => (
+						<article class="solution-area">
+							<h3>{area.title}</h3>
+							<p>{area.description}</p>
+							<span>{area.examples}</span>
+						</article>
+					))
+				}
+			</div>
+		</div>
+	</section>
+
+	<section class="page-closing section" aria-labelledby="solutions-closing-title">
+		<div class="container page-closing__inner">
+			<div>
+				<p class="eyebrow">Asesoría</p>
+				<h2 id="solutions-closing-title">Cuéntanos qué necesitas mejorar.</h2>
+				<p>Revisamos tu caso y te orientamos sobre la solución más adecuada.</p>
+			</div>
+			<Button href={INSTAGRAM_URL} variant="primary" external ariaLabel={`Hablemos por ${INSTAGRAM_LABEL}`}>Hablemos</Button>
+		</div>
+	</section>
+</BaseLayout>

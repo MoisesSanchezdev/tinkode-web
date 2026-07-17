@@ -153,6 +153,42 @@ En móvil, el proceso se ordena verticalmente con una línea lateral de avance, 
 
 La densidad debe ser menor que en las secciones de problemas y soluciones. Los conectores no deben competir con el contenido, los pasos no deben quedar pegados y el cierre debe funcionar como una invitación breve, no como una promesa comercial.
 
+## Proyectos Editoriales
+
+La sección de proyectos usa un patrón editorial con proyectos separados, jerarquía clara y alternancia de contenido y visual en escritorio. No debe parecer dashboard, tabla ni listado uniforme de tarjetas.
+
+Cada proyecto muestra estado, categoría, nombre, descripción breve, qué se construyó, qué demuestra y una nota contextual cuando aporta claridad. Los estados se expresan en texto y no dependen únicamente del color.
+
+Los visuales deben ser honestos. No se usan placeholders grandes cuando no existe contenido real; las zonas de evidencia se ocultan o se reducen a notas breves hasta tener capturas autorizadas. No se simulan pantallas reales ni se descargan imágenes externas.
+
+La separación entre proyectos debe ser amplia y consistente. Las notas de código privado, documentación técnica privada y evidencia no pública se integran de forma discreta, sin sonar defensivas ni revelar arquitectura sensible.
+
+La página de proyectos debe cerrar con un CTA comercial organizado. El cierre puede invitar a solicitar asesoría, conocer trabajos relacionados durante una conversación y recibir orientación, cotización o presentación de planes según la necesidad. No debe haber frases flotantes ni CTAs compitiendo.
+
+Cuando se agreguen imágenes futuras, deben estar autorizadas, optimizadas, almacenadas en `public/images/projects/` y acompañadas por texto alternativo descriptivo. No se deben incluir repositorios, URLs privadas, credenciales, datos personales ni información interna.
+
+## Imágenes Conceptuales
+
+Las imágenes conceptuales autorizadas se almacenan como activos locales y optimizados. El bloque de conexiones del negocio usa `public/images/home/business-connections.webp`; la presentación NFC usa `public/images/projects/nfc/nfc-experience.webp`.
+
+Las imágenes deben publicarse en WebP cuando sea viable, conservar proporción, no deformarse y no depender de URLs externas. Deben usarse con `<img>`, dimensiones explícitas, `decoding="async"` y texto alternativo descriptivo.
+
+No se deben crear galerías, carruseles ni duplicar imágenes sin necesidad. Una imagen solo se muestra cuando ayuda a comprender el contenido y no aumenta el scroll de forma relevante.
+
+Las ilustraciones conceptuales no deben presentarse como casos reales, productos activos, implementaciones comerciales, clientes confirmados ni resultados obtenidos.
+
+## Arquitectura Multipágina
+
+El sitio usa una arquitectura multipágina para evitar que el inicio se convierta en una landing extensa. El home debe resumir qué hace TinKode, qué necesidades atiende, qué experiencia respalda la propuesta y cómo iniciar contacto.
+
+Las páginas internas concentran el detalle por tema: `/soluciones` explica qué puede construir TinKode, `/proceso` resume la forma de trabajo y `/proyectos` reúne proyectos, estados, autoría y privacidad. El contenido confirmado no se elimina, se reubica donde la lectura tenga más contexto.
+
+Las secciones deben seguir una estructura uniforme: etiqueta opcional, título, introducción breve, contenido principal y CTA integrado. Evitar frases flotantes, notas aisladas o botones separados de su bloque.
+
+En el home, los títulos deben mantenerse breves, las introducciones deben ocupar pocas líneas y los bloques descriptivos no deben superar una idea. En móvil, evitar secuencias largas de tarjetas, párrafos extensos y visuales altos. En escritorio, usar columnas para reducir altura sin convertir la página en dashboard.
+
+Los CTAs deben vivir dentro del cierre o contenido de la sección a la que pertenecen. No se deben dejar frases decorativas antes o después de un CTA sin contenedor claro.
+
 ## Fondo Y Grid
 
 El fondo global combina:
@@ -168,6 +204,28 @@ No usa imágenes externas, canvas ni animaciones permanentes.
 El header debe ser compacto, sticky y ligero. Usa fondo oscuro translúcido, borde inferior de baja opacidad y blur sutil. En escritorio muestra navegación horizontal y CTA; en móvil usa un botón de menú con `aria-expanded`, `aria-controls` y cierre al seleccionar enlaces.
 
 La navegación no debe sentirse como barra de administración ni ocupar demasiado espacio vertical. Los enlaces internos deben apuntar a IDs existentes o preparados.
+
+## Logo Oficial
+
+El logo oficial original se conserva en `public/images/brand/tinkode-logo.png`. Para el header se usa la versión derivada `public/images/brand/tinkode-logo-transparent.png`, con el área exterior al círculo transparente.
+
+El logo debe mantener su proporción original, no deformarse, no recortarse y no usarse como fondo decorativo, marca de agua ni relleno visual. Tampoco debe repetirse en cada sección: solo debe aparecer donde aporte identidad real.
+
+Tamaños aprobados: 48 px de alto en móvil y 54 px en escritorio. El header debe conservar una composición profesional, con mayor jerarquía de marca, sin brillo fuerte, sombras exageradas ni animaciones permanentes.
+
+El enlace de marca debe tener un nombre accesible completo. Si el texto `TinKode` aparece junto al logo, el `alt` del logo puede quedar vacío para evitar redundancia.
+
+El favicon actual se mantiene mientras no exista una versión específica aprobada para tamaños pequeños. No se debe rediseñar ni simplificar el logo automáticamente para favicon.
+
+## Páginas Compactas Y Contacto
+
+Las rutas principales son `/`, `/soluciones`, `/proceso` y `/proyectos`. Cada página debe concentrarse en un solo propósito y evitar mezclar secciones completas de otras rutas.
+
+El home debe ser corto: hero, resumen de soluciones, resumen de experiencia y CTA hacia Instagram. `/soluciones` debe explicar qué puede construir TinKode. `/proceso` debe explicar las cuatro etapas de trabajo. `/proyectos` debe demostrar experiencia y generar confianza.
+
+Las páginas internas no deben convertirse en landing pages extensas. Como orientación, usar encabezado breve, contenido concreto y un CTA final. Evitar introducciones largas, tarjetas altas, frases flotantes, placeholders visibles y cierres sin acción.
+
+El CTA comercial principal se centraliza en el Instagram oficial de TinKode. Los enlaces externos deben abrir en pestaña nueva con `target="_blank"` y `rel="noopener noreferrer"`.
 
 ## Hero
 

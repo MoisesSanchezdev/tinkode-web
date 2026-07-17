@@ -8,7 +8,7 @@ TinKode es una startup tecnológica colombiana que diseña tecnología para que 
 
 ## Estado actual
 
-Proyecto en desarrollo. La base técnica, el sistema visual inicial, la navegación responsive, el hero principal y las secciones de problemas, soluciones y forma de trabajo están preparados para revisión. No contiene todavía las secciones completas de proyectos, fundadores o contacto.
+Proyecto en desarrollo. La base técnica, el sistema visual inicial, la navegación responsive y la arquitectura multipágina inicial están preparados para revisión. El inicio resume la propuesta y las rutas internas concentran soluciones y proyectos. No contiene todavía las secciones completas de fundadores o contacto.
 
 ## Objetivo
 
@@ -49,13 +49,24 @@ npm run dev
 - `npm run astro`: ejecuta comandos de Astro.
 - `npm run check`: ejecuta comprobaciones de Astro y TypeScript.
 
+## Rutas
+
+- `/`: presentación breve de TinKode, resumen de soluciones, experiencia y CTA hacia Instagram.
+- `/soluciones`: soluciones que TinKode puede construir para negocios.
+- `/proceso`: forma breve de trabajo de TinKode.
+- `/proyectos`: proyectos reales compactos, estados, autoría, privacidad y evidencia futura autorizada.
+
 ## Estructura principal
 
 - `public/`: activos estáticos locales.
+- `public/images/brand/`: identidad visual oficial de TinKode.
+- `public/images/home/`: visuales conceptuales del inicio.
+- `public/images/projects/`: carpeta preparada para capturas futuras de proyectos autorizados.
+- `public/images/projects/nfc/`: visuales conceptuales del proyecto NFC.
 - `src/pages/`: páginas del sitio.
 - `src/styles/`: estilos globales y base CSS.
 - `src/components/layout/`: componentes de layout.
-- `src/components/sections/`: componentes de secciones de página como hero, problemas, soluciones y proceso.
+- `src/components/sections/`: componentes de secciones de página como hero, resúmenes del home, problemas, soluciones, proceso y proyectos.
 - `src/components/ui/`: componentes pequeños de interfaz como `Button`, `Badge` y `SurfaceCard`.
 - `src/layouts/`: layouts Astro.
 - `src/data/`: datos y contenido confirmado.
@@ -92,7 +103,7 @@ No hay variables de entorno requeridas en esta fase. No guardar secretos en el r
 
 ## Próxima fase
 
-Desarrollar la sección de proyectos solo con información autorizada, sin publicar repositorios privados ni datos confidenciales.
+Desarrollar la sección de fundadores solo con información confirmada y autorizada.
 
 ## Nota
 

@@ -1,6 +1,7 @@
 ---
 import Badge from "../ui/Badge.astro";
 import Button from "../ui/Button.astro";
+import { INSTAGRAM_LABEL, INSTAGRAM_URL } from "../../data/contact";
 ---
 
 <section class="hero" aria-labelledby="hero-title">
@@ -14,8 +15,8 @@ import Button from "../ui/Button.astro";
 				</p>
 			</div>
 			<div class="hero__actions" aria-label="Acciones principales">
-				<Button href="#contacto" variant="primary" size="large">Cuéntanos qué quieres mejorar</Button>
-				<Button href="#soluciones" variant="ghost" size="large">Explorar soluciones</Button>
+				<Button href={INSTAGRAM_URL} variant="primary" size="large" external ariaLabel={`Cuéntanos qué quieres mejorar por ${INSTAGRAM_LABEL}`}>Cuéntanos qué quieres mejorar</Button>
+				<Button href="/soluciones" variant="ghost" size="large">Explorar soluciones</Button>
 			</div>
 		</div>
 

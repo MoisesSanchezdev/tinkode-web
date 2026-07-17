@@ -1,18 +1,26 @@
 ---
 import Button from "../ui/Button.astro";
+import { INSTAGRAM_LABEL, INSTAGRAM_URL } from "../../data/contact";
 
 const navItems = [
-	{ label: "Soluciones", href: "#soluciones" },
-	{ label: "Cómo trabajamos", href: "#proceso" },
-	{ label: "Proyectos", href: "#proyectos" },
-	{ label: "Nosotros", href: "#nosotros" },
+	{ label: "Inicio", href: "/" },
+	{ label: "Soluciones", href: "/soluciones" },
+	{ label: "Cómo trabajamos", href: "/proceso" },
+	{ label: "Proyectos", href: "/proyectos" },
 ];
 ---
 
 <header class="site-header" data-site-header>
 	<div class="container site-header__inner">
 		<a class="site-logo" href="/" aria-label="TinKode, inicio">
-			<span class="site-logo__mark" aria-hidden="true">TK</span>
+			<img
+				class="site-logo__image"
+				src="/images/brand/tinkode-logo-transparent.png"
+				alt=""
+				width="1254"
+				height="1254"
+				decoding="async"
+			/>
 			<span>TinKode</span>
 		</a>
 
@@ -27,7 +35,7 @@ const navItems = [
 		</nav>
 
 		<div class="site-header__actions">
-			<Button href="#contacto" variant="primary" size="small">Hablemos</Button>
+			<Button href={INSTAGRAM_URL} variant="primary" size="small" external ariaLabel={`Hablemos por ${INSTAGRAM_LABEL}`}>Hablemos</Button>
 			<button
 				class="menu-toggle"
 				type="button"
@@ -50,7 +58,7 @@ const navItems = [
 				</li>
 			))}
 			<li>
-				<a class="mobile-nav__cta" href="#contacto">Hablemos</a>
+				<a class="mobile-nav__cta" href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" aria-label={`Hablemos por ${INSTAGRAM_LABEL}`}>Hablemos</a>
 			</li>
 		</ul>
 	</nav>

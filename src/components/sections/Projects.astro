@@ -1,0 +1,107 @@
+---
+import Button from "../ui/Button.astro";
+import { INSTAGRAM_LABEL, INSTAGRAM_URL } from "../../data/contact";
+---
+
+<section id="proyectos" class="projects-section section" aria-labelledby="projects-title">
+	<div class="container">
+		<div class="section-header projects-section__header">
+			<p class="eyebrow">Proyectos</p>
+			<h2 id="projects-title">Experiencia construyendo soluciones reales.</h2>
+			<p>Páginas, sistemas y experiencias digitales desarrolladas alrededor de necesidades concretas.</p>
+		</div>
+
+		<p class="projects-section__context">
+			Proyectos desarrollados por TinKode y por sus fundadores durante el proceso de consolidación de la marca.
+		</p>
+
+		<div class="project-list">
+			<article class="project-showcase project-showcase--featured" aria-labelledby="project-lpt-title">
+				<div class="project-showcase__content">
+					<div class="project-showcase__meta" aria-label="Estado y categoría">
+						<span>Proyecto desarrollado</span>
+						<span>Plataforma web corporativa</span>
+					</div>
+					<h3 id="project-lpt-title">LPT</h3>
+					<p>Plataforma corporativa para presentar servicios, sectores y canales de contacto de una empresa real.</p>
+					<p class="project-built">Se construyó una estructura web responsive para ordenar líneas de negocio y futuras solicitudes de información.</p>
+					<div class="project-proof">
+						<h4>Qué demuestra</h4>
+						<p>Capacidad para organizar información empresarial y convertirla en una experiencia web clara.</p>
+					</div>
+					<div class="project-notes" aria-label="Notas y evidencia del proyecto LPT">
+						<p>Desarrollado por uno de los fundadores antes de la consolidación de TinKode.</p>
+						<p>Empresa real · No publicado · Código privado.</p>
+					</div>
+				</div>
+			</article>
+
+			<article class="project-showcase" aria-labelledby="project-robot-title">
+				<div class="project-showcase__content">
+					<div class="project-showcase__meta" aria-label="Estado y categoría">
+						<span>En pruebas · Presentación prevista para la Semana de la Electrónica</span>
+						<span>Sistema web para gestión de competencia</span>
+					</div>
+					<h3 id="project-robot-title">Plataforma Robot Explota Globos</h3>
+					<p>Sistema web para organizar participantes, etapas y correcciones durante una competencia con múltiples grupos.</p>
+					<p class="project-built">Se construyeron áreas públicas y administrativas para gestionar avance, enfrentamientos y ajustes manuales.</p>
+					<div class="project-proof">
+						<h4>Qué demuestra</h4>
+						<p>Capacidad para construir sistemas con reglas, administración y correcciones durante procesos reales.</p>
+					</div>
+					<div class="project-notes" aria-label="Notas y evidencia del proyecto Robot Explota Globos">
+						<p>Proyecto para la Universidad Tecnológica de Pereira.</p>
+						<p>Capturas y demostración disponibles próximamente.</p>
+					</div>
+				</div>
+			</article>
+
+			<article class="project-showcase project-showcase--nfc" aria-labelledby="project-nfc-title">
+				<div class="project-showcase__content">
+					<div class="project-showcase__meta" aria-label="Estado y categoría">
+						<span>Proyecto en desarrollo</span>
+						<span>Solución digital en desarrollo</span>
+					</div>
+					<h3 id="project-nfc-title">Experiencias NFC para negocios</h3>
+					<div class="project-nfc-intro">
+						<p>Experiencias digitales que conectan objetos físicos con información y acciones desde el celular.</p>
+						<figure class="project-media-card">
+							<img
+								src="/images/projects/nfc/nfc-experience.webp"
+								alt="Etiqueta NFC conectando un objeto físico con una experiencia digital en un celular."
+								width="1000"
+								height="1010"
+								loading="lazy"
+								decoding="async"
+							/>
+						</figure>
+					</div>
+					<p class="project-built">Se trabaja en integrar elementos NFC con experiencias web para menús, información, solicitudes o servicios.</p>
+					<div class="project-proof">
+						<h4>Qué demuestra</h4>
+						<p>Capacidad para conectar tecnología física con experiencias digitales útiles para negocios.</p>
+					</div>
+					<div class="project-notes" aria-label="Notas del proyecto NFC">
+						<p>Concepto y desarrollo en evolución.</p>
+						<p>Sin clientes, métricas ni resultados confirmados.</p>
+					</div>
+				</div>
+			</article>
+		</div>
+
+		<div class="projects-closing">
+			<div>
+				<p class="eyebrow">Asesoría</p>
+				<h2>¿Quieres conocer proyectos similares?</h2>
+				<p>Podemos mostrarte trabajos relacionados con tu necesidad y orientarte sobre la solución, cotización o plan más adecuado.</p>
+				<p class="projects-closing__privacy">
+					Parte del código, documentación y evidencia de los proyectos se mantiene en privado.
+				</p>
+			</div>
+			<div class="projects-closing__actions">
+				<Button href={INSTAGRAM_URL} variant="primary" external ariaLabel={`Solicitar asesoría por ${INSTAGRAM_LABEL}`}>Solicitar asesoría</Button>
+				<Button href="/soluciones" variant="ghost">Volver a soluciones</Button>
+			</div>
+		</div>
+	</div>
+</section>

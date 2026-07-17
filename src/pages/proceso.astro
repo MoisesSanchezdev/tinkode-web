@@ -1,0 +1,61 @@
+---
+import Button from "../components/ui/Button.astro";
+import { INSTAGRAM_LABEL, INSTAGRAM_URL } from "../data/contact";
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const steps = [
+	{
+		title: "Entendemos",
+		description: "Conversamos sobre el negocio, el problema y la forma actual de trabajar.",
+	},
+	{
+		title: "Diseñamos",
+		description: "Definimos una solución clara, realista y conectada con la necesidad.",
+	},
+	{
+		title: "Construimos",
+		description: "Desarrollamos y ajustamos por etapas para tomar decisiones visibles.",
+	},
+	{
+		title: "Evolucionamos",
+		description: "La solución puede crecer cuando cambian las necesidades del negocio.",
+	},
+];
+---
+
+<BaseLayout title="Cómo trabajamos — TinKode" description="Proceso breve de trabajo de TinKode para entender, diseñar, construir y evolucionar soluciones digitales.">
+	<section class="page-intro section" aria-labelledby="process-page-title">
+		<div class="container page-intro__inner">
+			<p class="eyebrow">Cómo trabajamos</p>
+			<h1 id="process-page-title">Primero entendemos. Después construimos.</h1>
+			<p>No necesitas llegar con la solución definida. Empezamos por entender qué tendría sentido construir.</p>
+		</div>
+	</section>
+
+	<section class="process-page section" aria-labelledby="process-steps-title">
+		<div class="container">
+			<h2 id="process-steps-title" class="sr-only">Etapas del proceso</h2>
+			<ol class="process-page__steps">
+				{
+					steps.map((step) => (
+						<li>
+							<h3>{step.title}</h3>
+							<p>{step.description}</p>
+						</li>
+					))
+				}
+			</ol>
+		</div>
+	</section>
+
+	<section class="page-closing section" aria-labelledby="process-closing-title">
+		<div class="container page-closing__inner">
+			<div>
+				<p class="eyebrow">Empecemos</p>
+				<h2 id="process-closing-title">Cuéntanos qué quieres mejorar.</h2>
+				<p>Te orientamos desde una conversación inicial por Instagram.</p>
+			</div>
+			<Button href={INSTAGRAM_URL} variant="primary" external ariaLabel={`Hablemos por ${INSTAGRAM_LABEL}`}>Hablemos</Button>
+		</div>
+	</section>
+</BaseLayout>

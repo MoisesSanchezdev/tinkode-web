@@ -1,0 +1,67 @@
+---
+import Button from "../ui/Button.astro";
+import { INSTAGRAM_LABEL, INSTAGRAM_URL } from "../../data/contact";
+
+const experienceSummaries = [
+	"Plataforma web corporativa",
+	"Sistema administrativo especializado",
+	"Solución NFC en desarrollo",
+];
+---
+
+<section class="home-section home-solutions" aria-labelledby="home-solutions-title">
+	<div class="container home-section__grid">
+		<div class="home-section__copy">
+			<p class="eyebrow">Soluciones</p>
+			<h2 id="home-solutions-title">Todo tu negocio conectado.</h2>
+			<p>Clientes, ventas, agenda, inventario e información trabajando dentro de una misma solución.</p>
+			<Button href="/soluciones" variant="secondary">Explorar soluciones</Button>
+		</div>
+
+		<figure class="home-business-visual">
+			<img
+				src="/images/home/business-connections.webp"
+				alt="Diagrama que conecta clientes, ventas, agenda, reportes e inventario dentro de un sistema para negocios."
+				width="1200"
+				height="701"
+				loading="lazy"
+				decoding="async"
+			/>
+		</figure>
+	</div>
+</section>
+
+<section class="home-section home-experience" aria-labelledby="home-experience-title">
+	<div class="container home-section__grid">
+		<div class="home-section__copy">
+			<p class="eyebrow">Experiencia</p>
+			<h2 id="home-experience-title">Experiencia que respalda lo que hacemos.</h2>
+			<p>
+				Hemos desarrollado plataformas corporativas, sistemas de gestión y soluciones tecnológicas
+				aplicadas a necesidades reales.
+			</p>
+			<Button href="/proyectos" variant="secondary">Ver experiencia</Button>
+		</div>
+
+		<div class="home-experience-list" aria-label="Tipos de experiencia">
+			{
+				experienceSummaries.map((item) => (
+					<div class="home-experience-item">
+						<span aria-hidden="true"></span>
+						<p>{item}</p>
+					</div>
+				))
+			}
+		</div>
+	</div>
+</section>
+
+<section class="home-section home-contact" aria-labelledby="home-contact-title">
+	<div class="container home-contact__inner">
+		<div>
+			<p class="eyebrow">Instagram</p>
+			<h2 id="home-contact-title">Cuéntanos qué quieres mejorar en tu negocio.</h2>
+		</div>
+		<Button href={INSTAGRAM_URL} variant="primary" external ariaLabel={`Hablemos por ${INSTAGRAM_LABEL}`}>Hablemos</Button>
+	</div>
+</section>
