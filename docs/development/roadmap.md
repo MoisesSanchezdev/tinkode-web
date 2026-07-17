@@ -52,6 +52,6 @@ Iteración visual de cierre: se integraron imágenes conceptuales locales y opti
 
 ## Estado de la fase 7
 
-La fase 7 incorpora la ruta `/nosotros` con los dos fundadores confirmados, perfiles compactos sin fotografías falsas, razones de confianza y CTA hacia Instagram. También elimina del home el mockup abstracto del hero y conserva una sola imagen conceptual para la conexión del negocio.
+La fase 7 incorpora la ruta `/nosotros` con el fundador y la cofundadora confirmados, perfiles compactos sin fotografías falsas, razones de confianza y CTA hacia Instagram. También elimina del home el mockup abstracto del hero y conserva una sola imagen conceptual para la conexión del negocio.
 
 La fase queda cerrada para el primer lanzamiento. Footer definitivo, contenido legal si aplica y dominio personalizado siguen pendientes.

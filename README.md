@@ -8,7 +8,7 @@ TinKode es una startup tecnológica colombiana que diseña tecnología para que 
 
 ## Estado actual
 
-Primera versión pública preparada. La base técnica, el sistema visual inicial, la navegación responsive y la arquitectura multipágina están listas para publicación. El inicio resume la propuesta y las rutas internas concentran soluciones, proceso, proyectos y fundadores. No contiene todavía un formulario de contacto ni footer definitivo.
+Primera versión pública preparada. La base técnica, el sistema visual inicial, la navegación responsive y la arquitectura multipágina están listas para publicación. El inicio resume la propuesta y las rutas internas concentran soluciones, proceso, proyectos y equipo fundador. No contiene todavía un formulario de contacto ni footer definitivo.
 
 ## Objetivo
 
@@ -55,7 +55,7 @@ npm run dev
 - `/soluciones`: soluciones que TinKode puede construir para negocios.
 - `/proceso`: forma breve de trabajo de TinKode.
 - `/proyectos`: proyectos reales compactos, estados, autoría, privacidad y evidencia futura autorizada.
-- `/nosotros`: presentación breve de los fundadores y del enfoque de trabajo de TinKode.
+- `/nosotros`: presentación breve del equipo fundador y del enfoque de trabajo de TinKode.
 
 ## Estructura principal
 

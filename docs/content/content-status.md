@@ -2,10 +2,10 @@
 
 La información de esta lista está pendiente de confirmación. No debe publicarse como contenido final hasta contar con autorización o fuente confirmada.
 
-- Nombre completo de cada fundador: definido para Valeria López Chávez y Moisés Sánchez Naranjo.
-- Carrera: definida para ambos fundadores.
+- Equipo fundador: definido para Valeria López Chávez y Moisés Sánchez Naranjo.
+- Carrera: definida para ambos integrantes.
 - Universidad: Universidad Tecnológica de Pereira.
-- Rol: cofundadora y cofundador, sin cargos ejecutivos inventados.
+- Rol: Valeria como cofundadora y Moisés como fundador, sin cargos ejecutivos inventados.
 - Experiencia confirmada: pendiente.
 - Habilidades: pendiente.
 - Fotografías: pendientes.
@@ -84,7 +84,7 @@ La información de esta lista está pendiente de confirmación. No debe publicar
 - `/proyectos`: contenido detallado de LPT, Robot Explota Globos y Experiencias NFC para negocios.
 - Estados de proyectos: sin cambios respecto a Fase 6.
 - Contacto: se centraliza temporalmente en Instagram.
-- Nosotros: ruta preparada en Fase 7 con información confirmada de fundadores.
+- Nosotros: ruta preparada en Fase 7 con información confirmada del equipo fundador.
 
 ## Refinamiento comercial de `/proyectos`
 
@@ -110,7 +110,7 @@ La información de esta lista está pendiente de confirmación. No debe publicar
 
 - Valeria López Chávez: cofundadora de TinKode.
 - Formación de Valeria: estudiante de Ingeniería de Sistemas en la Universidad Tecnológica de Pereira.
-- Moisés Sánchez Naranjo: cofundador de TinKode.
+- Moisés Sánchez Naranjo: fundador de TinKode.
 - Formación de Moisés: estudiante de Ingeniería Electrónica en la Universidad Tecnológica de Pereira.
 - Fotografías: pendientes; se usan iniciales temporales `VL` y `MS`.
 - Roles ejecutivos: no definidos; no usar CEO, CTO, dirección, gerencia ni años de experiencia no confirmados.
