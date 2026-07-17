@@ -1,6 +1,7 @@
 ---
 import Hero from "../components/sections/Hero.astro";
 import Problems from "../components/sections/Problems.astro";
+import Process from "../components/sections/Process.astro";
 import Solutions from "../components/sections/Solutions.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 ---
@@ -9,20 +10,22 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 	<Hero />
 	<Problems />
 	<Solutions />
+	<Process />
 
-	<section id="proceso" class="continuity-section" aria-labelledby="continuity-title">
-		<div class="container continuity-section__inner">
-			<p class="eyebrow">Siguiente bloque</p>
-			<h2 id="continuity-title">Base preparada para explicar cómo trabajamos.</h2>
-			<div class="continuity-markers" aria-label="Secciones preparadas">
-				<a href="#proyectos">Proyectos</a>
+	<section id="proyectos" class="future-section" aria-labelledby="future-title">
+		<div class="container future-section__inner">
+			<div>
+				<p class="eyebrow">Siguientes bloques</p>
+				<h2 id="future-title">Base preparada para proyectos, nosotros y contacto.</h2>
+			</div>
+			<div class="future-markers" aria-label="Secciones preparadas">
+				<span>Proyectos</span>
 				<a href="#nosotros">Nosotros</a>
 				<a href="#contacto">Contacto</a>
 			</div>
 		</div>
 	</section>
 
-	<div id="proyectos" class="anchor-target" aria-hidden="true"></div>
 	<div id="nosotros" class="anchor-target" aria-hidden="true"></div>
 	<div id="contacto" class="anchor-target" aria-hidden="true"></div>
 </BaseLayout>

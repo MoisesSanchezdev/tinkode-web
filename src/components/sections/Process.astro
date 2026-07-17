@@ -1,0 +1,63 @@
+---
+import Button from "../ui/Button.astro";
+
+const steps = [
+	{
+		number: "01",
+		title: "Entendemos",
+		description: "Conversamos sobre el negocio, el problema y la forma en que se trabaja actualmente.",
+		key: "No empezamos ofreciendo una herramienta.",
+	},
+	{
+		number: "02",
+		title: "Diseñamos",
+		description: "Organizamos la necesidad y definimos una solución clara, realista y útil.",
+		key: "Cada función debe responder a un problema.",
+	},
+	{
+		number: "03",
+		title: "Construimos",
+		description: "Desarrollamos, probamos y ajustamos la solución por etapas.",
+		key: "Avances visibles y decisiones claras.",
+	},
+	{
+		number: "04",
+		title: "Evolucionamos",
+		description: "La solución puede mejorar y crecer cuando cambian las necesidades del negocio.",
+		key: "La tecnología debe acompañar el crecimiento.",
+	},
+];
+---
+
+<section id="proceso" class="process-section section" aria-labelledby="process-title">
+	<div class="container">
+		<div class="section-header process-section__header">
+			<p class="eyebrow">Cómo trabajamos</p>
+			<h2 id="process-title">Primero entendemos. Después construimos.</h2>
+			<p>
+				No necesitas llegar con la solución definida. Empezamos entendiendo qué ocurre,
+				qué necesitas mejorar y qué tendría sentido construir.
+			</p>
+		</div>
+
+		<ol class="process-steps" aria-label="Etapas de trabajo de TinKode">
+			{
+				steps.map((step) => (
+					<li class="process-step">
+						<span class="process-step__number" aria-hidden="true">{step.number}</span>
+						<div class="process-step__body">
+							<h3>{step.title}</h3>
+							<p>{step.description}</p>
+							<p class="process-step__key">{step.key}</p>
+						</div>
+					</li>
+				))
+			}
+		</ol>
+
+		<aside class="process-closing" aria-label="Cierre de la forma de trabajo">
+			<p>Cada proyecto comienza con una conversación, no con una plantilla.</p>
+			<Button href="#contacto" variant="ghost">Hablemos de tu idea</Button>
+		</aside>
+	</div>
+</section>

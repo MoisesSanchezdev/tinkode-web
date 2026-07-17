@@ -6,7 +6,7 @@
 2. Fase 2 — Sistema visual: completada.
 3. Fase 3 — Navegación y hero: completada.
 4. Fase 4 — Problemas y soluciones: completada.
-5. Fase 5 — Forma de trabajo: pendiente.
+5. Fase 5 — Forma de trabajo: completada.
 6. Proyectos: pendiente.
 7. Fundadores: pendiente.
 8. Contacto: pendiente.
@@ -31,4 +31,8 @@ La fase 3 reemplazó la demostración temporal por el inicio real del sitio: `Ba
 
 ## Estado de la fase 4
 
-La fase 4 incorporó y refinó las secciones reales de problemas y soluciones: diagnóstico de complejidad operativa, cuatro problemas agrupados, cuatro categorías de solución y una transición breve hacia proyectos futuros. La fase 5 permanece pendiente.
+La fase 4 incorporó y refinó las secciones reales de problemas y soluciones: diagnóstico de complejidad operativa, cuatro problemas agrupados, cuatro categorías de solución y una transición breve hacia proyectos futuros.
+
+## Estado de la fase 5
+
+La fase 5 incorporó la sección real de forma de trabajo con cuatro etapas: entender, diseñar, construir y evolucionar. El proceso se presenta como un recorrido ligero, sin tiempos comerciales, garantías ni condiciones contractuales inventadas. La fase de proyectos permanece pendiente.

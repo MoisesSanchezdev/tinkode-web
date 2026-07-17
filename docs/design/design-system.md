@@ -145,6 +145,14 @@ La transición hacia futuras secciones puede usar una tarjeta o franja discreta,
 
 La navegación interna usa offset mediante `scroll-padding-top` y `scroll-margin-top` para que los títulos no queden ocultos bajo el header sticky.
 
+## Proceso Secuencial
+
+La sección de forma de trabajo presenta cuatro pasos en un recorrido ligero. Usa números visibles, conectores discretos y bloques compactos con una sola idea por paso.
+
+En móvil, el proceso se ordena verticalmente con una línea lateral de avance, separación suficiente entre pasos y textos cortos. En escritorio, los cuatro pasos pueden organizarse de forma horizontal con conectores suaves y anchuras controladas para evitar que el bloque parezca una tabla o dashboard.
+
+La densidad debe ser menor que en las secciones de problemas y soluciones. Los conectores no deben competir con el contenido, los pasos no deben quedar pegados y el cierre debe funcionar como una invitación breve, no como una promesa comercial.
+
 ## Fondo Y Grid
 
 El fondo global combina:

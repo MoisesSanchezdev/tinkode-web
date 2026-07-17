@@ -31,6 +31,15 @@ La información de esta lista está pendiente de confirmación. No debe publicar
 - Revisión de tono: usar situaciones cotidianas, frases breves y menos etiquetas por tarjeta.
 - Proyectos reales: pendientes de confirmación y autorización.
 
+## Contenido definido en Fase 5
+
+- Proceso general de trabajo: definido conceptualmente.
+- Etapas del proceso: entender, diseñar, construir y evolucionar.
+- Tiempos comerciales: no definidos.
+- Garantías: no definidas.
+- Condiciones contractuales: no definidas.
+- CTA de contacto: temporal y apuntando a `#contacto`.
+
 ## Reglas para proyectos futuros
 
 Los proyectos podrán mostrarse sin compartir código fuente. Cada proyecto debe indicar con precisión su estado real:
