@@ -8,8 +8,8 @@ interface Props {
 }
 
 const {
-	title = "TinKode — Tecnología para negocios",
-	description = "Diseñamos experiencias digitales, sistemas y automatizaciones para ayudar a los negocios a funcionar mejor.",
+	title = "TinKode — Tecnología para que tu negocio funcione mejor",
+	description = "Creamos sistemas, automatizaciones y experiencias digitales pensadas alrededor de problemas reales de los negocios.",
 } = Astro.props as Props;
 ---
 
@@ -20,6 +20,9 @@ const {
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="description" content={description} />
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>

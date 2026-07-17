@@ -177,6 +177,16 @@ No se deben crear galerías, carruseles ni duplicar imágenes sin necesidad. Una
 
 Las ilustraciones conceptuales no deben presentarse como casos reales, productos activos, implementaciones comerciales, clientes confirmados ni resultados obtenidos.
 
+## Perfiles Sin Fotografía
+
+La página `/nosotros` usa un patrón compacto para perfiles sin fotografía. Mientras no existan fotos autorizadas, se permiten iniciales discretas como `VL` y `MS`, marcadas como decorativas cuando el nombre aparece junto al perfil.
+
+No se deben usar fotos de stock, rostros generados, avatares humanos falsos ni espacios grandes reservados para imágenes futuras. La estructura debe permitir reemplazar las iniciales por fotos reales más adelante sin rediseñar toda la página.
+
+La página Nosotros debe ser breve: encabezado, dos perfiles, razones de confianza, una frase de enfoque y un CTA final. No debe parecer un currículo académico, una página universitaria ni una agencia con equipo inventado.
+
+El home no debe conservar mockups decorativos sin contenido cuando ya existe una imagen conceptual autorizada para la misma idea. Una sola imagen conceptual debe comunicar cada concepto para evitar duplicación, scroll extra y recuadros huérfanos.
+
 ## Arquitectura Multipágina
 
 El sitio usa una arquitectura multipágina para evitar que el inicio se convierta en una landing extensa. El home debe resumir qué hace TinKode, qué necesidades atiende, qué experiencia respalda la propuesta y cómo iniciar contacto.
@@ -219,9 +229,9 @@ El favicon actual se mantiene mientras no exista una versión específica aproba
 
 ## Páginas Compactas Y Contacto
 
-Las rutas principales son `/`, `/soluciones`, `/proceso` y `/proyectos`. Cada página debe concentrarse en un solo propósito y evitar mezclar secciones completas de otras rutas.
+Las rutas principales son `/`, `/soluciones`, `/proceso`, `/proyectos` y `/nosotros`. Cada página debe concentrarse en un solo propósito y evitar mezclar secciones completas de otras rutas.
 
-El home debe ser corto: hero, resumen de soluciones, resumen de experiencia y CTA hacia Instagram. `/soluciones` debe explicar qué puede construir TinKode. `/proceso` debe explicar las cuatro etapas de trabajo. `/proyectos` debe demostrar experiencia y generar confianza.
+El home debe ser corto: hero, resumen de soluciones con una imagen conceptual, resumen de experiencia y CTA hacia Instagram. `/soluciones` debe explicar qué puede construir TinKode. `/proceso` debe explicar las cuatro etapas de trabajo. `/proyectos` debe demostrar experiencia y generar confianza. `/nosotros` debe presentar a los fundadores con información confirmada.
 
 Las páginas internas no deben convertirse en landing pages extensas. Como orientación, usar encabezado breve, contenido concreto y un CTA final. Evitar introducciones largas, tarjetas altas, frases flotantes, placeholders visibles y cierres sin acción.
 
@@ -229,9 +239,13 @@ El CTA comercial principal se centraliza en el Instagram oficial de TinKode. Los
 
 ## Hero
 
-El hero debe aparecer pronto debajo de la navegación, especialmente en móvil. Usa una composición de una columna en móvil y dos columnas en escritorio. El mensaje y CTA mantienen prioridad visual; el panel tecnológico es decorativo y debe marcarse con `aria-hidden` cuando corresponda.
+El hero debe aparecer pronto debajo de la navegación, especialmente en móvil. El mensaje y CTA mantienen prioridad visual. No debe incluir mockups decorativos vacíos ni interfaces simuladas que repitan la función de imágenes conceptuales reales.
 
-Los paneles abstractos deben tener gaps claros, borde sutil y uso moderado de acentos. No incluir métricas, números, textos técnicos falsos ni animaciones agresivas.
+No incluir métricas, números, textos técnicos falsos ni animaciones agresivas.
+
+## Metadatos
+
+Cada página debe tener `title` único y `meta description` breve mediante `BaseLayout`. El sitio mantiene `lang="es"`, viewport responsive y favicon local. No se deben agregar canonical, Open Graph con URL pública ni dominios inventados hasta confirmar la URL de lanzamiento.
 
 ## Accesibilidad
 

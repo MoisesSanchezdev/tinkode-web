@@ -8,7 +8,7 @@
 4. Fase 4 — Problemas y soluciones: completada.
 5. Fase 5 — Forma de trabajo: completada.
 6. Fase 6 — Proyectos reales: completada.
-7. Fase 7 — Fundadores: pendiente.
+7. Fase 7 — Fundadores: completada.
 8. Contacto: pendiente.
 9. Footer definitivo: pendiente.
 10. Responsive y accesibilidad: pendiente.
@@ -49,3 +49,9 @@ También se realizó un refinamiento visual y comercial de `/proyectos`: se elim
 Revisión urgente para publicación: compactación multipágina, identidad de marca y contacto por Instagram. Se separó `/proceso`, se redujeron `/soluciones` y `/proyectos`, se centralizaron los CTAs comerciales en Instagram y se incorporó una versión transparente del logo para el header.
 
 Iteración visual de cierre: se integraron imágenes conceptuales locales y optimizadas para el bloque de conexiones del negocio en home y para Experiencias NFC para negocios. Las imágenes no se presentan como productos comerciales activos ni casos de éxito publicados.
+
+## Estado de la fase 7
+
+La fase 7 incorpora la ruta `/nosotros` con los dos fundadores confirmados, perfiles compactos sin fotografías falsas, razones de confianza y CTA hacia Instagram. También elimina del home el mockup abstracto del hero y conserva una sola imagen conceptual para la conexión del negocio.
+
+La fase queda cerrada para el primer lanzamiento. Footer definitivo, contenido legal si aplica y dominio personalizado siguen pendientes.

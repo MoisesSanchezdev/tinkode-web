@@ -2,13 +2,13 @@
 
 La información de esta lista está pendiente de confirmación. No debe publicarse como contenido final hasta contar con autorización o fuente confirmada.
 
-- Nombre completo de cada fundador: pendiente.
-- Carrera: pendiente.
-- Universidad: pendiente.
-- Rol: pendiente.
+- Nombre completo de cada fundador: definido para Valeria López Chávez y Moisés Sánchez Naranjo.
+- Carrera: definida para ambos fundadores.
+- Universidad: Universidad Tecnológica de Pereira.
+- Rol: cofundadora y cofundador, sin cargos ejecutivos inventados.
 - Experiencia confirmada: pendiente.
 - Habilidades: pendiente.
-- Fotografías: pendiente.
+- Fotografías: pendientes.
 - Proyectos autorizados: pendiente.
 - Capturas de proyectos: pendiente.
 - Enlaces públicos: pendiente.
@@ -84,7 +84,7 @@ La información de esta lista está pendiente de confirmación. No debe publicar
 - `/proyectos`: contenido detallado de LPT, Robot Explota Globos y Experiencias NFC para negocios.
 - Estados de proyectos: sin cambios respecto a Fase 6.
 - Contacto: se centraliza temporalmente en Instagram.
-- Nosotros: pendiente, sin ruta ni contenido definitivo.
+- Nosotros: ruta preparada en Fase 7 con información confirmada de fundadores.
 
 ## Refinamiento comercial de `/proyectos`
 
@@ -103,8 +103,19 @@ La información de esta lista está pendiente de confirmación. No debe publicar
 - `/proyectos`: compacta, sin placeholders grandes ni textos redundantes.
 - Imagen de conexiones del negocio: ilustrativa, local y autorizada en `public/images/home/business-connections.webp`.
 - Las imágenes NFC y de conexiones no representan implementaciones comerciales activas ni casos de éxito publicados.
-- Nosotros: pendiente.
+- Nosotros: ruta compacta preparada; fotografías pendientes.
 - No inventar ni cambiar el usuario de Instagram sin confirmación.
+
+## Contenido definido en Fase 7
+
+- Valeria López Chávez: cofundadora de TinKode.
+- Formación de Valeria: estudiante de Ingeniería de Sistemas en la Universidad Tecnológica de Pereira.
+- Moisés Sánchez Naranjo: cofundador de TinKode.
+- Formación de Moisés: estudiante de Ingeniería Electrónica en la Universidad Tecnológica de Pereira.
+- Fotografías: pendientes; se usan iniciales temporales `VL` y `MS`.
+- Roles ejecutivos: no definidos; no usar CEO, CTO, dirección, gerencia ni años de experiencia no confirmados.
+- `/nosotros`: ruta compacta para explicar quiénes están detrás de TinKode, enfoque de trabajo y razones de confianza.
+- Contacto: Instagram sigue siendo el canal comercial actual.
 
 ## Reglas para proyectos futuros
 
