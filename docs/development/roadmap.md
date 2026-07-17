@@ -4,8 +4,8 @@
 
 1. Fase 1 — Preparación del repositorio: completada.
 2. Fase 2 — Sistema visual: completada.
-3. Navegación y hero: pendiente.
-4. Problemas y soluciones: pendiente.
+3. Fase 3 — Navegación y hero: completada.
+4. Fase 4 — Problemas y soluciones: pendiente.
 5. Forma de trabajo: pendiente.
 6. Proyectos: pendiente.
 7. Fundadores: pendiente.
@@ -23,4 +23,8 @@ La fase 1 preparó el repositorio Astro, TypeScript estricto, estructura de carp
 
 ## Estado de la fase 2
 
-La fase 2 definió tokens visuales, estilos globales, componentes base (`Button`, `Badge`, `SurfaceCard`) y una página temporal de demostración del sistema visual. La fase 3 permanece pendiente.
+La fase 2 definió tokens visuales, estilos globales, componentes base (`Button`, `Badge`, `SurfaceCard`) y una página temporal de demostración del sistema visual.
+
+## Estado de la fase 3
+
+La fase 3 reemplazó la demostración temporal por el inicio real del sitio: `BaseLayout`, navegación responsive, menú móvil accesible, hero principal, visual tecnológico decorativo y un bloque inferior mínimo con anclas preparadas. La fase 4 permanece pendiente.

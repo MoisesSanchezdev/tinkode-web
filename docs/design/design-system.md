@@ -141,6 +141,18 @@ El fondo global combina:
 
 No usa imágenes externas, canvas ni animaciones permanentes.
 
+## Header Y Navegación
+
+El header debe ser compacto, sticky y ligero. Usa fondo oscuro translúcido, borde inferior de baja opacidad y blur sutil. En escritorio muestra navegación horizontal y CTA; en móvil usa un botón de menú con `aria-expanded`, `aria-controls` y cierre al seleccionar enlaces.
+
+La navegación no debe sentirse como barra de administración ni ocupar demasiado espacio vertical. Los enlaces internos deben apuntar a IDs existentes o preparados.
+
+## Hero
+
+El hero debe aparecer pronto debajo de la navegación, especialmente en móvil. Usa una composición de una columna en móvil y dos columnas en escritorio. El mensaje y CTA mantienen prioridad visual; el panel tecnológico es decorativo y debe marcarse con `aria-hidden` cuando corresponda.
+
+Los paneles abstractos deben tener gaps claros, borde sutil y uso moderado de acentos. No incluir métricas, números, textos técnicos falsos ni animaciones agresivas.
+
 ## Accesibilidad
 
 - Foco visible con `--color-focus`.

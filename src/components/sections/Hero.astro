@@ -1,0 +1,53 @@
+---
+import Badge from "../ui/Badge.astro";
+import Button from "../ui/Button.astro";
+---
+
+<section class="hero" aria-labelledby="hero-title">
+	<div class="container hero__grid">
+		<div class="hero__content">
+			<Badge variant="accent">Ingeniería aplicada a negocios</Badge>
+			<div class="hero__copy">
+				<h1 id="hero-title">Diseñamos tecnología para que tu negocio funcione mejor.</h1>
+				<p>
+					Creamos experiencias digitales, sistemas y automatizaciones a partir de problemas reales.
+				</p>
+			</div>
+			<div class="hero__actions" aria-label="Acciones principales">
+				<Button href="#contacto" variant="primary" size="large">Cuéntanos qué quieres mejorar</Button>
+				<Button href="#soluciones" variant="ghost" size="large">Explorar soluciones</Button>
+			</div>
+		</div>
+
+		<div class="hero-visual" aria-hidden="true">
+			<div class="hero-visual__panel hero-visual__panel--main">
+				<div class="hero-visual__topline">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<div class="hero-flow">
+					<div class="hero-flow__node hero-flow__node--accent"></div>
+					<div class="hero-flow__line"></div>
+					<div class="hero-flow__node"></div>
+					<div class="hero-flow__line"></div>
+					<div class="hero-flow__node hero-flow__node--secondary"></div>
+				</div>
+				<div class="hero-modules">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+			<div class="hero-visual__panel hero-visual__panel--side">
+				<div class="hero-visual__signal"></div>
+				<div class="hero-visual__bars">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

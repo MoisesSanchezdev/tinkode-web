@@ -1,126 +1,26 @@
 ---
-import Badge from "../components/ui/Badge.astro";
-import Button from "../components/ui/Button.astro";
-import SurfaceCard from "../components/ui/SurfaceCard.astro";
-import "../styles/global.css";
-
-const pageTitle = "TinKode | Sistema visual";
-const pageDescription =
-	"Muestra temporal del sistema visual base de TinKode construido con Astro.";
-
-const cards = [
-	{
-		title: "Superficie elevada",
-		copy: "Base para agrupar contenido futuro con borde sutil, fondo oscuro y jerarquia clara.",
-	},
-	{
-		title: "Interaccion discreta",
-		copy: "Estados hover y foco pensados para sentirse profesionales sin depender de brillo excesivo.",
-	},
-	{
-		title: "Lectura primero",
-		copy: "Espaciado, escala y contraste preparados para una experiencia comoda en pantallas pequenas.",
-	},
-];
-
-const swatches = [
-	{ label: "Principal", value: "#05070B", style: "background: var(--color-page);" },
-	{ label: "Superficie", value: "#111824", style: "background: var(--color-surface-raised);" },
-	{ label: "Texto", value: "#F4F7FB", style: "background: var(--color-text);" },
-	{ label: "Acento", value: "#18F28A", style: "background: var(--color-accent-primary);" },
-	{ label: "Secundario", value: "#2C9CFF", style: "background: var(--color-accent-secondary);" },
-	{ label: "Borde", value: "14% opacity", style: "background: var(--color-border);" },
-];
-
+import Hero from "../components/sections/Hero.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
-<html lang="es">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="description" content={pageDescription} />
-		<meta name="generator" content={Astro.generator} />
-		<title>{pageTitle}</title>
-	</head>
-	<body>
-		<main class="demo-page" aria-labelledby="page-title">
-			<div class="container demo-stack">
-				<section class="demo-header" aria-describedby="site-description">
-					<div class="demo-status" aria-label="Estado de la pagina">
-						<Badge variant="accent">Temporal de desarrollo</Badge>
-						<Badge variant="secondary">Fase 2</Badge>
-					</div>
-					<div class="section-header">
-						<p class="eyebrow">TinKode</p>
-						<h1 id="page-title" class="demo-title">Sistema visual</h1>
-						<p id="site-description" class="demo-lead">
-							Diseñamos tecnología para que los negocios funcionen mejor.
-						</p>
-					</div>
-					<div class="demo-actions" aria-label="Muestras de botones">
-						<Button variant="primary">Boton principal</Button>
-						<Button variant="secondary">Boton secundario</Button>
-						<Button variant="ghost">Boton discreto</Button>
-					</div>
-					<div class="demo-badges" aria-label="Muestras de etiquetas">
-						<Badge variant="accent">Sistema activo</Badge>
-						<Badge variant="secondary">Solucion personalizada</Badge>
-						<Badge variant="success">Ingenieria aplicada</Badge>
-					</div>
-				</section>
+<BaseLayout>
+	<Hero />
 
-				<section class="section" aria-labelledby="cards-title">
-					<div class="section-header">
-						<p class="eyebrow">Componentes base</p>
-						<h2 id="cards-title" class="demo-type-section">Tarjetas reutilizables</h2>
-					</div>
-					<div class="demo-grid">
-						{
-							cards.map((card) => (
-								<SurfaceCard interactive>
-									<h3 class="demo-card-title">{card.title}</h3>
-									<p class="demo-card-copy">{card.copy}</p>
-								</SurfaceCard>
-							))
-						}
-					</div>
-				</section>
-
-				<section class="section" aria-labelledby="type-title">
-					<SurfaceCard as="section" padding="spacious">
-						<div class="demo-type-scale">
-							<p class="eyebrow">Escala tipografica</p>
-							<h2 id="type-title" class="demo-type-display">Claridad tecnica</h2>
-							<p class="demo-type-section">Titular de seccion</p>
-							<p class="demo-type-body">
-								Texto base para validar lectura, ritmo y contraste sin cargar fuentes externas ni
-								contenido comercial definitivo.
-							</p>
-						</div>
-					</SurfaceCard>
-				</section>
-
-				<section class="section" aria-labelledby="color-title">
-					<div class="section-header">
-						<p class="eyebrow">Tokens principales</p>
-						<h2 id="color-title" class="demo-type-section">Color controlado</h2>
-					</div>
-					<div class="demo-token-grid">
-						{
-							swatches.map((swatch) => (
-								<SurfaceCard padding="compact">
-									<div class="demo-swatch">
-										<div class="demo-swatch-color" style={swatch.style}></div>
-										<strong>{swatch.label}</strong>
-										<span class="demo-swatch-code">{swatch.value}</span>
-									</div>
-								</SurfaceCard>
-							))
-						}
-					</div>
-				</section>
+	<section id="soluciones" class="continuity-section" aria-labelledby="continuity-title">
+		<div class="container continuity-section__inner">
+			<p class="eyebrow">Siguiente bloque</p>
+			<h2 id="continuity-title">Base preparada para presentar soluciones sin inventar contenido.</h2>
+			<div class="continuity-markers" aria-label="Secciones preparadas">
+				<a href="#proceso">Cómo trabajamos</a>
+				<a href="#proyectos">Proyectos</a>
+				<a href="#nosotros">Nosotros</a>
+				<a href="#contacto">Contacto</a>
 			</div>
-		</main>
-	</body>
-</html>
+		</div>
+	</section>
+
+	<div id="proceso" class="anchor-target" aria-hidden="true"></div>
+	<div id="proyectos" class="anchor-target" aria-hidden="true"></div>
+	<div id="nosotros" class="anchor-target" aria-hidden="true"></div>
+	<div id="contacto" class="anchor-target" aria-hidden="true"></div>
+</BaseLayout>
