@@ -1,0 +1,41 @@
+---
+interface Props {
+	href?: string;
+	type?: "button" | "submit" | "reset";
+	variant?: "primary" | "secondary" | "ghost";
+	size?: "small" | "medium" | "large";
+	external?: boolean;
+	class?: string;
+	ariaLabel?: string;
+}
+
+const {
+	href,
+	type = "button",
+	variant = "primary",
+	size = "medium",
+	external = false,
+	class: className,
+	ariaLabel,
+} = Astro.props as Props;
+
+const classes = ["tk-button", `tk-button--${variant}`, `tk-button--${size}`, className];
+const rel = external ? "noopener noreferrer" : undefined;
+const target = external ? "_blank" : undefined;
+---
+
+{
+	href ? (
+		<a class:list={classes} href={href} aria-label={ariaLabel} rel={rel} target={target}>
+			<slot name="icon-start" />
+			<slot />
+			<slot name="icon-end" />
+		</a>
+	) : (
+		<button class:list={classes} type={type} aria-label={ariaLabel}>
+			<slot name="icon-start" />
+			<slot />
+			<slot name="icon-end" />
+		</button>
+	)
+}

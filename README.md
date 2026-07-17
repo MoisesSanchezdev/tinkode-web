@@ -8,7 +8,7 @@ TinKode es una startup tecnológica colombiana que diseña tecnología para que 
 
 ## Estado actual
 
-Proyecto en desarrollo. Esta fase prepara la base técnica, documental y de verificación. No contiene todavía la página comercial completa.
+Proyecto en desarrollo. La base técnica y el sistema visual inicial están preparados. No contiene todavía la página comercial completa.
 
 ## Objetivo
 
@@ -56,7 +56,7 @@ npm run dev
 - `src/styles/`: estilos globales y base CSS.
 - `src/components/layout/`: componentes de layout.
 - `src/components/sections/`: componentes de secciones de página.
-- `src/components/ui/`: componentes pequeños de interfaz.
+- `src/components/ui/`: componentes pequeños de interfaz como `Button`, `Badge` y `SurfaceCard`.
 - `src/layouts/`: layouts Astro.
 - `src/data/`: datos y contenido confirmado.
 - `src/scripts/`: scripts del lado cliente cuando sean necesarios.
@@ -92,7 +92,7 @@ No hay variables de entorno requeridas en esta fase. No guardar secretos en el r
 
 ## Próxima fase
 
-Definir el sistema visual inicial y preparar la arquitectura de navegación y hero, sin inventar contenido comercial no confirmado.
+Preparar la arquitectura de navegación y hero, sin construir todavía contenido comercial definitivo ni inventar información no confirmada.
 
 ## Nota
 

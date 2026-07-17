@@ -3,7 +3,7 @@
 ## Fases
 
 1. Fase 1 — Preparación del repositorio: completada.
-2. Fase 2 — Sistema visual: pendiente.
+2. Fase 2 — Sistema visual: completada.
 3. Navegación y hero: pendiente.
 4. Problemas y soluciones: pendiente.
 5. Forma de trabajo: pendiente.
@@ -20,3 +20,7 @@
 ## Estado de la fase 1
 
 La fase 1 preparó el repositorio Astro, TypeScript estricto, estructura de carpetas, documentación base, página mínima de comprobación, Git local y validaciones iniciales.
+
+## Estado de la fase 2
+
+La fase 2 definió tokens visuales, estilos globales, componentes base (`Button`, `Badge`, `SurfaceCard`) y una página temporal de demostración del sistema visual. La fase 3 permanece pendiente.

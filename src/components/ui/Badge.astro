@@ -1,0 +1,13 @@
+---
+interface Props {
+	variant?: "neutral" | "accent" | "secondary" | "success";
+	class?: string;
+}
+
+const { variant = "neutral", class: className } = Astro.props as Props;
+const classes = ["tk-badge", variant !== "neutral" && `tk-badge--${variant}`, className];
+---
+
+<span class:list={classes}>
+	<slot />
+</span>
