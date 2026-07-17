@@ -22,3 +22,42 @@ La información de esta lista está pendiente de confirmación. No debe publicar
 - Información legal: pendiente.
 - Política de privacidad: pendiente.
 - Tratamiento de datos: pendiente.
+
+## Contenido definido en Fase 4
+
+- Problemas que TinKode ayuda a resolver: definido conceptualmente.
+- Categorías de soluciones: definidas conceptualmente.
+- Enfoque de comunicación: partir del problema antes de ofrecer tecnología.
+- Revisión de tono: usar situaciones cotidianas, frases breves y menos etiquetas por tarjeta.
+- Proyectos reales: pendientes de confirmación y autorización.
+
+## Reglas para proyectos futuros
+
+Los proyectos podrán mostrarse sin compartir código fuente. Cada proyecto debe indicar con precisión su estado real:
+
+- Proyecto desarrollado.
+- Proyecto en desarrollo.
+- Prototipo.
+- Concepto.
+
+Para publicar un proyecto se requiere autorización del contenido visible. Puede incluir:
+
+- Nombre autorizado.
+- Descripción.
+- Problema resuelto.
+- Funcionalidades.
+- Capturas autorizadas.
+- Estado real.
+- Rol de TinKode.
+- Nota “Código fuente privado” cuando corresponda.
+
+Nunca debe exigirse ni publicarse:
+
+- Código fuente.
+- Repositorios privados.
+- Credenciales.
+- Información confidencial.
+- Datos de clientes.
+- Arquitectura sensible.
+
+Las capturas deben estar autorizadas y todavía faltan datos definitivos de proyectos.

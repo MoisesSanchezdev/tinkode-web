@@ -1,0 +1,63 @@
+---
+import SurfaceCard from "../ui/SurfaceCard.astro";
+
+const problems = [
+	{
+		number: "01",
+		title: "Demasiado trabajo manual",
+		description: "Confirmar pedidos, copiar información o actualizar datos una y otra vez termina consumiendo tiempo.",
+		examples: "Pedidos · registros · seguimientos",
+	},
+	{
+		number: "02",
+		title: "Información en demasiados lugares",
+		description: "Clientes, reservas y datos importantes quedan repartidos entre chats, archivos y hojas de cálculo.",
+		examples: "Chats · archivos · hojas de cálculo",
+	},
+	{
+		number: "03",
+		title: "Procesos difíciles para el cliente",
+		description: "Pedir, reservar o encontrar información debería ser sencillo, especialmente desde el celular.",
+		examples: "Pedidos · reservas · consultas",
+	},
+	{
+		number: "04",
+		title: "Herramientas que no encajan",
+		description: "Muchas plataformas obligan al negocio a adaptarse a ellas, en lugar de adaptarse al negocio.",
+		examples: "Procesos rígidos · información duplicada",
+	},
+];
+---
+
+<section id="problemas" class="problems-section section" aria-labelledby="problems-title">
+	<div class="container">
+		<div class="section-header problems-section__header">
+			<p class="eyebrow">Lo que suele complicar un negocio</p>
+			<h2 id="problems-title">Lo cotidiano también puede volverse difícil.</h2>
+			<p>
+				Cuando la información, las tareas y la atención dependen de procesos manuales, el
+				trabajo empieza a ocupar más tiempo del necesario.
+			</p>
+		</div>
+
+		<div class="problem-grid">
+			{
+				problems.map((problem) => (
+					<SurfaceCard class="problem-card" padding="spacious">
+						<div class="problem-card__meta">
+							<span class="problem-card__number">{problem.number}</span>
+						</div>
+						<h3>{problem.title}</h3>
+						<p>{problem.description}</p>
+						<p class="problem-card__examples">{problem.examples}</p>
+					</SurfaceCard>
+				))
+			}
+		</div>
+
+		<aside class="diagnostic-note" aria-label="Enfoque de diagnóstico">
+			<span aria-hidden="true"></span>
+			<p>No siempre hace falta otra herramienta. Primero hay que entender qué está haciendo más difícil el trabajo.</p>
+		</aside>
+	</div>
+</section>

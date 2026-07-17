@@ -1,0 +1,69 @@
+---
+import Button from "../ui/Button.astro";
+import SurfaceCard from "../ui/SurfaceCard.astro";
+
+const solutions = [
+	{
+		code: "S01",
+		title: "Presencia digital",
+		result: "Sitios y experiencias que presentan mejor el negocio y facilitan que las personas actúen.",
+		capabilities: "Páginas web · menús · catálogos · formularios",
+	},
+	{
+		code: "S02",
+		title: "Organización del negocio",
+		result: "Sistemas para reunir información y tener mayor claridad sobre la operación.",
+		capabilities: "Inventarios · clientes · reservas · paneles",
+	},
+	{
+		code: "S03",
+		title: "Automatización de procesos",
+		result: "Flujos que reducen tareas repetitivas y conectan mejor la información.",
+		capabilities: "WhatsApp · notificaciones · formularios · integraciones",
+	},
+	{
+		code: "S04",
+		title: "Soluciones a medida",
+		result: "Tecnología diseñada alrededor de una necesidad particular, no de una plantilla.",
+		capabilities: "Sistemas internos · NFC · software personalizado",
+	},
+];
+---
+
+<section id="soluciones" class="solutions-section section" aria-labelledby="solutions-title">
+	<div class="container">
+		<div class="section-header solutions-section__header">
+			<p class="eyebrow">Cómo podemos ayudar</p>
+			<h2 id="solutions-title">Soluciones que encajan con la forma de trabajar de tu negocio.</h2>
+			<p>
+				Diseñamos herramientas claras para organizar, automatizar y mejorar experiencias sin
+				añadir complejidad innecesaria.
+			</p>
+		</div>
+
+		<div class="solution-grid">
+			{
+				solutions.map((solution) => (
+					<SurfaceCard interactive class="solution-card" padding="spacious">
+						<div class="solution-card__topline">
+							<span>{solution.code}</span>
+							<span aria-hidden="true"></span>
+						</div>
+						<h3>{solution.title}</h3>
+						<p>{solution.result}</p>
+						<p class="solution-card__capabilities">{solution.capabilities}</p>
+					</SurfaceCard>
+				))
+			}
+		</div>
+
+		<SurfaceCard as="aside" class="projects-transition" padding="spacious">
+			<div>
+				<p class="eyebrow">Siguiente etapa</p>
+				<h3>De necesidades reales a soluciones digitales.</h3>
+				<p>Ya hemos convertido necesidades reales en páginas, sistemas y plataformas digitales.</p>
+			</div>
+			<Button href="#proyectos" variant="secondary">Conocer proyectos</Button>
+		</SurfaceCard>
+	</div>
+</section>

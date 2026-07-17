@@ -131,6 +131,20 @@ Componente: `src/components/ui/SurfaceCard.astro`.
 
 Superficie reutilizable con fondo oscuro, borde, radio y padding configurable. La prop `interactive` habilita un hover discreto. La prop `as` permite elegir un elemento semántico entre `article`, `section`, `div` y `aside`.
 
+## Secciones De Diagnóstico Y Soluciones
+
+Las secciones de contenido deben mantener encabezado claro, texto introductorio breve y tarjetas con separación generosa. La lectura debe sentirse comercial y humana, no como dashboard ni documentación técnica.
+
+Cada tarjeta debe comunicar una sola idea: título breve, una frase directa y, como máximo, una línea discreta de ejemplos o capacidades. Evitar listas extensas, exceso de pills y explicaciones que repitan el título.
+
+Las tarjetas de problemas pueden usar numeración discreta. Las etiquetas técnicas superiores deben evitarse cuando agreguen ruido visual.
+
+Las tarjetas de soluciones deben sentirse más constructivas: códigos cortos, acentos moderados y capacidades agrupadas en una línea breve. El beneficio debe aparecer antes que la capacidad técnica.
+
+La transición hacia futuras secciones puede usar una tarjeta o franja discreta, siempre sin inventar proyectos, métricas ni resultados.
+
+La navegación interna usa offset mediante `scroll-padding-top` y `scroll-margin-top` para que los títulos no queden ocultos bajo el header sticky.
+
 ## Fondo Y Grid
 
 El fondo global combina:

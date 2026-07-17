@@ -1,17 +1,20 @@
 ---
 import Hero from "../components/sections/Hero.astro";
+import Problems from "../components/sections/Problems.astro";
+import Solutions from "../components/sections/Solutions.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
 <BaseLayout>
 	<Hero />
+	<Problems />
+	<Solutions />
 
-	<section id="soluciones" class="continuity-section" aria-labelledby="continuity-title">
+	<section id="proceso" class="continuity-section" aria-labelledby="continuity-title">
 		<div class="container continuity-section__inner">
 			<p class="eyebrow">Siguiente bloque</p>
-			<h2 id="continuity-title">Base preparada para presentar soluciones sin inventar contenido.</h2>
+			<h2 id="continuity-title">Base preparada para explicar cómo trabajamos.</h2>
 			<div class="continuity-markers" aria-label="Secciones preparadas">
-				<a href="#proceso">Cómo trabajamos</a>
 				<a href="#proyectos">Proyectos</a>
 				<a href="#nosotros">Nosotros</a>
 				<a href="#contacto">Contacto</a>
@@ -19,7 +22,6 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 		</div>
 	</section>
 
-	<div id="proceso" class="anchor-target" aria-hidden="true"></div>
 	<div id="proyectos" class="anchor-target" aria-hidden="true"></div>
 	<div id="nosotros" class="anchor-target" aria-hidden="true"></div>
 	<div id="contacto" class="anchor-target" aria-hidden="true"></div>
