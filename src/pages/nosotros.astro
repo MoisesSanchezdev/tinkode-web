@@ -1,109 +1,20 @@
 ---
-import Button from "../components/ui/Button.astro";
-import { INSTAGRAM_LABEL, INSTAGRAM_URL } from "../data/contact";
+import AboutHeroVisual from "../components/sections/AboutHeroVisual.astro";
+import AboutPrinciples from "../components/sections/AboutPrinciples.astro";
+import FounderConvergence from "../components/sections/FounderConvergence.astro";
+import FounderTeam from "../components/sections/FounderTeam.astro";
+import TinKodeOrigin from "../components/sections/TinKodeOrigin.astro";
+import TinKodeVision from "../components/sections/TinKodeVision.astro";
+import TrustEvidence from "../components/sections/TrustEvidence.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
-
-const founders = [
-	{
-		initials: "VL",
-		name: "Valeria López Chávez",
-		role: "Cofundadora de TinKode",
-		education: "Estudiante de Ingeniería de Sistemas en la Universidad Tecnológica de Pereira.",
-		contribution: "Aporta una visión enfocada en software, organización de sistemas y construcción de experiencias digitales.",
-	},
-	{
-		initials: "MS",
-		name: "Moisés Sánchez Naranjo",
-		role: "Fundador de TinKode",
-		education: "Estudiante de Ingeniería Electrónica en la Universidad Tecnológica de Pereira.",
-		contribution: "Aporta una visión que conecta desarrollo, automatización, tecnología física y solución de problemas.",
-	},
-];
-
-const trustReasons = [
-	{
-		title: "Entendemos antes de construir",
-		description: "Primero analizamos la necesidad y después definimos qué tecnología tiene sentido.",
-	},
-	{
-		title: "Hablas directamente con quienes desarrollan",
-		description: "La comunicación se mantiene cercana durante decisiones, avances y ajustes del proyecto.",
-	},
-	{
-		title: "Construimos con orden",
-		description: "Cada función debe responder a un problema y formar parte de una solución clara.",
-	},
-	{
-		title: "Pensamos en el crecimiento",
-		description: "Diseñamos soluciones que puedan ajustarse cuando cambian las necesidades del negocio.",
-	},
-];
 ---
 
-<BaseLayout title="Nosotros | TinKode" description="Conoce al equipo fundador de TinKode y el enfoque de ingeniería con el que desarrollamos soluciones para negocios.">
-	<section class="page-intro section" aria-labelledby="about-page-title">
-		<div class="container page-intro__inner">
-			<p class="eyebrow">Nosotros</p>
-			<h1 id="about-page-title">Dos áreas de ingeniería. Una misma forma de construir.</h1>
-			<p>TinKode nace de la colaboración entre ingeniería de sistemas e ingeniería electrónica para crear soluciones digitales pensadas alrededor de problemas reales.</p>
-		</div>
-	</section>
-
-	<section class="about-founders section" aria-labelledby="founders-title">
-		<div class="container">
-			<div class="section-header about-founders__header">
-				<h2 id="founders-title">Quiénes están detrás de TinKode</h2>
-			</div>
-
-			<div class="founder-grid">
-				{
-					founders.map((founder) => (
-						<article class="founder-card">
-							<div class="founder-card__mark" aria-hidden="true">{founder.initials}</div>
-							<div class="founder-card__body">
-								<p class="founder-card__role">{founder.role}</p>
-								<h3>{founder.name}</h3>
-								<p>{founder.education}</p>
-								<p>{founder.contribution}</p>
-							</div>
-						</article>
-					))
-				}
-			</div>
-		</div>
-	</section>
-
-	<section class="about-trust section" aria-labelledby="trust-title">
-		<div class="container">
-			<div class="section-header about-trust__header">
-				<h2 id="trust-title">Tecnología con criterio y acompañamiento directo.</h2>
-			</div>
-
-			<div class="trust-grid">
-				{
-					trustReasons.map((reason) => (
-						<article class="trust-card">
-							<h3>{reason.title}</h3>
-							<p>{reason.description}</p>
-						</article>
-					))
-				}
-			</div>
-
-			<aside class="about-principle">
-				<p>No comenzamos preguntando qué software vender. Comenzamos entendiendo cómo funciona el negocio, qué está fallando y qué vale la pena mejorar.</p>
-			</aside>
-		</div>
-	</section>
-
-	<section class="page-closing section" aria-labelledby="about-closing-title">
-		<div class="container page-closing__inner">
-			<div>
-				<p class="eyebrow">Conversemos</p>
-				<h2 id="about-closing-title">Conversemos sobre lo que quieres construir.</h2>
-				<p>Podemos escuchar tu necesidad, orientarte y preparar una propuesta según el tipo de solución que requieras.</p>
-			</div>
-			<Button href={INSTAGRAM_URL} variant="primary" external ariaLabel={`Hablemos por ${INSTAGRAM_LABEL}`}>Hablemos por Instagram</Button>
-		</div>
-	</section>
+<BaseLayout title="Nosotros | TinKode" description="Conoce el origen, el equipo fundador y la forma de pensar con la que TinKode construye soluciones de software, automatización y tecnología.">
+	<AboutHeroVisual />
+	<TinKodeOrigin />
+	<FounderTeam />
+	<FounderConvergence />
+	<AboutPrinciples />
+	<TrustEvidence />
+	<TinKodeVision />
 </BaseLayout>

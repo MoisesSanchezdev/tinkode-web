@@ -1,0 +1,37 @@
+---
+import ConnectionLine from "../ui/ConnectionLine.astro";
+import Reveal from "../ui/Reveal.astro";
+import SectionBackground from "../ui/SectionBackground.astro";
+import SectionHeading from "../ui/SectionHeading.astro";
+
+const sequence = ["Problema real", "Análisis", "Idea", "Ingeniería", "Solución", "TinKode"];
+---
+
+<SectionBackground variant="grid" class="about-page-section about-origin" ariaLabelledby="about-origin-title">
+	<div class="container about-origin__grid">
+		<Reveal class="about-origin__copy">
+			<SectionHeading
+				eyebrow="Origen"
+				title="TinKode comenzó con una pregunta."
+				titleId="about-origin-title"
+				description="TinKode nació de una idea sencilla: la tecnología debe resolver problemas reales."
+			/>
+			<p>Pensamos primero en cómo funciona el negocio y después en qué tecnología utilizar. Desde esa mirada, dos perfiles de ingeniería se unen para construir soluciones útiles, organizadas y adaptables.</p>
+		</Reveal>
+
+		<Reveal class="about-origin__visual" delay="sm">
+			<div class="about-origin__question">¿Y si la tecnología se diseñara alrededor del problema y no al revés?</div>
+			<ol class="about-origin__sequence" aria-label="Secuencia de origen de TinKode">
+				{
+					sequence.map((item, index) => (
+						<li class:list={["about-origin__step", index === sequence.length - 1 && "is-final"]}>
+							<span>{String(index + 1).padStart(2, "0")}</span>
+							<strong>{item}</strong>
+							{index < sequence.length - 1 && <ConnectionLine variant={index % 2 === 0 ? "green" : "blue"} />}
+						</li>
+					))
+				}
+			</ol>
+		</Reveal>
+	</div>
+</SectionBackground>

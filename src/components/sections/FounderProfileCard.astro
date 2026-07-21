@@ -1,0 +1,56 @@
+---
+import GlowIcon from "../ui/GlowIcon.astro";
+import InlineIcon from "../ui/InlineIcon.astro";
+import SurfaceCard from "../ui/SurfaceCard.astro";
+import TechNode from "../ui/TechNode.astro";
+
+interface Props {
+	initials: string;
+	name: string;
+	role: string;
+	study: string;
+	institution: string;
+	description: string;
+	focus: readonly string[];
+	variant?: "green" | "blue";
+}
+
+const {
+	initials,
+	name,
+	role,
+	study,
+	institution,
+	description,
+	focus,
+	variant = "green",
+} = Astro.props as Props;
+---
+
+<SurfaceCard class={`about-founder-card about-founder-card--${variant}`} padding="spacious">
+	<div class="about-founder-card__mark" aria-hidden="true">
+		<span>{initials}</span>
+		<div class="about-founder-card__pattern">
+			<i></i>
+			<i></i>
+			<i></i>
+			<i></i>
+		</div>
+	</div>
+
+	<div class="about-founder-card__body">
+		<p class="about-founder-card__role">{role}</p>
+		<h3>{name}</h3>
+		<div class="about-founder-card__education">
+			<GlowIcon variant={variant} size="sm">
+				<InlineIcon name={variant === "green" ? "integration" : "software"} />
+			</GlowIcon>
+			<p><strong>{study}</strong><span>{institution}</span></p>
+		</div>
+		<p>{description}</p>
+	</div>
+
+	<ul class="about-founder-card__focus" aria-label={`Focos de ${name}`}>
+		{focus.map((item) => <TechNode as="li" label={item} variant={variant} size="sm" />)}
+	</ul>
+</SurfaceCard>

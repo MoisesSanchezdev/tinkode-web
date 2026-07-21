@@ -1,0 +1,73 @@
+---
+import GlowIcon from "../ui/GlowIcon.astro";
+import InlineIcon from "../ui/InlineIcon.astro";
+import Reveal from "../ui/Reveal.astro";
+import SectionBackground from "../ui/SectionBackground.astro";
+import SectionHeading from "../ui/SectionHeading.astro";
+import SurfaceCard from "../ui/SurfaceCard.astro";
+
+const principles = [
+	{
+		title: "Tecnología al servicio del negocio",
+		description: "Cada decisión técnica parte de lo que necesita mejorar el proceso, el equipo o la operación.",
+		icon: "briefcase",
+		variant: "green",
+	},
+	{
+		title: "Ingeniería con propósito",
+		description: "Buscamos soluciones entendibles, sostenibles y conectadas con una necesidad concreta.",
+		icon: "integration",
+		variant: "blue",
+	},
+	{
+		title: "Soluciones adaptables",
+		description: "Diseñamos sistemas que puedan ajustarse cuando el negocio cambie o crezca.",
+		icon: "workflow",
+		variant: "green",
+	},
+	{
+		title: "Calidad sobre cantidad",
+		description: "Preferimos construir menos, pero con mejor criterio, validación y atención al detalle.",
+		icon: "shield",
+		variant: "blue",
+	},
+	{
+		title: "Aprendizaje continuo",
+		description: "Mejoramos la forma de trabajar a medida que aparecen nuevas necesidades y mejores herramientas.",
+		icon: "control",
+		variant: "green",
+	},
+] as const;
+---
+
+<SectionBackground variant="grid" class="about-page-section about-principles-premium" ariaLabelledby="about-principles-title">
+	<div class="container">
+		<Reveal class="about-principles-premium__heading">
+			<SectionHeading
+				eyebrow="Principios"
+		title="La forma de pensar importa tanto como el código."
+				titleId="about-principles-title"
+		description="Estos principios ayudan a mantener el trabajo enfocado, claro y honesto desde la primera conversación."
+			/>
+		</Reveal>
+
+		<div class="about-principles-premium__grid">
+			{
+				principles.map((principle, index) => (
+					<Reveal as="article" delay={index % 2 === 0 ? "sm" : "md"}>
+						<SurfaceCard class="about-principle-card">
+							<div class="about-principle-card__top">
+								<GlowIcon variant={principle.variant}>
+									<InlineIcon name={principle.icon} />
+								</GlowIcon>
+								<span>{String(index + 1).padStart(2, "0")}</span>
+							</div>
+							<h3>{principle.title}</h3>
+							<p>{principle.description}</p>
+						</SurfaceCard>
+					</Reveal>
+				))
+			}
+		</div>
+	</div>
+</SectionBackground>

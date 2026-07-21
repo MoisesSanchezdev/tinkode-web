@@ -1,0 +1,69 @@
+---
+import { INSTAGRAM_LABEL, INSTAGRAM_URL } from "../../data/contact";
+import Badge from "../ui/Badge.astro";
+import Button from "../ui/Button.astro";
+import ConnectionLine from "../ui/ConnectionLine.astro";
+import InlineIcon from "../ui/InlineIcon.astro";
+import Reveal from "../ui/Reveal.astro";
+import SectionBackground from "../ui/SectionBackground.astro";
+import TechNode from "../ui/TechNode.astro";
+
+const outputs = [
+	{ label: "Automatización", variant: "green" },
+	{ label: "Software", variant: "blue" },
+	{ label: "Experiencias", variant: "blue" },
+	{ label: "Sistemas", variant: "green" },
+	{ label: "Soluciones", variant: "green" },
+] as const;
+---
+
+<SectionBackground variant="mixed" class="about-page-section about-hero" ariaLabelledby="about-hero-title">
+	<div class="container about-hero__grid">
+		<Reveal class="about-hero__content">
+			<div class="about-hero__copy">
+				<Badge variant="accent">Quiénes somos</Badge>
+				<h1 id="about-hero-title">Ingeniería, software y una idea clara: construir tecnología con propósito.</h1>
+				<p>TinKode nace para ayudar a negocios y organizaciones a resolver problemas mediante soluciones diseñadas con criterio, claridad y tecnología.</p>
+			</div>
+
+			<div class="about-hero__actions" aria-label="Acciones principales de nosotros">
+				<Button href={INSTAGRAM_URL} variant="primary" external ariaLabel={`Hablemos por ${INSTAGRAM_LABEL}`}>
+					Hablemos
+					<InlineIcon slot="icon-end" name="message" />
+				</Button>
+				<Button href="/proyectos" variant="secondary">
+					Ver proyectos
+					<InlineIcon slot="icon-end" name="arrow" />
+				</Button>
+			</div>
+		</Reveal>
+
+		<Reveal class="about-hero-map" delay="sm">
+			<div class="about-hero-map__inputs" aria-label="Areas de ingenieria que convergen en TinKode">
+				<div class="about-core about-core--green">
+					<span>Perfil técnico</span>
+					<strong>Ingeniería electrónica</strong>
+					<p>Integración, automatización y sistemas físico-digitales.</p>
+				</div>
+				<div class="about-core about-core--blue">
+					<span>Perfil de software</span>
+					<strong>Ingeniería de sistemas</strong>
+					<p>Arquitectura, organización y experiencias digitales.</p>
+				</div>
+			</div>
+
+			<div class="about-hero-map__merge" aria-hidden="true">
+				<ConnectionLine variant="green" />
+				<div class="about-hero-map__center">
+					<span>TinKode</span>
+					<small>problema -> criterio -> solución</small>
+				</div>
+				<ConnectionLine variant="blue" />
+			</div>
+
+			<div class="about-hero-map__outputs" aria-label="Salidas de trabajo">
+				{outputs.map((item) => <TechNode label={item.label} variant={item.variant} size="sm" active />)}
+			</div>
+		</Reveal>
+	</div>
+</SectionBackground>
