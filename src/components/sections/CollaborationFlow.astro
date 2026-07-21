@@ -1,0 +1,50 @@
+---
+import GlowIcon from "../ui/GlowIcon.astro";
+import InlineIcon from "../ui/InlineIcon.astro";
+import Reveal from "../ui/Reveal.astro";
+import SectionHeading from "../ui/SectionHeading.astro";
+import VisualCard from "../ui/VisualCard.astro";
+
+const checkpoints = [
+	{ title: "Conversamos", detail: "Aclaramos contexto y necesidad.", icon: "message", variant: "green" },
+	{ title: "Proponemos", detail: "Presentamos dirección y alcance.", icon: "interface", variant: "blue" },
+	{ title: "Validamos", detail: "Revisamos decisiones importantes.", icon: "shield", variant: "green" },
+	{ title: "Construimos", detail: "Avanzamos por partes visibles.", icon: "software", variant: "blue" },
+	{ title: "Mostramos avances", detail: "Compartimos progreso entendible.", icon: "report", variant: "green" },
+	{ title: "Ajustamos", detail: "Mejoramos con criterio y feedback.", icon: "automation", variant: "blue" },
+] as const;
+---
+
+<section class="process-collaboration process-page-section" aria-labelledby="process-collaboration-title">
+	<div class="container process-collaboration__grid">
+		<div class="process-collaboration__copy">
+			<SectionHeading
+				eyebrow="Comunicación"
+				title="Construimos contigo, no a puerta cerrada."
+				description="La comunicación se mantiene directa y orientada a decisiones: entender, proponer, validar, mostrar avances y ajustar."
+				titleId="process-collaboration-title"
+			/>
+		</div>
+
+		<div class="process-collaboration__flow" aria-label="Representación conceptual de comunicación y validación">
+			{
+				checkpoints.map((checkpoint, index) => (
+					<Reveal delay={index > 2 ? "sm" : "none"}>
+						<VisualCard variant={checkpoint.variant} padding="compact" class="process-collaboration-card">
+							<div class="process-collaboration-card__icon">
+								<GlowIcon variant={checkpoint.variant} size="sm">
+									<InlineIcon name={checkpoint.icon} />
+								</GlowIcon>
+								<span>{String(index + 1).padStart(2, "0")}</span>
+							</div>
+							<div>
+								<h3>{checkpoint.title}</h3>
+								<p>{checkpoint.detail}</p>
+							</div>
+						</VisualCard>
+					</Reveal>
+				))
+			}
+		</div>
+	</div>
+</section>

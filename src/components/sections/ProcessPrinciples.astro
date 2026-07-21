@@ -1,0 +1,46 @@
+---
+import GlowIcon from "../ui/GlowIcon.astro";
+import InlineIcon from "../ui/InlineIcon.astro";
+import Reveal from "../ui/Reveal.astro";
+import SectionHeading from "../ui/SectionHeading.astro";
+import VisualCard from "../ui/VisualCard.astro";
+
+const principles = [
+	{ title: "Problema antes que tecnología", detail: "La herramienta llega después del diagnóstico.", icon: "message", variant: "green" },
+	{ title: "Claridad antes que complejidad", detail: "Diseñamos lo necesario para avanzar mejor.", icon: "control", variant: "blue" },
+	{ title: "Validación antes que suposición", detail: "Las decisiones importantes se revisan.", icon: "shield", variant: "green" },
+	{ title: "Escalabilidad sin sobrediseño", detail: "La base queda lista para crecer con sentido.", icon: "integration", variant: "blue" },
+	{ title: "Mejora continua", detail: "La solución puede evolucionar con la operación.", icon: "automation", variant: "green" },
+] as const;
+---
+
+<section class="process-principles process-page-section" aria-labelledby="process-principles-title">
+	<div class="container">
+		<SectionHeading
+			eyebrow="Principios"
+			title="Diseñamos con criterio, no con plantillas."
+			description="Estos principios ayudan a mantener el proceso sobrio, útil y conectado con el negocio."
+			titleId="process-principles-title"
+			class="process-principles__heading"
+		/>
+
+		<div class="process-principles__grid">
+			{
+				principles.map((principle, index) => (
+					<Reveal delay={index > 2 ? "sm" : "none"}>
+						<VisualCard interactive variant={principle.variant} padding="compact" class="process-principle-card">
+							<div class="process-principle-card__top">
+								<GlowIcon variant={principle.variant} size="md">
+									<InlineIcon name={principle.icon} />
+								</GlowIcon>
+								<span>{String(index + 1).padStart(2, "0")}</span>
+							</div>
+							<h3>{principle.title}</h3>
+							<p>{principle.detail}</p>
+						</VisualCard>
+					</Reveal>
+				))
+			}
+		</div>
+	</div>
+</section>

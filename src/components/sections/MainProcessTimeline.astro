@@ -1,0 +1,80 @@
+---
+import ConnectionLine from "../ui/ConnectionLine.astro";
+import GlowIcon from "../ui/GlowIcon.astro";
+import InlineIcon from "../ui/InlineIcon.astro";
+import Reveal from "../ui/Reveal.astro";
+import SectionHeading from "../ui/SectionHeading.astro";
+import VisualCard from "../ui/VisualCard.astro";
+
+const steps = [
+	{
+		number: "01",
+		title: "Entendemos",
+		description: "Conocemos cómo funciona el negocio, qué problemas existen y qué personas intervienen.",
+		icon: "message",
+		variant: "green",
+		resource: ["Contexto", "Proceso real", "Prioridad"],
+	},
+	{
+		number: "02",
+		title: "Diseñamos",
+		description: "Definimos la solución, sus flujos, prioridades y experiencia antes de construir.",
+		icon: "interface",
+		variant: "blue",
+		resource: ["Flujo", "Decisiones", "Alcance"],
+	},
+	{
+		number: "03",
+		title: "Construimos",
+		description: "Desarrollamos con una estructura clara, validando cada parte importante.",
+		icon: "software",
+		variant: "green",
+		resource: ["Módulos", "Integración", "Entrega"],
+	},
+	{
+		number: "04",
+		title: "Evolucionamos",
+		description: "Ajustamos, mejoramos y ampliamos la solución conforme cambia el negocio.",
+		icon: "automation",
+		variant: "blue",
+		resource: ["Mejora", "Nuevas reglas", "Escala"],
+	},
+] as const;
+---
+
+<section class="process-timeline process-page-section" aria-labelledby="process-timeline-title">
+	<div class="container">
+		<SectionHeading
+			eyebrow="Flujo principal"
+			title="Cada solución empieza con una conversación."
+			description="El proceso avanza de forma ordenada: primero comprendemos, después diseñamos, construimos y mejoramos."
+			titleId="process-timeline-title"
+			class="process-timeline__heading"
+		/>
+
+		<ol class="process-timeline__track" aria-label="Cuatro etapas principales del proceso TinKode">
+			{
+				steps.map((step, index) => (
+					<Reveal as="li" class={["process-timeline__step", `process-timeline__step--${step.variant}`, index % 2 === 1 && "process-timeline__step--lower"].filter(Boolean).join(" ")} delay={index > 1 ? "sm" : "none"}>
+						<VisualCard variant={step.variant} interactive class="process-step-card">
+							<div class="process-step-card__top">
+								<span>{step.number}</span>
+								<GlowIcon variant={step.variant} size="md">
+									<InlineIcon name={step.icon} />
+								</GlowIcon>
+							</div>
+							<div class="process-step-card__body">
+								<h3>{step.title}</h3>
+								<p>{step.description}</p>
+							</div>
+							<div class="process-step-card__resource" aria-hidden="true">
+								{step.resource.map((item) => <span>{item}</span>)}
+							</div>
+						</VisualCard>
+						{index < steps.length - 1 && <ConnectionLine class="process-timeline__connector" variant="mixed" />}
+					</Reveal>
+				))
+			}
+		</ol>
+	</div>
+</section>
