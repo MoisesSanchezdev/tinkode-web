@@ -1,0 +1,84 @@
+---
+import Badge from "../ui/Badge.astro";
+import Button from "../ui/Button.astro";
+import ConnectionLine from "../ui/ConnectionLine.astro";
+import InlineIcon from "../ui/InlineIcon.astro";
+import SectionBackground from "../ui/SectionBackground.astro";
+import TechNode from "../ui/TechNode.astro";
+import { INSTAGRAM_LABEL, INSTAGRAM_URL } from "../../data/contact";
+
+const fragmentedItems = ["Procesos manuales", "Datos dispersos", "Herramientas aisladas"] as const;
+
+const methodItems = [
+	{ label: "Análisis", icon: "workflow" },
+	{ label: "Diseño", icon: "interface" },
+	{ label: "Integración", icon: "integration" },
+	{ label: "Automatización", icon: "automation" },
+] as const;
+
+const connectedItems = [
+	{ label: "Información central", icon: "database" },
+	{ label: "Control operativo", icon: "control" },
+	{ label: "Experiencia clara", icon: "website" },
+] as const;
+---
+
+<SectionBackground as="section" variant="mixed" class="solutions-hero" ariaLabelledby="solutions-hero-title">
+	<div class="container solutions-hero__grid">
+		<div class="solutions-hero__content">
+			<Badge variant="accent">Soluciones diseñadas alrededor de tu negocio</Badge>
+			<div class="solutions-hero__copy">
+				<h1 id="solutions-hero-title">La tecnología debe adaptarse a tu negocio.</h1>
+				<p>
+					Cada operación tiene procesos, personas e información diferentes. Diseñamos soluciones que conectan esas piezas y eliminan fricciones reales.
+				</p>
+			</div>
+			<div class="solutions-hero__actions" aria-label="Acciones principales">
+				<Button href={INSTAGRAM_URL} variant="primary" size="large" external ariaLabel={`Hablemos por ${INSTAGRAM_LABEL}`}>Hablemos</Button>
+				<Button href="/proyectos" variant="ghost" size="large">Ver proyectos</Button>
+			</div>
+		</div>
+
+		<div class="solutions-hero-visual" aria-label="Proceso visual desde operación desorganizada hasta sistema conectado">
+			<div class="solutions-hero-visual__cluster solutions-hero-visual__cluster--start">
+				<span class="solutions-hero-visual__label">Operación fragmentada</span>
+				{
+					fragmentedItems.map((item) => (
+						<div class="solutions-hero-visual__chip">
+							<span aria-hidden="true"></span>
+							{item}
+						</div>
+					))
+				}
+			</div>
+
+			<ConnectionLine class="solutions-hero-visual__line" variant="mixed" />
+
+			<div class="solutions-hero-visual__method">
+				<span class="solutions-hero-visual__method-core">TinKode</span>
+				<div class="solutions-hero-visual__method-grid">
+					{
+						methodItems.map((item, index) => (
+							<TechNode label={item.label} variant={index % 2 === 0 ? "green" : "blue"} size="sm" active={index === 2}>
+								<InlineIcon slot="icon" name={item.icon} />
+							</TechNode>
+						))
+					}
+				</div>
+			</div>
+
+			<ConnectionLine class="solutions-hero-visual__line" variant="mixed" />
+
+			<div class="solutions-hero-visual__cluster solutions-hero-visual__cluster--end">
+				<span class="solutions-hero-visual__label">Sistema conectado</span>
+				{
+					connectedItems.map((item) => (
+						<TechNode label={item.label} variant="green" size="sm" active>
+							<InlineIcon slot="icon" name={item.icon} />
+						</TechNode>
+					))
+				}
+			</div>
+		</div>
+	</div>
+</SectionBackground>

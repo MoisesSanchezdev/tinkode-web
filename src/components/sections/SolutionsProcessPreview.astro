@@ -1,0 +1,40 @@
+---
+import Button from "../ui/Button.astro";
+import InlineIcon from "../ui/InlineIcon.astro";
+import SectionBackground from "../ui/SectionBackground.astro";
+import SectionHeading from "../ui/SectionHeading.astro";
+
+const steps = [
+	{ title: "Entendemos problema", icon: "message" },
+	{ title: "Revisamos proceso", icon: "workflow" },
+	{ title: "Diseñamos solución", icon: "interface" },
+	{ title: "Elegimos tecnología", icon: "software" },
+	{ title: "Construimos y mejoramos", icon: "automation" },
+] as const;
+---
+
+<SectionBackground as="section" variant="glow-blue" class="solutions-process-preview solutions-page-section" ariaLabelledby="solutions-process-preview-title">
+	<div class="container solutions-process-preview__grid">
+		<div class="solutions-process-preview__copy">
+			<SectionHeading
+				eyebrow="Proceso"
+				title="No empezamos eligiendo tecnología."
+				description="Primero entendemos cómo funciona el negocio y qué fricción necesita resolverse. Después decidimos qué construir."
+				titleId="solutions-process-preview-title"
+			/>
+			<Button href="/proceso" variant="secondary">Conocer nuestro proceso</Button>
+		</div>
+
+		<ol class="solutions-process-preview__steps" aria-label="Secuencia de trabajo TinKode">
+			{
+				steps.map((step, index) => (
+					<li>
+						<span class="solutions-process-preview__number">{String(index + 1).padStart(2, "0")}</span>
+						<InlineIcon name={step.icon} />
+						<strong>{step.title}</strong>
+					</li>
+				))
+			}
+		</ol>
+	</div>
+</SectionBackground>

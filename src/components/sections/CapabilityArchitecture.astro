@@ -1,0 +1,86 @@
+---
+import InlineIcon from "../ui/InlineIcon.astro";
+import SectionHeading from "../ui/SectionHeading.astro";
+import TechNode from "../ui/TechNode.astro";
+
+const layers = [
+	{
+		title: "Experiencias",
+		description: "Puntos de contacto para usuarios, clientes o equipos.",
+		items: [
+			{ label: "Sitio web", icon: "website" },
+			{ label: "Formularios", icon: "form" },
+			{ label: "NFC", icon: "nfc" },
+			{ label: "Agendamiento", icon: "calendar" },
+		],
+		variant: "blue",
+	},
+	{
+		title: "Operación",
+		description: "Módulos que ordenan procesos internos y gestión diaria.",
+		items: [
+			{ label: "Inventario", icon: "inventory" },
+			{ label: "Clientes", icon: "customer" },
+			{ label: "Procesos", icon: "workflow" },
+			{ label: "Administración", icon: "interface" },
+		],
+		variant: "green",
+	},
+	{
+		title: "Información",
+		description: "Datos conectados para reducir duplicación y mejorar visibilidad.",
+		items: [
+			{ label: "Bases de datos", icon: "database" },
+			{ label: "Reportes", icon: "report" },
+			{ label: "Integraciones", icon: "integration" },
+			{ label: "Automatización", icon: "automation" },
+		],
+		variant: "blue",
+	},
+] as const;
+
+const connectedCapabilities = ["WhatsApp", "APIs", "Experiencia del cliente"] as const;
+---
+
+<section class="solutions-architecture solutions-page-section" aria-labelledby="solutions-architecture-title">
+	<div class="container solutions-architecture__grid">
+		<div class="solutions-architecture__copy">
+			<SectionHeading
+				eyebrow="Arquitectura"
+				title="Una solución puede conectar mucho más que una interfaz."
+				description="Una solución TinKode puede unir experiencias, operación e información para que la tecnología trabaje alrededor del negocio."
+				titleId="solutions-architecture-title"
+			/>
+			<div class="solutions-architecture__extra" aria-label="Capacidades conectables">
+				{connectedCapabilities.map((item) => <span>{item}</span>)}
+			</div>
+		</div>
+
+		<div class="solutions-architecture__diagram" aria-label="Arquitectura por capas de una solución TinKode">
+			<div class="solutions-architecture__core">
+				<span>Solución TinKode</span>
+			</div>
+			<div class="solutions-architecture__layers">
+				{
+					layers.map((layer) => (
+						<div class:list={["solutions-architecture-layer", `solutions-architecture-layer--${layer.variant}`]}>
+							<div class="solutions-architecture-layer__header">
+								<strong>{layer.title}</strong>
+								<p>{layer.description}</p>
+							</div>
+							<div class="solutions-architecture-layer__nodes">
+								{
+									layer.items.map((item) => (
+										<TechNode label={item.label} variant={layer.variant} size="sm">
+											<InlineIcon slot="icon" name={item.icon} />
+										</TechNode>
+									))
+								}
+							</div>
+						</div>
+					))
+				}
+			</div>
+		</div>
+	</div>
+</section>

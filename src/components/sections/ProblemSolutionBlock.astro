@@ -1,0 +1,124 @@
+---
+import ConnectionLine from "../ui/ConnectionLine.astro";
+import GlowIcon from "../ui/GlowIcon.astro";
+import InlineIcon from "../ui/InlineIcon.astro";
+import Reveal from "../ui/Reveal.astro";
+import SectionBackground from "../ui/SectionBackground.astro";
+import SectionHeading from "../ui/SectionHeading.astro";
+import TechNode from "../ui/TechNode.astro";
+import VisualCard from "../ui/VisualCard.astro";
+
+const transformations = [
+	{
+		title: "Automatización de procesos",
+		problem: "Tareas repetidas consumen tiempo y aumentan la posibilidad de error.",
+		approach: "Mapeamos el flujo real y definimos qué pasos pueden ejecutarse con reglas claras.",
+		solution: "Flujos, avisos, formularios conectados y acciones automáticas.",
+		benefit: "Operación más continua y menos dependiente de seguimiento manual.",
+		icon: "automation",
+		variant: "green",
+	},
+	{
+		title: "Software personalizado",
+		problem: "Las herramientas genéricas obligan al negocio a adaptar su operación.",
+		approach: "Diseñamos módulos alrededor de la forma real de trabajar del equipo.",
+		solution: "Aplicaciones internas, portales, paneles o sistemas a medida.",
+		benefit: "Una herramienta más clara para resolver necesidades específicas.",
+		icon: "software",
+		variant: "blue",
+	},
+	{
+		title: "Sistemas administrativos",
+		problem: "La información crítica se consulta tarde o desde demasiadas fuentes.",
+		approach: "Ordenamos datos, permisos y vistas según la operación diaria.",
+		solution: "Paneles de gestión, inventario, clientes, reservas y reportes.",
+		benefit: "Mayor visibilidad para administrar sin perseguir información.",
+		icon: "interface",
+		variant: "green",
+	},
+	{
+		title: "Experiencias digitales",
+		problem: "Clientes y usuarios no encuentran una forma simple de interactuar.",
+		approach: "Convertimos procesos comerciales o de atención en recorridos claros.",
+		solution: "Sitios, formularios, catálogos, agendamiento o páginas operativas.",
+		benefit: "Interacciones más ordenadas desde el primer contacto.",
+		icon: "website",
+		variant: "blue",
+	},
+	{
+		title: "Integraciones",
+		problem: "Cada sistema guarda una parte y el equipo termina copiando datos.",
+		approach: "Identificamos puntos de conexión entre canales, bases y procesos.",
+		solution: "APIs, sincronización, formularios conectados y automatización entre herramientas.",
+		benefit: "Menos duplicación y una operación más coherente.",
+		icon: "integration",
+		variant: "green",
+	},
+	{
+		title: "NFC y conexión físico-digital",
+		problem: "La experiencia presencial no siempre continúa de forma digital.",
+		approach: "Diseñamos puntos de contacto simples para activar acciones desde objetos o espacios.",
+		solution: "Tarjetas NFC, menús, accesos, perfiles, campañas o flujos de atención.",
+		benefit: "Una transición más natural entre el mundo físico y el sistema digital.",
+		icon: "nfc",
+		variant: "blue",
+	},
+] as const;
+---
+
+<SectionBackground as="section" variant="glow-green" class="solutions-transform solutions-page-section" ariaLabelledby="solutions-transform-title">
+	<div class="container">
+		<SectionHeading
+			eyebrow="Transformación"
+			title="De una fricción operativa a una solución útil."
+			description="No partimos de un paquete cerrado. Entendemos el problema, diseñamos el flujo y elegimos la tecnología que mejor encaja con la operación."
+			titleId="solutions-transform-title"
+			class="solutions-transform__heading"
+		/>
+
+		<div class="solutions-transform__list">
+			{
+				transformations.map((item, index) => (
+					<Reveal class="solutions-transform__item" delay={index > 1 ? "sm" : "none"}>
+						<VisualCard variant={item.variant} class={["solutions-transform-card", index % 2 === 1 && "solutions-transform-card--reverse"].filter(Boolean).join(" ")}>
+							<div class="solutions-transform-card__copy">
+								<div class="solutions-transform-card__title">
+									<GlowIcon variant={item.variant} size="md">
+										<InlineIcon name={item.icon} />
+									</GlowIcon>
+									<h3>{item.title}</h3>
+								</div>
+								<div class="solutions-transform-card__matrix">
+									<div>
+										<span>Problema</span>
+										<p>{item.problem}</p>
+									</div>
+									<div>
+										<span>Enfoque TinKode</span>
+										<p>{item.approach}</p>
+									</div>
+									<div>
+										<span>Posible solución</span>
+										<p>{item.solution}</p>
+									</div>
+									<div>
+										<span>Resultado esperado</span>
+										<p>{item.benefit}</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="solutions-transform-card__visual" aria-hidden="true">
+								<TechNode label="Fricción" variant={item.variant} size="sm" />
+								<ConnectionLine variant={item.variant} />
+								<TechNode label="Análisis" variant="blue" size="sm" active />
+								<ConnectionLine variant="mixed" />
+								<TechNode label="Solución adaptable" variant="green" size="sm" active />
+							</div>
+						</VisualCard>
+					</Reveal>
+				))
+			}
+		</div>
+	</div>
+</SectionBackground>
