@@ -2,23 +2,27 @@
 import Badge from "../ui/Badge.astro";
 import Button from "../ui/Button.astro";
 import SectionBackground from "../ui/SectionBackground.astro";
+import BusinessNetwork from "./BusinessNetwork.astro";
 import { INSTAGRAM_LABEL, INSTAGRAM_URL } from "../../data/contact";
 ---
 
 <SectionBackground as="section" variant="mixed" class="hero" ariaLabelledby="hero-title">
 	<div class="container hero__grid">
 		<div class="hero__content">
-			<Badge variant="accent">Ingeniería aplicada a negocios</Badge>
+			<Badge variant="accent">Tecnología aplicada a negocios</Badge>
 			<div class="hero__copy">
-				<h1 id="hero-title">Diseñamos tecnología para que tu negocio funcione mejor.</h1>
+				<h1 id="hero-title">Diseñamos tecnología para que los negocios funcionen mejor.</h1>
 				<p>
-					Creamos experiencias digitales, sistemas y automatizaciones a partir de problemas reales.
+					Conectamos procesos, información y experiencias para construir sistemas útiles, claros y escalables.
 				</p>
 			</div>
 			<div class="hero__actions" aria-label="Acciones principales">
 				<Button href={INSTAGRAM_URL} variant="primary" size="large" external ariaLabel={`Cuéntanos qué quieres mejorar por ${INSTAGRAM_LABEL}`}>Cuéntanos qué quieres mejorar</Button>
 				<Button href="/soluciones" variant="ghost" size="large">Explorar soluciones</Button>
 			</div>
+			<p class="hero__trust">Ingeniería, automatización y software personalizado alrededor de problemas reales.</p>
 		</div>
+
+		<BusinessNetwork />
 	</div>
 </SectionBackground>

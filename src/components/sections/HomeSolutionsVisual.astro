@@ -1,0 +1,99 @@
+---
+import Button from "../ui/Button.astro";
+import GlowIcon from "../ui/GlowIcon.astro";
+import InlineIcon from "../ui/InlineIcon.astro";
+import Reveal from "../ui/Reveal.astro";
+import SectionHeading from "../ui/SectionHeading.astro";
+import VisualCard from "../ui/VisualCard.astro";
+
+const solutions = [
+	{
+		title: "Automatización de procesos",
+		description: "Menos tareas repetitivas, más continuidad operativa.",
+		icon: "automation",
+		variant: "green",
+		visual: "Flujo activo",
+		featured: true,
+	},
+	{
+		title: "Software personalizado",
+		description: "Herramientas hechas alrededor del negocio.",
+		icon: "software",
+		variant: "blue",
+		visual: "Logica propia",
+		featured: false,
+	},
+	{
+		title: "Sistemas administrativos",
+		description: "Información clara para gestionar mejor.",
+		icon: "interface",
+		variant: "green",
+		visual: "Panel interno",
+		featured: false,
+	},
+	{
+		title: "Experiencias digitales",
+		description: "Puntos de contacto utiles y faciles de usar.",
+		icon: "website",
+		variant: "blue",
+		visual: "Web movil",
+		featured: false,
+	},
+	{
+		title: "Integraciones",
+		description: "Canales y datos trabajando juntos.",
+		icon: "integration",
+		variant: "green",
+		visual: "Conexion",
+		featured: false,
+	},
+	{
+		title: "Organización de información",
+		description: "Datos ordenados para decidir con más claridad.",
+		icon: "database",
+		variant: "blue",
+		visual: "Base central",
+		featured: false,
+	},
+] as const;
+---
+
+<section class="home-solutions-visual home-section" aria-labelledby="home-solutions-visual-title">
+	<div class="container">
+		<div class="home-solutions-visual__header">
+			<SectionHeading
+				eyebrow="Soluciones"
+				title="Tecnología que ordena, conecta y automatiza."
+				description="El Home resume capacidades reales sin convertir a TinKode en un catálogo técnico."
+				titleId="home-solutions-visual-title"
+			/>
+			<Button href="/soluciones" variant="secondary">Ver soluciones</Button>
+		</div>
+
+		<div class="solution-visual-grid">
+			{
+				solutions.map((solution, index) => (
+					<Reveal class={["solution-visual-grid__item", solution.featured && "solution-visual-grid__item--featured"].filter(Boolean).join(" ")} delay={index > 1 ? "sm" : "none"}>
+						<VisualCard interactive variant={solution.variant} class="solution-visual-card">
+							<div class="solution-visual-card__top">
+								<GlowIcon variant={solution.variant} size={solution.featured ? "lg" : "md"}>
+									<InlineIcon name={solution.icon} />
+								</GlowIcon>
+								<span>{solution.visual}</span>
+							</div>
+							<div class="solution-visual-card__body">
+								<h3>{solution.title}</h3>
+								<p>{solution.description}</p>
+							</div>
+							<div class="solution-visual-card__meter" aria-hidden="true">
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+						</VisualCard>
+					</Reveal>
+				))
+			}
+		</div>
+	</div>
+</section>

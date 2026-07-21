@@ -1,0 +1,53 @@
+---
+import Button from "../ui/Button.astro";
+import InlineIcon from "../ui/InlineIcon.astro";
+import SectionBackground from "../ui/SectionBackground.astro";
+import VisualCard from "../ui/VisualCard.astro";
+
+const capabilities = ["Gestión de participantes", "Fases de competencia", "Panel administrativo", "Reglas de negocio"];
+---
+
+<SectionBackground as="section" variant="grid" class="home-project-preview home-section" ariaLabelledby="home-project-preview-title">
+	<div class="container home-project-preview__grid">
+		<div class="home-project-preview__copy">
+			<p class="eyebrow">Proyecto destacado</p>
+			<h2 id="home-project-preview-title">Robot Explota Globos demuestra logica aplicada a un caso real.</h2>
+			<p>Una plataforma en pruebas para organizar participantes, etapas y correcciones durante una competencia.</p>
+			<div class="home-project-preview__tags" aria-label="Capacidades representadas">
+				{capabilities.map((capability) => <span>{capability}</span>)}
+			</div>
+			<Button href="/proyectos" variant="secondary">Ver proyectos</Button>
+		</div>
+
+		<VisualCard variant="mixed" class="project-concept-card" as="div">
+			<div class="project-concept-card__header">
+				<div>
+					<span>Representación conceptual</span>
+					<strong>Panel de competencia</strong>
+				</div>
+				<InlineIcon name="workflow" />
+			</div>
+			<div class="project-concept-card__stage">
+				<div class="project-concept-card__lane">
+					<span>Registro</span>
+					<strong>Participantes</strong>
+				</div>
+				<div class="project-concept-card__lane is-active">
+					<span>Fase actual</span>
+					<strong>Batallas</strong>
+				</div>
+				<div class="project-concept-card__lane">
+					<span>Ajustes</span>
+					<strong>Correcciones</strong>
+				</div>
+			</div>
+			<div class="project-concept-card__bracket" aria-hidden="true">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<p>Mockup conceptual, no captura exacta del sistema real.</p>
+		</VisualCard>
+	</div>
+</SectionBackground>

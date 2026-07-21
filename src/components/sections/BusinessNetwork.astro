@@ -1,0 +1,52 @@
+---
+import ConnectionLine from "../ui/ConnectionLine.astro";
+import InlineIcon from "../ui/InlineIcon.astro";
+import TechNode from "../ui/TechNode.astro";
+
+const nodes = [
+	{ label: "Clientes", variant: "green", icon: "website" },
+	{ label: "Ventas", variant: "blue", icon: "report" },
+	{ label: "Inventario", variant: "green", icon: "database" },
+	{ label: "WhatsApp", variant: "blue", icon: "whatsapp" },
+	{ label: "Información", variant: "green", icon: "database" },
+	{ label: "Automatización", variant: "blue", icon: "automation" },
+	{ label: "Reportes", variant: "green", icon: "report" },
+	{ label: "Experiencias", variant: "blue", icon: "interface" },
+] as const;
+---
+
+<div class="business-network" aria-label="Sistema de negocio conectado por TinKode">
+	<div class="business-network__core">
+		<span class="business-network__core-label">TinKode</span>
+		<span class="business-network__core-subtitle">Sistema conectado</span>
+	</div>
+
+	<div class="business-network__ring" aria-hidden="true"></div>
+	<div class="business-network__signal business-network__signal--green" aria-hidden="true"></div>
+	<div class="business-network__signal business-network__signal--blue" aria-hidden="true"></div>
+
+	<div class="business-network__nodes">
+		{
+			nodes.map((node, index) => (
+				<div class:list={["business-network__node", `business-network__node--${index + 1}`]}>
+					<TechNode label={node.label} variant={node.variant} active={index === 0 || index === 5}>
+						<InlineIcon slot="icon" name={node.icon} />
+					</TechNode>
+				</div>
+			))
+		}
+	</div>
+
+	<div class="business-network__lines" aria-hidden="true">
+		<ConnectionLine class="business-network__line business-network__line--one" />
+		<ConnectionLine class="business-network__line business-network__line--two" variant="blue" />
+		<ConnectionLine class="business-network__line business-network__line--three" variant="green" />
+		<ConnectionLine class="business-network__line business-network__line--four" />
+	</div>
+
+	<div class="business-network__status" aria-label="Capacidades conectadas">
+		<span>Procesos</span>
+		<span>Datos</span>
+		<span>Acciones</span>
+	</div>
+</div>

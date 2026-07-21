@@ -1,0 +1,54 @@
+---
+type IconName =
+	| "automation"
+	| "database"
+	| "integration"
+	| "interface"
+	| "report"
+	| "software"
+	| "whatsapp"
+	| "website"
+	| "nfc"
+	| "form"
+	| "arrow"
+	| "shield"
+	| "workflow";
+
+interface Props {
+	name: IconName;
+	label?: string;
+	class?: string;
+}
+
+const { name, label, class: className } = Astro.props as Props;
+
+const paths: Record<IconName, string> = {
+	automation: '<path d="M7 12a5 5 0 0 1 8.8-3.2" /><path d="M17 5v4h-4" /><path d="M17 12a5 5 0 0 1-8.8 3.2" /><path d="M7 19v-4h4" />',
+	database: '<ellipse cx="12" cy="5" rx="7" ry="3" /><path d="M5 5v7c0 1.7 3.1 3 7 3s7-1.3 7-3V5" /><path d="M5 12v7c0 1.7 3.1 3 7 3s7-1.3 7-3v-7" />',
+	integration: '<path d="M7 7h4v4H7z" /><path d="M13 13h4v4h-4z" /><path d="M11 9h3a3 3 0 0 1 3 3v1" /><path d="M13 15h-3a3 3 0 0 1-3-3v-1" />',
+	interface: '<path d="M4 6h16v12H4z" /><path d="M4 10h16" /><path d="M8 14h4" /><path d="M15 14h2" />',
+	report: '<path d="M5 19V5" /><path d="M5 19h14" /><path d="M9 16v-5" /><path d="M13 16V8" /><path d="M17 16v-3" />',
+	software: '<path d="M8 8 4 12l4 4" /><path d="m16 8 4 4-4 4" /><path d="m14 5-4 14" />',
+	whatsapp: '<path d="M5.5 18.5 6.4 15A7 7 0 1 1 9 17.6z" /><path d="M9.5 8.8c.3 2 1.8 3.6 3.7 4.2" /><path d="M13.6 13.1h.1" /><path d="M9.4 8.8h.1" />',
+	website: '<path d="M4 6h16v12H4z" /><path d="M4 10h16" /><path d="M8 14h3" /><path d="M14 14h2" />',
+	nfc: '<path d="M7 8a6 6 0 0 1 0 8" /><path d="M10 6a9 9 0 0 1 0 12" /><path d="M13 4a12 12 0 0 1 0 16" /><path d="M18 9v6" />',
+	form: '<path d="M6 4h12v16H6z" /><path d="M9 8h6" /><path d="M9 12h6" /><path d="M9 16h3" />',
+	arrow: '<path d="M5 12h14" /><path d="m13 6 6 6-6 6" />',
+	shield: '<path d="M12 3 5 6v5c0 4.4 2.8 8.4 7 10 4.2-1.6 7-5.6 7-10V6z" /><path d="m9.5 12 1.8 1.8 3.4-4" />',
+	workflow: '<path d="M6 7h4v4H6z" /><path d="M14 13h4v4h-4z" /><path d="M10 9h2a3 3 0 0 1 3 3v1" /><path d="M9 15H6a2 2 0 0 1-2-2v-2" />',
+};
+---
+
+<svg
+	class:list={["tk-inline-icon", className]}
+	viewBox="0 0 24 24"
+	fill="none"
+	stroke="currentColor"
+	stroke-width="1.8"
+	stroke-linecap="round"
+	stroke-linejoin="round"
+	aria-hidden={label ? undefined : "true"}
+	role={label ? "img" : undefined}
+	aria-label={label}
+	set:html={paths[name]}
+/>

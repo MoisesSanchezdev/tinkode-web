@@ -23,6 +23,8 @@ const classes = [
 </Tag>
 
 <script>
+	document.documentElement.classList.add("has-reveal-js");
+
 	const revealItems = document.querySelectorAll("[data-reveal]");
 	const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
