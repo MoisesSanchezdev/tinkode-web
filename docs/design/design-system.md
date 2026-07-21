@@ -217,7 +217,7 @@ La navegación no debe sentirse como barra de administración ni ocupar demasiad
 
 ## Logo Oficial
 
-El logo oficial original se conserva en `public/images/brand/tinkode-logo.png`. Para el header se usa la versión derivada `public/images/brand/tinkode-logo-transparent.png`, con el área exterior al círculo transparente.
+El logo oficial original se conserva en `public/images/brand/tinkode-logo.png`. Para navegación se usa una versión optimizada del símbolo en `public/images/brand/tinkode-symbol.png`.
 
 El logo debe mantener su proporción original, no deformarse, no recortarse y no usarse como fondo decorativo, marca de agua ni relleno visual. Tampoco debe repetirse en cada sección: solo debe aparecer donde aporte identidad real.
 

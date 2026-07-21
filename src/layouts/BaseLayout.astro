@@ -1,16 +1,28 @@
 ---
+import Footer from "../components/layout/Footer.astro";
 import Header from "../components/layout/Header.astro";
 import "../styles/global.css";
 
 interface Props {
 	title?: string;
 	description?: string;
+	path?: string;
 }
 
+const SITE_URL = "https://tinkode-web.pages.dev";
+const DEFAULT_TITLE = "TinKode | Tecnología para que los negocios funcionen mejor";
+const DEFAULT_DESCRIPTION = "TinKode diseña software, automatización y experiencias digitales para que negocios y organizaciones resuelvan problemas reales.";
+const OG_IMAGE = "/og.png";
+
 const {
-	title = "TinKode — Tecnología para que tu negocio funcione mejor",
-	description = "Creamos sistemas, automatizaciones y experiencias digitales pensadas alrededor de problemas reales de los negocios.",
+	title = DEFAULT_TITLE,
+	description = DEFAULT_DESCRIPTION,
+	path,
 } = Astro.props as Props;
+
+const pathname = path ?? Astro.url.pathname;
+const canonicalUrl = new URL(pathname, SITE_URL).toString();
+const imageUrl = new URL(OG_IMAGE, SITE_URL).toString();
 ---
 
 <!doctype html>
@@ -18,11 +30,21 @@ const {
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="description" content={description} />
+		<link rel="canonical" href={canonicalUrl} />
 		<meta property="og:type" content="website" />
 		<meta property="og:title" content={title} />
 		<meta property="og:description" content={description} />
+		<meta property="og:url" content={canonicalUrl} />
+		<meta property="og:image" content={imageUrl} />
+		<meta property="og:image:width" content="1200" />
+		<meta property="og:image:height" content="630" />
+		<meta property="og:locale" content="es_CO" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content={title} />
+		<meta name="twitter:description" content={description} />
+		<meta name="twitter:image" content={imageUrl} />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
@@ -33,6 +55,7 @@ const {
 			<main id="main-content" tabindex="-1">
 				<slot />
 			</main>
+			<Footer />
 		</div>
 	</body>
 </html>

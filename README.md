@@ -8,7 +8,7 @@ TinKode es una startup tecnológica colombiana que diseña tecnología para que 
 
 ## Estado actual
 
-Primera versión pública preparada. La base técnica, el sistema visual inicial, la navegación responsive y la arquitectura multipágina están listas para publicación. El inicio resume la propuesta y las rutas internas concentran soluciones, proceso, proyectos y equipo fundador. No contiene todavía un formulario de contacto ni footer definitivo.
+Primera versión pública preparada. La base técnica, el sistema visual premium, la navegación responsive, el footer definitivo, SEO técnico y la arquitectura multipágina están listas para publicación. El inicio resume la propuesta y las rutas internas concentran soluciones, proceso, proyectos y equipo fundador. No contiene todavía un formulario de contacto propio.
 
 ## Objetivo
 
@@ -31,7 +31,7 @@ Crear una base profesional, limpia, documentada y verificable para construir el 
 ## Instalación
 
 ```powershell
-cd C:\Projects\tinkode-web
+cd tinkode-web
 npm install
 ```
 
@@ -85,7 +85,7 @@ npm run dev
 
 ## Flujo de trabajo
 
-1. Trabajar únicamente en `C:\Projects\tinkode-web`.
+1. Trabajar únicamente dentro del repositorio local del proyecto.
 2. Leer `AGENTS.md` y la documentación antes de modificar.
 3. Mantener cambios pequeños y verificables.
 4. Ejecutar `npm run check` y `npm run build` al finalizar.
@@ -104,7 +104,7 @@ No hay variables de entorno requeridas en esta fase. No guardar secretos en el r
 
 ## Próxima fase
 
-Publicar la primera versión oficial y preparar mejoras posteriores como footer definitivo, contenido legal si aplica y dominio personalizado cuando se autorice.
+Publicar la primera versión oficial y preparar mejoras posteriores como contenido legal si aplica, formulario propio y dominio personalizado cuando se autorice.
 
 ## Nota
 

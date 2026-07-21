@@ -22,7 +22,7 @@ La información de esta lista está pendiente de confirmación. No debe publicar
 - Información legal: pendiente.
 - Política de privacidad: pendiente.
 - Tratamiento de datos: pendiente.
-- Footer definitivo: pendiente.
+- Footer definitivo: definido para la primera publicación.
 
 ## Contenido definido en Fase 4
 

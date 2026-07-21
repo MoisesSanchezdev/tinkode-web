@@ -1,0 +1,46 @@
+---
+import { INSTAGRAM_LABEL, INSTAGRAM_URL } from "../../data/contact";
+import InlineIcon from "../ui/InlineIcon.astro";
+
+const navItems = [
+	{ label: "Inicio", href: "/" },
+	{ label: "Soluciones", href: "/soluciones" },
+	{ label: "Cómo trabajamos", href: "/proceso" },
+	{ label: "Proyectos", href: "/proyectos" },
+	{ label: "Nosotros", href: "/nosotros" },
+];
+
+const year = new Date().getFullYear();
+---
+
+<footer class="site-footer">
+	<div class="container site-footer__inner">
+		<div class="site-footer__brand">
+			<a class="site-logo site-footer__logo" href="/" aria-label="TinKode, inicio">
+				<img
+					class="site-logo__image"
+					src="/images/brand/tinkode-symbol.png"
+					alt=""
+					width="192"
+					height="192"
+					loading="lazy"
+					decoding="async"
+				/>
+				<span>TinKode</span>
+			</a>
+			<p>Tecnología diseñada para que los negocios funcionen mejor.</p>
+		</div>
+
+		<nav class="site-footer__nav" aria-label="Navegación secundaria">
+			{navItems.map((item) => <a href={item.href}>{item.label}</a>)}
+		</nav>
+
+		<div class="site-footer__contact">
+			<a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" aria-label={INSTAGRAM_LABEL}>
+				<InlineIcon name="message" />
+				<span>Instagram</span>
+			</a>
+			<p>© {year} TinKode. Todos los derechos reservados.</p>
+		</div>
+	</div>
+</footer>

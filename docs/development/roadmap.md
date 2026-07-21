@@ -10,11 +10,11 @@
 6. Fase 6 — Proyectos reales: completada.
 7. Fase 7 — Fundadores: completada.
 8. Contacto: pendiente.
-9. Footer definitivo: pendiente.
-10. Responsive y accesibilidad: pendiente.
-11. Optimización: pendiente.
-12. GitHub: pendiente.
-13. Publicación en Cloudflare Pages: pendiente.
+9. Footer definitivo: completado para primera publicación.
+10. Responsive y accesibilidad: auditado para primera publicación.
+11. Optimización: auditada para primera publicación.
+12. GitHub: pendiente de push final.
+13. Publicación en Cloudflare Pages: pendiente de verificación posterior al push.
 14. Dominio propio: pendiente.
 15. Evolución futura: pendiente.
 
@@ -54,4 +54,4 @@ Iteración visual de cierre: se integraron imágenes conceptuales locales y opti
 
 La fase 7 incorpora la ruta `/nosotros` con el fundador y la cofundadora confirmados, perfiles compactos sin fotografías falsas, razones de confianza y CTA hacia Instagram. También elimina del home el mockup abstracto del hero y conserva una sola imagen conceptual para la conexión del negocio.
 
-La fase queda cerrada para el primer lanzamiento. Footer definitivo, contenido legal si aplica y dominio personalizado siguen pendientes.
+La fase queda cerrada para el primer lanzamiento. Contenido legal si aplica, formulario propio y dominio personalizado siguen pendientes.

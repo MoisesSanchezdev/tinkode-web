@@ -9,6 +9,9 @@ const navItems = [
 	{ label: "Proyectos", href: "/proyectos" },
 	{ label: "Nosotros", href: "/nosotros" },
 ];
+
+const currentPath = Astro.url.pathname.replace(/\/$/, "") || "/";
+const isCurrent = (href: string) => href === currentPath;
 ---
 
 <header class="site-header" data-site-header>
@@ -16,10 +19,10 @@ const navItems = [
 		<a class="site-logo" href="/" aria-label="TinKode, inicio">
 			<img
 				class="site-logo__image"
-				src="/images/brand/tinkode-logo-transparent.png"
+				src="/images/brand/tinkode-symbol.png"
 				alt=""
-				width="1254"
-				height="1254"
+				width="192"
+				height="192"
 				decoding="async"
 			/>
 			<span>TinKode</span>
@@ -29,7 +32,7 @@ const navItems = [
 			<ul class="site-nav__list">
 				{navItems.map((item) => (
 					<li>
-						<a href={item.href}>{item.label}</a>
+						<a href={item.href} aria-current={isCurrent(item.href) ? "page" : undefined}>{item.label}</a>
 					</li>
 				))}
 			</ul>
@@ -55,7 +58,7 @@ const navItems = [
 		<ul class="mobile-nav__list">
 			{navItems.map((item) => (
 				<li>
-					<a href={item.href}>{item.label}</a>
+					<a href={item.href} aria-current={isCurrent(item.href) ? "page" : undefined}>{item.label}</a>
 				</li>
 			))}
 			<li>
