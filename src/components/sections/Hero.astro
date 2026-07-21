@@ -1,10 +1,11 @@
 ---
 import Badge from "../ui/Badge.astro";
 import Button from "../ui/Button.astro";
+import SectionBackground from "../ui/SectionBackground.astro";
 import { INSTAGRAM_LABEL, INSTAGRAM_URL } from "../../data/contact";
 ---
 
-<section class="hero" aria-labelledby="hero-title">
+<SectionBackground as="section" variant="mixed" class="hero" ariaLabelledby="hero-title">
 	<div class="container hero__grid">
 		<div class="hero__content">
 			<Badge variant="accent">Ingeniería aplicada a negocios</Badge>
@@ -20,4 +21,4 @@ import { INSTAGRAM_LABEL, INSTAGRAM_URL } from "../../data/contact";
 			</div>
 		</div>
 	</div>
-</section>
+</SectionBackground>

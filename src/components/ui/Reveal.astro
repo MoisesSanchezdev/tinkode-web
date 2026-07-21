@@ -1,0 +1,46 @@
+---
+interface Props {
+	as?: "div" | "section" | "article" | "li";
+	delay?: "none" | "sm" | "md" | "lg";
+	class?: string;
+}
+
+const {
+	as: Tag = "div",
+	delay = "none",
+	class: className,
+} = Astro.props as Props;
+
+const classes = [
+	"tk-reveal",
+	delay !== "none" && `tk-reveal--delay-${delay}`,
+	className,
+];
+---
+
+<Tag class:list={classes} data-reveal>
+	<slot />
+</Tag>
+
+<script>
+	const revealItems = document.querySelectorAll("[data-reveal]");
+	const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+	if (prefersReducedMotion || !("IntersectionObserver" in window)) {
+		revealItems.forEach((item) => item.classList.add("is-revealed"));
+	} else {
+		const observer = new IntersectionObserver(
+			(entries) => {
+				entries.forEach((entry) => {
+					if (entry.isIntersecting) {
+						entry.target.classList.add("is-revealed");
+						observer.unobserve(entry.target);
+					}
+				});
+			},
+			{ rootMargin: "0px 0px -10% 0px", threshold: 0.16 },
+		);
+
+		revealItems.forEach((item) => observer.observe(item));
+	}
+</script>

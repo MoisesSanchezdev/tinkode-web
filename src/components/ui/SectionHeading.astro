@@ -1,0 +1,31 @@
+---
+interface Props {
+	eyebrow?: string;
+	title: string;
+	description?: string;
+	titleId?: string;
+	align?: "start" | "center";
+	class?: string;
+}
+
+const {
+	eyebrow,
+	title,
+	description,
+	titleId,
+	align = "start",
+	class: className,
+} = Astro.props as Props;
+
+const classes = [
+	"tk-section-heading",
+	`tk-section-heading--${align}`,
+	className,
+];
+---
+
+<div class:list={classes}>
+	{eyebrow && <p class="eyebrow">{eyebrow}</p>}
+	<h2 id={titleId}>{title}</h2>
+	{description && <p>{description}</p>}
+</div>

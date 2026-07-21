@@ -1,0 +1,34 @@
+---
+interface Props {
+	as?: "div" | "li";
+	label: string;
+	variant?: "green" | "blue";
+	size?: "sm" | "md" | "lg";
+	active?: boolean;
+	class?: string;
+}
+
+const {
+	as: Tag = "div",
+	label,
+	variant = "green",
+	size = "md",
+	active = false,
+	class: className,
+} = Astro.props as Props;
+
+const classes = [
+	"tk-tech-node",
+	`tk-tech-node--${variant}`,
+	`tk-tech-node--${size}`,
+	active && "is-active",
+	className,
+];
+---
+
+<Tag class:list={classes}>
+	<span class="tk-tech-node__icon" aria-hidden="true">
+		<slot name="icon" />
+	</span>
+	<span class="tk-tech-node__label">{label}</span>
+</Tag>
