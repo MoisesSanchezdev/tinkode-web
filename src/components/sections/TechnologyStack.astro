@@ -1,0 +1,58 @@
+---
+import InlineIcon from "../ui/InlineIcon.astro";
+import SectionHeading from "../ui/SectionHeading.astro";
+import TechNode from "../ui/TechNode.astro";
+
+const groups = [
+	{
+		title: "Frontend",
+		icon: "interface",
+		items: ["Astro", "TypeScript", "JavaScript", "HTML", "CSS"],
+		variant: "blue",
+	},
+	{
+		title: "Backend",
+		icon: "software",
+		items: ["Python", "Django", "APIs", "Bases de datos", "AJAX"],
+		variant: "green",
+	},
+	{
+		title: "Herramientas",
+		icon: "workflow",
+		items: ["Git", "GitHub", "Node.js"],
+		variant: "blue",
+	},
+] as const;
+---
+
+<section class="projects-stack projects-page-section" aria-labelledby="projects-stack-title">
+	<div class="container projects-stack__grid">
+		<SectionHeading
+			eyebrow="Stack tecnológico"
+			title="Seleccionamos el stack según las necesidades de cada solución."
+			description="Estas tecnologías aparecen en el sitio y en los proyectos presentados, sin implicar que todas se usaron en cada caso."
+			titleId="projects-stack-title"
+			class="projects-stack__heading"
+		/>
+
+		<div class="projects-stack__groups">
+			{
+				groups.map((group) => (
+					<article class:list={["projects-stack-group", `projects-stack-group--${group.variant}`]}>
+						<div class="projects-stack-group__header">
+							<InlineIcon name={group.icon} />
+							<h3>{group.title}</h3>
+						</div>
+						<div class="projects-stack-group__items">
+							{
+								group.items.map((item) => (
+									<TechNode label={item} variant={group.variant} size="sm" />
+								))
+							}
+						</div>
+					</article>
+				))
+			}
+		</div>
+	</div>
+</section>

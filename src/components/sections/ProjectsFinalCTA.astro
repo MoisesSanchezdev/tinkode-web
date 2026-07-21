@@ -1,0 +1,36 @@
+---
+import Button from "../ui/Button.astro";
+import ConnectionLine from "../ui/ConnectionLine.astro";
+import InlineIcon from "../ui/InlineIcon.astro";
+import TechNode from "../ui/TechNode.astro";
+import { INSTAGRAM_LABEL, INSTAGRAM_URL } from "../../data/contact";
+---
+
+<section class="projects-final-cta projects-page-section" aria-labelledby="projects-final-cta-title">
+	<div class="container">
+		<div class="projects-final-cta__inner">
+			<div class="projects-final-cta__copy">
+				<p class="eyebrow">Hablemos</p>
+				<h2 id="projects-final-cta-title">¿Tienes un problema que merece una solución mejor?</h2>
+				<p>Cuéntanos qué necesitas construir, organizar o automatizar.</p>
+				<div class="projects-final-cta__actions">
+					<Button href={INSTAGRAM_URL} variant="primary" size="large" external ariaLabel={`Hablemos por ${INSTAGRAM_LABEL}`}>Hablemos</Button>
+					<Button href="/soluciones" variant="ghost" size="large">Ver soluciones</Button>
+				</div>
+			</div>
+			<div class="projects-final-cta__visual" aria-label="Línea conceptual de problema a solución">
+				<TechNode label="Problema" variant="green" size="sm" active>
+					<InlineIcon slot="icon" name="message" />
+				</TechNode>
+				<ConnectionLine variant="mixed" />
+				<TechNode label="Diseño" variant="blue" size="sm">
+					<InlineIcon slot="icon" name="interface" />
+				</TechNode>
+				<ConnectionLine variant="mixed" />
+				<TechNode label="Solución funcional" variant="green" size="sm" active>
+					<InlineIcon slot="icon" name="software" />
+				</TechNode>
+			</div>
+		</div>
+	</div>
+</section>

@@ -1,0 +1,52 @@
+---
+import InlineIcon from "../ui/InlineIcon.astro";
+import TechNode from "../ui/TechNode.astro";
+
+const phases = ["Grupos", "Ronda 32", "Repechaje"] as const;
+const battles = [
+	{ group: "Grupo 1", first: "Equipo A", second: "Equipo B", state: "Batalla 04" },
+	{ group: "Grupo 2", first: "Equipo C", second: "Equipo D", state: "Ganador pendiente" },
+] as const;
+---
+
+<div class="competition-mockup" aria-label="Representación conceptual del sistema de competencia Robot Explota Globos">
+	<div class="competition-mockup__top">
+		<span>Representación conceptual</span>
+		<TechNode label="Administración editable" variant="green" size="sm" active>
+			<InlineIcon slot="icon" name="control" />
+		</TechNode>
+	</div>
+	<div class="competition-mockup__shell" aria-hidden="true">
+		<aside class="competition-mockup__side">
+			<span>Categorías</span>
+			<strong>Colegios</strong>
+			<strong>Universidades</strong>
+			<span>Fases</span>
+		</aside>
+		<div class="competition-mockup__panel">
+			<div class="competition-mockup__phases">
+				{phases.map((phase, index) => <span class:list={[index === 1 && "is-active"]}>{phase}</span>)}
+			</div>
+			<div class="competition-mockup__battles">
+				{
+					battles.map((battle) => (
+						<div class="competition-mockup__battle">
+							<span>{battle.group}</span>
+							<div>
+								<strong>{battle.first}</strong>
+								<small>vs</small>
+								<strong>{battle.second}</strong>
+							</div>
+							<em>{battle.state}</em>
+						</div>
+					))
+				}
+			</div>
+			<div class="competition-mockup__actions">
+				<span>Registrar ganador</span>
+				<span>Corregir batalla</span>
+				<span>Guardar progreso</span>
+			</div>
+		</div>
+	</div>
+</div>

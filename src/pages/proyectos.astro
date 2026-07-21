@@ -1,16 +1,23 @@
 ---
-import Projects from "../components/sections/Projects.astro";
+import CorporateWebsiteMockup from "../components/sections/CorporateWebsiteMockup.astro";
+import FeaturedProjectCase from "../components/sections/FeaturedProjectCase.astro";
+import NfcExperienceVisual from "../components/sections/NfcExperienceVisual.astro";
+import ProjectCapabilityGrid from "../components/sections/ProjectCapabilityGrid.astro";
+import ProjectsFinalCTA from "../components/sections/ProjectsFinalCTA.astro";
+import ProjectsHeroVisual from "../components/sections/ProjectsHeroVisual.astro";
+import TechnologyStack from "../components/sections/TechnologyStack.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
-<BaseLayout title="Experiencia y proyectos | TinKode" description="Explora parte de la experiencia construida por TinKode y sus fundadores en plataformas, sistemas y soluciones NFC.">
-	<section class="page-intro section" aria-labelledby="projects-page-title">
-		<div class="container page-intro__inner">
-			<p class="eyebrow">Proyectos</p>
-			<h1 id="projects-page-title">Soluciones reales, presentadas con honestidad.</h1>
-			<p>Experiencia construyendo plataformas, sistemas y soluciones digitales sin publicar evidencia privada.</p>
-		</div>
-	</section>
-
-	<Projects />
+<BaseLayout
+	title="Proyectos y experiencias | TinKode"
+	description="Proyectos reales de TinKode y experiencia previa de sus fundadores presentados como casos de análisis, diseño e ingeniería responsable."
+>
+	<ProjectsHeroVisual />
+	<FeaturedProjectCase />
+	<CorporateWebsiteMockup />
+	<NfcExperienceVisual />
+	<ProjectCapabilityGrid />
+	<TechnologyStack />
+	<ProjectsFinalCTA />
 </BaseLayout>
