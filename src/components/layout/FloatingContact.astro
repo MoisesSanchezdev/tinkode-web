@@ -1,0 +1,9 @@
+---
+import { INSTAGRAM_LABEL, INSTAGRAM_URL } from "../../data/contact";
+import InlineIcon from "../ui/InlineIcon.astro";
+---
+
+<a class="v2-floating-contact" href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" aria-label={`Escríbenos por Instagram · ${INSTAGRAM_LABEL}`}>
+	<InlineIcon name="message" />
+	<span>Escríbenos</span>
+</a>

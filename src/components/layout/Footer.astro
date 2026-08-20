@@ -5,42 +5,57 @@ import InlineIcon from "../ui/InlineIcon.astro";
 const navItems = [
 	{ label: "Inicio", href: "/" },
 	{ label: "Soluciones", href: "/soluciones" },
-	{ label: "Cómo trabajamos", href: "/proceso" },
 	{ label: "Proyectos", href: "/proyectos" },
+	{ label: "Proceso", href: "/proceso" },
 	{ label: "Nosotros", href: "/nosotros" },
+];
+
+const solutionItems = ["Presencia digital", "Automatización", "Sistemas para negocios", "Datos y dashboards"];
+const projectItems = [
+	{ label: "Robot Explota Globos", href: "/proyectos#robot-explota-globos" },
+	{ label: "LPT", href: "/proyectos#lpt" },
+	{ label: "Experiencias NFC", href: "/proyectos#nfc" },
 ];
 
 const year = new Date().getFullYear();
 ---
 
 <footer class="site-footer">
-	<div class="container site-footer__inner">
-		<div class="site-footer__brand">
-			<a class="site-logo site-footer__logo" href="/" aria-label="TinKode, inicio">
-				<img
-					class="site-logo__image"
-					src="/images/brand/tinkode-symbol.png"
-					alt=""
-					width="192"
-					height="192"
-					loading="lazy"
-					decoding="async"
-				/>
-				<span>TinKode</span>
-			</a>
-			<p>Tecnología diseñada para que los negocios funcionen mejor.</p>
+	<div class="container">
+		<div class="site-footer__inner">
+			<div class="site-footer__brand">
+				<a class="site-logo site-footer__logo" href="/" aria-label="TinKode, inicio">
+					<img class="site-logo__image" src="/images/brand/tinkode-symbol.png" alt="" width="192" height="192" loading="lazy" decoding="async" />
+					<span>TinKode</span>
+				</a>
+				<p>No vendemos software. Diseñamos la forma en que funcionan los negocios.</p>
+			</div>
+
+			<nav class="site-footer__column" aria-label="Navegación secundaria">
+				<strong>Explorar</strong>
+				{navItems.map((item) => <a href={item.href}>{item.label}</a>)}
+			</nav>
+
+			<div class="site-footer__column">
+				<strong>Soluciones</strong>
+				{solutionItems.map((item) => <a href="/soluciones">{item}</a>)}
+			</div>
+
+			<nav class="site-footer__column" aria-label="Proyectos">
+				<strong>Proyectos</strong>
+				{projectItems.map((item) => <a href={item.href}>{item.label}</a>)}
+			</nav>
+
+			<div class="site-footer__contact">
+				<strong>Contacto</strong>
+				<a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" aria-label={INSTAGRAM_LABEL}>
+					<InlineIcon name="message" /><span>Instagram</span>
+				</a>
+			</div>
 		</div>
-
-		<nav class="site-footer__nav" aria-label="Navegación secundaria">
-			{navItems.map((item) => <a href={item.href}>{item.label}</a>)}
-		</nav>
-
-		<div class="site-footer__contact">
-			<a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" aria-label={INSTAGRAM_LABEL}>
-				<InlineIcon name="message" />
-				<span>Instagram</span>
-			</a>
+		<div class="site-footer__bottom">
 			<p>© {year} TinKode. Todos los derechos reservados.</p>
+			<span>Colombia · Tecnología con propósito</span>
 		</div>
 	</div>
 </footer>

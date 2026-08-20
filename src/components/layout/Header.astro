@@ -5,8 +5,8 @@ import { INSTAGRAM_LABEL, INSTAGRAM_URL } from "../../data/contact";
 const navItems = [
 	{ label: "Inicio", href: "/" },
 	{ label: "Soluciones", href: "/soluciones" },
-	{ label: "Cómo trabajamos", href: "/proceso" },
 	{ label: "Proyectos", href: "/proyectos" },
+	{ label: "Proceso", href: "/proceso" },
 	{ label: "Nosotros", href: "/nosotros" },
 ];
 
@@ -15,57 +15,42 @@ const isCurrent = (href: string) => href === currentPath;
 ---
 
 <header class="site-header" data-site-header>
-	<div class="container site-header__inner">
-		<a class="site-logo" href="/" aria-label="TinKode, inicio">
-			<img
-				class="site-logo__image"
-				src="/images/brand/tinkode-symbol.png"
-				alt=""
-				width="192"
-				height="192"
-				decoding="async"
-			/>
-			<span>TinKode</span>
-		</a>
+	<div class="container site-header__shell">
+		<div class="site-header__inner">
+			<a class="site-logo" href="/" aria-label="TinKode, inicio">
+				<img class="site-logo__image" src="/images/brand/tinkode-symbol.png" alt="" width="192" height="192" decoding="async" />
+				<span>TinKode</span>
+			</a>
 
-		<nav class="site-nav" aria-label="Navegación principal">
-			<ul class="site-nav__list">
-				{navItems.map((item) => (
-					<li>
-						<a href={item.href} aria-current={isCurrent(item.href) ? "page" : undefined}>{item.label}</a>
-					</li>
-				))}
-			</ul>
-		</nav>
+			<nav class="site-nav" aria-label="Navegación principal">
+				<ul class="site-nav__list">
+					{navItems.map((item) => <li><a href={item.href} aria-current={isCurrent(item.href) ? "page" : undefined}>{item.label}</a></li>)}
+				</ul>
+			</nav>
 
-		<div class="site-header__actions">
-			<Button href={INSTAGRAM_URL} variant="primary" size="small" external ariaLabel={`Hablemos por ${INSTAGRAM_LABEL}`}>Hablemos</Button>
-			<button
-				class="menu-toggle"
-				type="button"
-				aria-label="Abrir menú principal"
-				aria-controls="mobile-menu"
-				aria-expanded="false"
-				data-menu-toggle
-			>
-				<span aria-hidden="true"></span>
-				<span aria-hidden="true"></span>
-			</button>
+			<div class="site-header__actions">
+				<Button href={INSTAGRAM_URL} variant="primary" size="small" external ariaLabel={`Hablemos por ${INSTAGRAM_LABEL}`}>Hablemos</Button>
+				<button class="menu-toggle" type="button" aria-label="Abrir menú principal" aria-controls="mobile-menu" aria-expanded="false" data-menu-toggle>
+					<span aria-hidden="true"></span><span aria-hidden="true"></span>
+				</button>
+			</div>
 		</div>
 	</div>
 
-	<nav id="mobile-menu" class="mobile-nav" aria-label="Navegación móvil" data-mobile-menu hidden>
-		<ul class="mobile-nav__list">
-			{navItems.map((item) => (
-				<li>
-					<a href={item.href} aria-current={isCurrent(item.href) ? "page" : undefined}>{item.label}</a>
-				</li>
-			))}
-			<li>
-				<a class="mobile-nav__cta" href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" aria-label={`Hablemos por ${INSTAGRAM_LABEL}`}>Hablemos</a>
-			</li>
-		</ul>
-	</nav>
+	<div id="mobile-menu" class="mobile-nav" data-mobile-menu hidden>
+		<button class="mobile-nav__backdrop" type="button" aria-label="Cerrar menú principal" data-menu-dismiss></button>
+		<nav class="mobile-nav__panel" aria-label="Navegación móvil">
+			<div class="mobile-nav__head">
+				<span>Menú</span>
+				<button type="button" aria-label="Cerrar menú principal" data-menu-dismiss><span aria-hidden="true"></span><span aria-hidden="true"></span></button>
+			</div>
+			<ul class="mobile-nav__list">
+				{navItems.map((item) => <li><a href={item.href} aria-current={isCurrent(item.href) ? "page" : undefined}>{item.label}</a></li>)}
+				<li><a class="mobile-nav__cta" href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" aria-label={`Hablemos por ${INSTAGRAM_LABEL}`}>Hablemos</a></li>
+			</ul>
+			<p>Diseñamos tecnología para que los negocios funcionen mejor.</p>
+		</nav>
+	</div>
 </header>
 
 <script>
@@ -75,27 +60,44 @@ const isCurrent = (href: string) => href === currentPath;
 
 	if (header instanceof HTMLElement && toggle instanceof HTMLButtonElement && menu instanceof HTMLElement) {
 		const links = menu.querySelectorAll("a");
+		const dismissButtons = menu.querySelectorAll("[data-menu-dismiss]");
+		let wasOpened = false;
 
-		const setMenuState = (isOpen: boolean) => {
+		const setMenuState = (isOpen: boolean, restoreFocus = true) => {
 			toggle.setAttribute("aria-expanded", String(isOpen));
 			toggle.setAttribute("aria-label", isOpen ? "Cerrar menú principal" : "Abrir menú principal");
 			menu.hidden = !isOpen;
 			header.classList.toggle("is-menu-open", isOpen);
+			document.body.classList.toggle("is-menu-open", isOpen);
+			if (isOpen) {
+				wasOpened = true;
+				requestAnimationFrame(() => links.item(0)?.focus());
+			} else if (restoreFocus && wasOpened) {
+				toggle.focus();
+			}
 		};
 
-		toggle.addEventListener("click", () => {
-			const isOpen = toggle.getAttribute("aria-expanded") === "true";
-			setMenuState(!isOpen);
-		});
-
-		links.forEach((link) => {
-			link.addEventListener("click", () => setMenuState(false));
-		});
+		toggle.addEventListener("click", () => setMenuState(toggle.getAttribute("aria-expanded") !== "true"));
+		links.forEach((link) => link.addEventListener("click", () => setMenuState(false, false)));
+		dismissButtons.forEach((button) => button.addEventListener("click", () => setMenuState(false)));
 
 		document.addEventListener("keydown", (event) => {
-			if (event.key === "Escape") {
-				setMenuState(false);
+			if (event.key === "Escape" && toggle.getAttribute("aria-expanded") === "true") setMenuState(false);
+			if (event.key === "Tab" && toggle.getAttribute("aria-expanded") === "true") {
+				const focusable = [...menu.querySelectorAll<HTMLElement>('a[href], button:not([disabled])')];
+				const first = focusable[0];
+				const last = focusable[focusable.length - 1];
+				if (event.shiftKey && document.activeElement === first) {
+					event.preventDefault();
+					last?.focus();
+				} else if (!event.shiftKey && document.activeElement === last) {
+					event.preventDefault();
+					first?.focus();
+				}
 			}
 		});
+
+		window.matchMedia("(min-width: 900px)").addEventListener("change", (event) => { if (event.matches) setMenuState(false, false); });
+		window.addEventListener("scroll", () => header.classList.toggle("is-scrolled", window.scrollY > 16), { passive: true });
 	}
 </script>

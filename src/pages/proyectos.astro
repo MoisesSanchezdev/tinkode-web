@@ -1,24 +1,25 @@
 ---
-import CorporateWebsiteMockup from "../components/sections/CorporateWebsiteMockup.astro";
-import FeaturedProjectCase from "../components/sections/FeaturedProjectCase.astro";
-import NfcExperienceVisual from "../components/sections/NfcExperienceVisual.astro";
-import ProjectCapabilityGrid from "../components/sections/ProjectCapabilityGrid.astro";
-import ProjectsFinalCTA from "../components/sections/ProjectsFinalCTA.astro";
-import ProjectsHeroVisual from "../components/sections/ProjectsHeroVisual.astro";
-import TechnologyStack from "../components/sections/TechnologyStack.astro";
+import FinalCta from "../components/sections/FinalCta.astro";
+import PageHero from "../components/sections/PageHero.astro";
+import ProjectsShowcase from "../components/sections/ProjectsShowcase.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
 <BaseLayout
-	title="Proyectos de software e ingeniería | TinKode"
-	description="Explora proyectos y experiencias de TinKode en software, ingeniería, automatización y soluciones digitales aplicadas."
+	title="Proyectos reales de software e ingeniería | TinKode"
+	description="Conoce proyectos reales de TinKode y sus fundadores en sistemas web, experiencias corporativas y soluciones NFC."
 	path="/proyectos"
 >
-	<ProjectsHeroVisual />
-	<FeaturedProjectCase />
-	<CorporateWebsiteMockup />
-	<NfcExperienceVisual />
-	<ProjectCapabilityGrid />
-	<TechnologyStack />
-	<ProjectsFinalCTA />
+	<PageHero
+		eyebrow="Proyectos"
+		title="Construir confianza empieza por mostrar el trabajo con honestidad."
+		description="Estos proyectos evidencian cómo abordamos información, reglas, interfaces y experiencias sin publicar datos sensibles ni presentar conceptos como resultados terminados."
+		focus="Proyectos"
+		icon="interface"
+		secondaryHref="/soluciones"
+		secondaryLabel="Explorar soluciones"
+		nodes={["Contexto", "Sistema", "Evidencia"]}
+	/>
+	<ProjectsShowcase />
+	<FinalCta title="¿Tienes una necesidad parecida? Diseñemos una solución para tu contexto." secondaryHref="/proceso" secondaryLabel="Conocer el proceso" />
 </BaseLayout>

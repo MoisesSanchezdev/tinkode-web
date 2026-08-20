@@ -1,0 +1,39 @@
+---
+import { problems } from "../../data/site";
+import InlineIcon from "../ui/InlineIcon.astro";
+import SectionIntro from "../ui/SectionIntro.astro";
+
+interface Props {
+	showHeader?: boolean;
+}
+
+const { showHeader = true } = Astro.props as Props;
+---
+
+<section id="problemas" class="v2-section v2-problems" aria-labelledby={showHeader ? "v2-problems-title" : undefined}>
+	<div class="container">
+		{showHeader && (
+			<SectionIntro
+				eyebrow="Señales que frenan el crecimiento"
+				title="Tu negocio está perdiendo tiempo y oportunidades si…"
+				description="La tecnología aporta valor cuando resuelve una fricción concreta. Estas son algunas de las que encontramos con más frecuencia."
+				titleId="v2-problems-title"
+			/>
+		)}
+
+		<ol class="v2-problems__grid">
+			{
+				problems.map((problem, index) => (
+					<li class:list={["v2-problem-card", index === 0 && "v2-problem-card--featured"]}>
+						<div class="v2-problem-card__top">
+							<span>{problem.number}</span>
+							<InlineIcon name={problem.icon} />
+						</div>
+						<h3>{problem.title}</h3>
+						<p>{problem.description}</p>
+					</li>
+				))
+			}
+		</ol>
+	</div>
+</section>

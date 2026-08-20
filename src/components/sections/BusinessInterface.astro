@@ -1,0 +1,55 @@
+---
+import InlineIcon from "../ui/InlineIcon.astro";
+
+interface Props {
+	compact?: boolean;
+}
+
+const { compact = false } = Astro.props as Props;
+
+const modules = [
+	{ label: "Clientes", icon: "customer", tone: "blue" },
+	{ label: "Procesos", icon: "workflow", tone: "green" },
+	{ label: "Datos", icon: "database", tone: "blue" },
+	{ label: "Automatización", icon: "automation", tone: "green" },
+] as const;
+---
+
+<div class:list={["v2-business-interface", compact && "v2-business-interface--compact"]} aria-label="Representación conceptual de un negocio conectado por TinKode">
+	<div class="v2-business-interface__bar" aria-hidden="true">
+		<span></span><span></span><span></span>
+		<small>tinkode / operación conectada</small>
+	</div>
+
+	<div class="v2-business-interface__status">
+		<div>
+			<span class="v2-status-dot" aria-hidden="true"></span>
+			<p>Sistema del negocio</p>
+		</div>
+		<strong>Organizado</strong>
+	</div>
+
+	<div class="v2-business-interface__grid">
+		{
+			modules.map((module) => (
+				<div class:list={["v2-interface-module", `v2-interface-module--${module.tone}`]}>
+					<InlineIcon name={module.icon} />
+					<span>{module.label}</span>
+					<small>Conectado</small>
+				</div>
+			))
+		}
+	</div>
+
+	<div class="v2-business-interface__flow" aria-hidden="true">
+		<span></span><i></i><span></span><i></i><span></span>
+	</div>
+
+	<div class="v2-business-interface__footer">
+		<div>
+			<span>Información central</span>
+			<strong>Una operación más clara</strong>
+		</div>
+		<InlineIcon name="arrow" />
+	</div>
+</div>

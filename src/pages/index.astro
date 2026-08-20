@@ -1,14 +1,28 @@
 ---
-import Hero from "../components/sections/Hero.astro";
-import HomeOverview from "../components/sections/HomeOverview.astro";
+import BenefitsStrip from "../components/sections/BenefitsStrip.astro";
+import FaqAccordion from "../components/sections/FaqAccordion.astro";
+import FinalCta from "../components/sections/FinalCta.astro";
+import FounderCards from "../components/sections/FounderCards.astro";
+import HomeHero from "../components/sections/HomeHero.astro";
+import ProblemsGrid from "../components/sections/ProblemsGrid.astro";
+import ProcessTimeline from "../components/sections/ProcessTimeline.astro";
+import ProjectsShowcase from "../components/sections/ProjectsShowcase.astro";
+import SolutionsGrid from "../components/sections/SolutionsGrid.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
 <BaseLayout
-	title="TinKode | Tecnología para que los negocios funcionen mejor"
-	description="TinKode diseña software, automatización y experiencias digitales para que negocios y organizaciones resuelvan problemas reales."
+	title="TinKode | Tecnología para hacer avanzar tu negocio"
+	description="TinKode diseña páginas, sistemas y automatizaciones que organizan procesos, mejoran experiencias y preparan negocios para crecer."
 	path="/"
 >
-	<Hero />
-	<HomeOverview />
+	<HomeHero />
+	<BenefitsStrip />
+	<ProblemsGrid />
+	<SolutionsGrid home />
+	<ProjectsShowcase home />
+	<ProcessTimeline home />
+	<FounderCards home />
+	<FaqAccordion />
+	<FinalCta />
 </BaseLayout>

@@ -1,0 +1,40 @@
+---
+import { INSTAGRAM_LABEL, INSTAGRAM_URL } from "../../data/contact";
+import Badge from "../ui/Badge.astro";
+import Button from "../ui/Button.astro";
+import InlineIcon from "../ui/InlineIcon.astro";
+import BusinessInterface from "./BusinessInterface.astro";
+---
+
+<section class="v2-hero" aria-labelledby="v2-hero-title">
+	<div class="v2-hero__ambient" aria-hidden="true"></div>
+	<div class="container v2-hero__grid">
+		<div class="v2-hero__content">
+			<Badge variant="accent">Tecnología diseñada para hacer crecer negocios</Badge>
+			<div class="v2-hero__copy">
+				<h1 id="v2-hero-title">Diseñamos la tecnología que hace avanzar tu negocio.</h1>
+				<p>Creamos páginas, sistemas y automatizaciones que organizan procesos, mejoran la experiencia de tus clientes y preparan tu empresa para crecer.</p>
+			</div>
+			<div class="v2-hero__actions" aria-label="Acciones principales">
+				<Button href={INSTAGRAM_URL} variant="primary" size="large" external ariaLabel={`Hablemos de tu negocio por ${INSTAGRAM_LABEL}`}>
+					Hablemos de tu negocio
+					<InlineIcon slot="icon-end" name="arrow" />
+				</Button>
+				<Button href="/proyectos" variant="ghost" size="large">Ver nuestros proyectos</Button>
+			</div>
+			<ul class="v2-hero__signals" aria-label="Enfoque de TinKode">
+				<li><span aria-hidden="true"></span>Software útil</li>
+				<li><span aria-hidden="true"></span>Procesos conectados</li>
+				<li><span aria-hidden="true"></span>Decisiones con claridad</li>
+			</ul>
+		</div>
+
+		<div class="v2-hero__visual">
+			<BusinessInterface />
+			<div class="v2-hero__visual-note">
+				<InlineIcon name="automation" />
+				<span>Menos tareas repetitivas</span>
+			</div>
+		</div>
+	</div>
+</section>

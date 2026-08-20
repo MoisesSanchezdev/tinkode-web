@@ -1,0 +1,90 @@
+---
+import { projects } from "../../data/site";
+import Button from "../ui/Button.astro";
+import InlineIcon from "../ui/InlineIcon.astro";
+import SectionIntro from "../ui/SectionIntro.astro";
+
+interface Props {
+	home?: boolean;
+}
+
+const { home = false } = Astro.props as Props;
+---
+
+<section id="proyectos" class="v2-section v2-projects" aria-labelledby="v2-projects-title">
+	<div class="container">
+		<div class="v2-section-heading-row">
+			<SectionIntro
+				eyebrow="Proyectos reales"
+				title="Experiencia que se puede explicar con honestidad."
+				description="Mostramos el contexto, la solución y el estado real de cada proyecto sin inventar métricas ni resultados."
+				titleId="v2-projects-title"
+			/>
+			{home && <Button href="/proyectos" variant="secondary">Conocer los proyectos</Button>}
+		</div>
+
+		<div class="v2-project-list">
+			{
+				projects.map((project, index) => (
+					<article id={project.id} class:list={["v2-project-card", index % 2 === 1 && "v2-project-card--reverse"]}>
+						<div class="v2-project-card__visual">
+							{project.visual === "competition" && (
+								<div class="v2-competition-ui" aria-label="Representación conceptual del sistema Robot Explota Globos">
+									<div class="v2-competition-ui__head">
+										<span>Competencia</span><strong>Fase de grupos</strong>
+									</div>
+									<div class="v2-competition-ui__score">
+										<div><small>Grupo A</small><strong>08</strong></div>
+										<span>VS</span>
+										<div><small>Grupo B</small><strong>06</strong></div>
+									</div>
+									<div class="v2-competition-ui__progress"><span></span></div>
+									<p>Participantes · Batallas · Ajustes</p>
+								</div>
+							)}
+							{project.visual === "website" && (
+								<div class="v2-website-ui" aria-label="Representación conceptual del sitio corporativo LPT">
+									<div class="v2-website-ui__bar"><span></span><span></span><span></span></div>
+									<strong>LPT</strong>
+									<p>Servicios empresariales organizados con claridad.</p>
+									<div><span>Aseo</span><span>Movilidad</span><span>Contacto</span></div>
+								</div>
+							)}
+							{project.visual === "nfc" && (
+								<figure class="v2-nfc-image">
+									<img
+										src="/images/projects/nfc/nfc-experience.webp"
+										alt="Etiqueta NFC conectando un objeto físico con una experiencia digital en un celular."
+										width="1000"
+										height="1010"
+										loading="lazy"
+										decoding="async"
+									/>
+									<figcaption>Imagen conceptual autorizada</figcaption>
+								</figure>
+							)}
+						</div>
+
+						<div class="v2-project-card__content">
+							<div class="v2-project-card__meta">
+								<span>{project.status}</span>
+								<small>{project.category}</small>
+							</div>
+							<h3>{project.name}</h3>
+							<dl>
+								<div><dt>Situación</dt><dd>{project.situation}</dd></div>
+								<div><dt>Solución</dt><dd>{project.solution}</dd></div>
+								<div><dt>Qué demuestra</dt><dd>{project.benefit}</dd></div>
+							</dl>
+							<ul class="v2-chip-list" aria-label={`Tecnologías y capacidades de ${project.name}`}>
+								{project.technologies.map((technology) => <li>{technology}</li>)}
+							</ul>
+							<p class="v2-project-card__note"><InlineIcon name="shield" />{project.note}</p>
+							{home && <a class="v2-text-link" href={`/proyectos#${project.id}`}>Ver detalles del proyecto <InlineIcon name="arrow" /></a>}
+						</div>
+					</article>
+				))
+			}
+		</div>
+	</div>
+</section>

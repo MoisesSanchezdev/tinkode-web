@@ -1,0 +1,48 @@
+---
+import { faqs } from "../../data/site";
+import SectionIntro from "../ui/SectionIntro.astro";
+---
+
+<section class="v2-section v2-faq" aria-labelledby="v2-faq-title">
+	<div class="container v2-faq__grid">
+		<SectionIntro
+			eyebrow="Preguntas frecuentes"
+			title="Respuestas claras antes de empezar."
+			description="Si tu necesidad no aparece aquí, la primera conversación también sirve para ordenar la pregunta correcta."
+			titleId="v2-faq-title"
+		/>
+
+		<div class="v2-faq__list" data-faq-list>
+			{
+				faqs.map((faq, index) => (
+					<article class:list={["v2-faq-item", index === 0 && "is-open"]}>
+						<h3>
+							<button type="button" aria-expanded={index === 0 ? "true" : "false"} aria-controls={`faq-panel-${index + 1}`} data-faq-button>
+								<span>{faq.question}</span><i aria-hidden="true"></i>
+							</button>
+						</h3>
+						<div id={`faq-panel-${index + 1}`} class="v2-faq-item__panel" data-faq-panel>
+							<div><p>{faq.answer}</p></div>
+						</div>
+					</article>
+				))
+			}
+		</div>
+	</div>
+</section>
+
+<script>
+	document.querySelectorAll("[data-faq-list]").forEach((list) => {
+		list.classList.add("is-ready");
+		list.querySelectorAll("[data-faq-button]").forEach((button) => {
+			if (!(button instanceof HTMLButtonElement)) return;
+			button.addEventListener("click", () => {
+				const item = button.closest(".v2-faq-item");
+				if (!(item instanceof HTMLElement)) return;
+				const isOpen = button.getAttribute("aria-expanded") === "true";
+				button.setAttribute("aria-expanded", String(!isOpen));
+				item.classList.toggle("is-open", !isOpen);
+			});
+		});
+	});
+</script>

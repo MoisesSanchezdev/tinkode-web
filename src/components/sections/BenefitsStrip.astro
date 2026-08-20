@@ -1,0 +1,21 @@
+---
+import { benefits } from "../../data/site";
+---
+
+<section class="v2-benefits" aria-label="Beneficios de trabajar con TinKode">
+	<div class="container">
+		<ul class="v2-benefits__list">
+			{
+				benefits.map((benefit) => (
+					<li>
+						<span>{benefit.code}</span>
+						<div>
+							<strong>{benefit.title}</strong>
+							<p>{benefit.description}</p>
+						</div>
+					</li>
+				))
+			}
+		</ul>
+	</div>
+</section>

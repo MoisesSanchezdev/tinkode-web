@@ -1,0 +1,50 @@
+---
+import { founders } from "../../data/site";
+import Button from "../ui/Button.astro";
+import InlineIcon from "../ui/InlineIcon.astro";
+import SectionIntro from "../ui/SectionIntro.astro";
+
+interface Props {
+	home?: boolean;
+	showHeader?: boolean;
+}
+
+const { home = false, showHeader = true } = Astro.props as Props;
+---
+
+<section id="nosotros" class="v2-section v2-founders" aria-labelledby={showHeader ? "v2-founders-title" : undefined}>
+	<div class="container">
+		{showHeader && (
+			<div class="v2-section-heading-row">
+				<SectionIntro
+					eyebrow="Quiénes están detrás"
+					title="Ingeniería cercana, criterio compartido."
+					description="TinKode nace de dos perfiles que combinan pensamiento técnico, organización y una misma intención: construir soluciones que tengan sentido para el negocio."
+					titleId="v2-founders-title"
+				/>
+				{home && <Button href="/nosotros" variant="secondary">Conocer TinKode</Button>}
+			</div>
+		)}
+
+		<div class="v2-founders__grid">
+			{
+				founders.map((founder) => (
+					<article class:list={["v2-founder-card", `v2-founder-card--${founder.accent}`]}>
+						<div class="v2-founder-card__identity">
+							<div class="v2-founder-card__avatar" aria-hidden="true">{founder.initials}</div>
+							<div>
+								<span>{founder.role}</span>
+								<h3>{founder.name}</h3>
+							</div>
+						</div>
+						<p>{founder.description}</p>
+						<div class="v2-founder-card__study">
+							<InlineIcon name="briefcase" />
+							<div><strong>{founder.study}</strong><span>{founder.institution}</span></div>
+						</div>
+					</article>
+				))
+			}
+		</div>
+	</div>
+</section>
