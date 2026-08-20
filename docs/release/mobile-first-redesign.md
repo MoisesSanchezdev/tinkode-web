@@ -100,9 +100,16 @@ Auditoría sobre el preview de producción con Lighthouse 13.4.1:
 - `docs/qa/evidence/home-mobile-390x844.png`
 - `docs/qa/evidence/home-desktop-1440x900.png`
 
-## Pendientes externos antes del cierre
+## Verificación pública
 
-- Confirmar push del commit final en GitHub.
-- Esperar y verificar el despliegue de Cloudflare Pages asociado al mismo commit.
-- Comprobar públicamente las cinco rutas, `robots.txt`, `sitemap.xml`, favicon y metadatos.
-- WhatsApp, fotografías, contenido legal y dominio personalizado siguen pendientes de información o autorización real.
+- GitHub recibió los commits de implementación y QA en `main`.
+- Cloudflare Pages completó correctamente el despliegue `21b4b7d9-ba95-4692-8c93-d8d62ce356df` asociado al código validado.
+- Se comprobó `https://tinkode-web.pages.dev` en 390 × 844 y 1440 × 900.
+- Las rutas `/`, `/soluciones`, `/proceso`, `/proyectos` y `/nosotros` sirven el nuevo contenido con HTTP 200.
+- Las cinco rutas públicas conservan un H1, navegación activa, JSON-LD, header, footer, contacto flotante y cero overflow horizontal.
+- La consola pública no registró errores ni advertencias.
+- `robots.txt`, `sitemap.xml`, `favicon.svg` y `og.png` responden con HTTP 200.
+
+## Pendientes de contenido
+
+WhatsApp comercial, fotografías autorizadas, contenido legal y dominio personalizado siguen pendientes de información o autorización real.
