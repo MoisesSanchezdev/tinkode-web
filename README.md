@@ -8,7 +8,7 @@ TinKode es una startup tecnológica colombiana que diseña tecnología para que 
 
 ## Estado actual
 
-Primera versión pública preparada. La base técnica, el sistema visual premium, la navegación responsive, el footer definitivo, SEO técnico y la arquitectura multipágina están listas para publicación. El inicio resume la propuesta y las rutas internas concentran soluciones, proceso, proyectos y equipo fundador. No contiene todavía un formulario de contacto propio.
+Rediseño premium mobile-first preparado para publicación. La experiencia comercial, navegación responsive, footer, SEO técnico, datos estructurados y arquitectura multipágina están unificados desde 320 px hasta escritorio. El Home presenta el recorrido completo y las rutas internas desarrollan soluciones, proceso, proyectos y equipo fundador. El contacto confirmado continúa centralizado en Instagram.
 
 ## Objetivo
 
@@ -51,11 +51,11 @@ npm run dev
 
 ## Rutas
 
-- `/`: presentación breve de TinKode, resumen de soluciones, experiencia y CTA hacia Instagram.
-- `/soluciones`: soluciones que TinKode puede construir para negocios.
-- `/proceso`: forma breve de trabajo de TinKode.
-- `/proyectos`: proyectos reales compactos, estados, autoría, privacidad y evidencia futura autorizada.
-- `/nosotros`: presentación breve del equipo fundador y del enfoque de trabajo de TinKode.
+- `/`: propuesta comercial, beneficios, problemas, soluciones, proyectos, proceso, fundadores, FAQ y CTA hacia Instagram.
+- `/soluciones`: presencia digital, automatización, sistemas, integraciones, datos, software personalizado y NFC.
+- `/proceso`: etapas y principios de trabajo de TinKode.
+- `/proyectos`: LPT, Robot Explota Globos UTP y Experiencias NFC con contexto, estado y evidencia honesta.
+- `/nosotros`: filosofía, equipo fundador y criterios de trabajo.
 
 ## Estructura principal
 
@@ -82,6 +82,7 @@ npm run dev
 - `docs/design/design-system.md`: dirección visual inicial.
 - `docs/content/content-status.md`: estado del contenido pendiente.
 - `docs/development/roadmap.md`: fases futuras del proyecto.
+- `docs/release/mobile-first-redesign.md`: auditoría, decisiones, matriz responsive y resultados de Lighthouse del rediseño actual.
 
 ## Flujo de trabajo
 
@@ -104,7 +105,7 @@ No hay variables de entorno requeridas en esta fase. No guardar secretos en el r
 
 ## Próxima fase
 
-Publicar la primera versión oficial y preparar mejoras posteriores como contenido legal si aplica, formulario propio y dominio personalizado cuando se autorice.
+Verificar la publicación conectada a GitHub en Cloudflare Pages y preparar mejoras posteriores como WhatsApp comercial, fotografías autorizadas, contenido legal si aplica, formulario propio y dominio personalizado cuando se autoricen.
 
 ## Nota
 
