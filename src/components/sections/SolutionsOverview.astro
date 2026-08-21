@@ -1,0 +1,28 @@
+---
+import { solutionCategories } from "../../data/site";
+import InlineIcon from "../ui/InlineIcon.astro";
+---
+
+<section class="section solutions-overview" aria-labelledby="solutions-overview-title">
+	<div class="container">
+		<div class="section-heading">
+			<p class="eyebrow">Capacidades</p>
+			<h2 id="solutions-overview-title">Tres formas de mejorar tu operación</h2>
+		</div>
+
+		<div class="solutions-overview__list">
+			{
+				solutionCategories.map((solution) => (
+					<article>
+						<div class="solutions-overview__icon"><InlineIcon name={solution.icon} /></div>
+						<div>
+							<h3>{solution.title}</h3>
+							<p>{solution.description}</p>
+							<small>{solution.scope}</small>
+						</div>
+					</article>
+				))
+			}
+		</div>
+	</div>
+</section>

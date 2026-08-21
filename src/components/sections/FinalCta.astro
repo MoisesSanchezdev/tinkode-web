@@ -4,40 +4,25 @@ import Button from "../ui/Button.astro";
 import InlineIcon from "../ui/InlineIcon.astro";
 
 interface Props {
-	eyebrow?: string;
 	title?: string;
 	description?: string;
-	secondaryHref?: string;
-	secondaryLabel?: string;
 }
 
 const {
-	eyebrow = "Hablemos",
-	title = "Tu negocio ya tiene el problema. Diseñemos juntos la solución.",
-	description = "Cuéntanos qué quieres mejorar y te ayudaremos a convertir esa necesidad en un siguiente paso claro.",
-	secondaryHref = "/nosotros",
-	secondaryLabel = "Conocer TinKode",
+	title = "Construyamos algo útil para tu negocio.",
+	description = "Cuéntanos qué quieres mejorar.",
 } = Astro.props as Props;
 ---
 
-<section class="v2-final-cta" aria-labelledby="v2-final-cta-title">
-	<div class="container">
-		<div class="v2-final-cta__inner">
-			<div class="v2-final-cta__copy">
-				<p class="v2-eyebrow">{eyebrow}</p>
-				<h2 id="v2-final-cta-title">{title}</h2>
-				<p>{description}</p>
-			</div>
-			<div class="v2-final-cta__actions">
-				<Button href={INSTAGRAM_URL} variant="primary" size="large" external ariaLabel={`Hablar por Instagram con TinKode · ${INSTAGRAM_LABEL}`}>
-					Hablar por Instagram
-					<InlineIcon slot="icon-end" name="arrow" />
-				</Button>
-				<Button href={secondaryHref} variant="ghost" size="large">{secondaryLabel}</Button>
-			</div>
-			<div class="v2-final-cta__system" aria-hidden="true">
-				<span>Problema</span><i></i><span>Diseño</span><i></i><span>Solución</span>
-			</div>
+<section class="final-cta" aria-labelledby="final-cta-title">
+	<div class="container final-cta__inner">
+		<div>
+			<h2 id="final-cta-title">{title}</h2>
+			<p>{description}</p>
 		</div>
+		<Button href={INSTAGRAM_URL} variant="primary" size="large" external ariaLabel={`Hablemos por ${INSTAGRAM_LABEL}`}>
+			Hablemos por Instagram
+			<InlineIcon slot="icon-end" name="arrow" />
+		</Button>
 	</div>
 </section>

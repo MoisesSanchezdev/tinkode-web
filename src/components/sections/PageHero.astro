@@ -1,56 +1,17 @@
 ---
-import type { IconName } from "../../data/site";
-import { INSTAGRAM_LABEL, INSTAGRAM_URL } from "../../data/contact";
-import Button from "../ui/Button.astro";
-import InlineIcon from "../ui/InlineIcon.astro";
-
 interface Props {
 	eyebrow: string;
 	title: string;
 	description: string;
-	focus: string;
-	icon: IconName;
-	secondaryHref?: string;
-	secondaryLabel?: string;
-	nodes?: readonly string[];
 }
 
-const {
-	eyebrow,
-	title,
-	description,
-	focus,
-	icon,
-	secondaryHref,
-	secondaryLabel,
-	nodes = ["Necesidad", "Diseño", "Solución"],
-} = Astro.props as Props;
+const { eyebrow, title, description } = Astro.props as Props;
 ---
 
-<section class="v2-page-hero" aria-labelledby="v2-page-hero-title">
-	<div class="v2-page-hero__ambient" aria-hidden="true"></div>
-	<div class="container v2-page-hero__grid">
-		<div class="v2-page-hero__content">
-			<p class="v2-eyebrow">{eyebrow}</p>
-			<h1 id="v2-page-hero-title">{title}</h1>
-			<p>{description}</p>
-			<div class="v2-page-hero__actions">
-				<Button href={INSTAGRAM_URL} variant="primary" size="large" external ariaLabel={`Hablemos por ${INSTAGRAM_LABEL}`}>Hablemos</Button>
-				{secondaryHref && secondaryLabel && <Button href={secondaryHref} variant="ghost" size="large">{secondaryLabel}</Button>}
-			</div>
-		</div>
-
-		<div class="v2-page-hero__visual" aria-label={`Mapa conceptual de ${focus}`}>
-			<div class="v2-page-hero__visual-head">
-				<div><InlineIcon name={icon} /></div>
-				<span>TinKode / {focus}</span>
-				<small>Enfoque activo</small>
-			</div>
-			<div class="v2-page-hero__nodes">
-				{nodes.map((node, index) => <span class:list={[index === nodes.length - 1 && "is-active"]}>{node}</span>)}
-			</div>
-			<div class="v2-page-hero__line" aria-hidden="true"><span></span></div>
-			<p>Una ruta clara desde el contexto hasta una solución que pueda evolucionar.</p>
-		</div>
+<section class="page-hero" aria-labelledby="page-hero-title">
+	<div class="container">
+		<p class="eyebrow">{eyebrow}</p>
+		<h1 id="page-hero-title">{title}</h1>
+		<p>{description}</p>
 	</div>
 </section>

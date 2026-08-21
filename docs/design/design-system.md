@@ -119,29 +119,21 @@ Tamaños:
 
 El componente funciona como `<a>` cuando recibe `href` y como `<button>` cuando no lo recibe. Incluye props tipadas para `href`, `type`, `variant`, `size`, `external`, `class` y `ariaLabel`.
 
-## Badges
+## Iconos
 
-Componente: `src/components/ui/Badge.astro`.
+Componente: `src/components/ui/InlineIcon.astro`.
 
-Sirve para etiquetas breves como “Sistema activo”, “Solución personalizada” o “Ingeniería aplicada”. Usa texto monoespaciado pequeño, borde sutil y variantes sobrias.
+El repertorio se limita a los símbolos que tienen un consumidor real. Los iconos acompañan acciones o categorías y no sustituyen títulos, precios ni nombres accesibles.
 
 ## Tarjetas
 
-Componente: `src/components/ui/SurfaceCard.astro`.
-
-Superficie reutilizable con fondo oscuro, borde, radio y padding configurable. La prop `interactive` habilita un hover discreto. La prop `as` permite elegir un elemento semántico entre `article`, `section`, `div` y `aside`.
+Solo se mantienen dos familias visuales de tarjeta: proyectos y planes. Se implementan en sus secciones porque sus estructuras son distintas y no necesitan una abstracción genérica. Las demás agrupaciones usan divisores, espacio y fondos continuos.
 
 ## Secciones De Diagnóstico Y Soluciones
 
-Las secciones de contenido deben mantener encabezado claro, texto introductorio breve y tarjetas con separación generosa. La lectura debe sentirse comercial y humana, no como dashboard ni documentación técnica.
+Las capacidades se organizan en tres categorías editoriales con una frase directa y divisores sutiles. El diagnóstico detallado no ocupa una sección propia en el Home y las soluciones no usan una tarjeta por problema, beneficio o tecnología.
 
-Cada tarjeta debe comunicar una sola idea: título breve, una frase directa y, como máximo, una línea discreta de ejemplos o capacidades. Evitar listas extensas, exceso de pills y explicaciones que repitan el título.
-
-Las tarjetas de problemas pueden usar numeración discreta. Las etiquetas técnicas superiores deben evitarse cuando agreguen ruido visual.
-
-Las tarjetas de soluciones deben sentirse más constructivas: códigos cortos, acentos moderados y capacidades agrupadas en una línea breve. El beneficio debe aparecer antes que la capacidad técnica.
-
-La transición hacia futuras secciones puede usar una tarjeta o franja discreta, siempre sin inventar proyectos, métricas ni resultados.
+La lectura debe sentirse comercial y humana, no como dashboard ni documentación técnica. Las etiquetas superiores son excepcionales y cada bloque conserva una sola idea principal.
 
 La navegación interna usa offset mediante `scroll-padding-top` y `scroll-margin-top` para que los títulos no queden ocultos bajo el header sticky.
 

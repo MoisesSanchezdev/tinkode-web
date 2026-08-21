@@ -2,46 +2,19 @@
 import FinalCta from "../components/sections/FinalCta.astro";
 import PageHero from "../components/sections/PageHero.astro";
 import ProcessTimeline from "../components/sections/ProcessTimeline.astro";
-import InlineIcon from "../components/ui/InlineIcon.astro";
-import SectionIntro from "../components/ui/SectionIntro.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
-
-const principles = [
-	{ icon: "message", title: "Conversación directa", text: "Las decisiones importantes se explican con contexto, sin convertir el proceso en una caja negra." },
-	{ icon: "control", title: "Alcance visible", text: "Ordenamos prioridades y límites para que cada etapa tenga un propósito comprensible." },
-	{ icon: "shield", title: "Validación responsable", text: "Probamos recorridos, contenido y comportamiento antes de preparar el lanzamiento." },
-	{ icon: "workflow", title: "Evolución ordenada", text: "La base se diseña para incorporar mejoras cuando el negocio realmente las necesite." },
-] as const;
 ---
 
 <BaseLayout
 	title="Proceso de diseño y desarrollo | TinKode"
-	description="Conoce cómo TinKode entiende el negocio, diseña la solución, construye y valida, y acompaña el lanzamiento."
+	description="Así entiende, diseña, construye y hace evolucionar TinKode las soluciones tecnológicas para negocios."
 	path="/proceso"
 >
 	<PageHero
-		eyebrow="Cómo trabajamos"
-		title="De una necesidad difusa a una solución clara."
-		description="El proceso combina comprensión del negocio, diseño, ingeniería y validación. Cada etapa reduce incertidumbre antes de avanzar."
-		focus="Proceso"
-		icon="workflow"
-		secondaryHref="/proyectos"
-		secondaryLabel="Ver proyectos"
-		nodes={["Entender", "Diseñar", "Construir", "Lanzar"]}
+		eyebrow="Proceso"
+		title="De una necesidad a una solución clara."
+		description="Ordenamos cada decisión antes de avanzar."
 	/>
-	<ProcessTimeline detailed />
-	<section class="v2-section v2-method" aria-labelledby="v2-method-title">
-		<div class="container">
-			<SectionIntro
-				eyebrow="Principios de trabajo"
-				title="Claridad técnica sin perder de vista el negocio."
-				description="La forma de colaborar también es parte de la solución."
-				titleId="v2-method-title"
-			/>
-			<div class="v2-method__grid">
-				{principles.map((principle) => <article><InlineIcon name={principle.icon} /><h3>{principle.title}</h3><p>{principle.text}</p></article>)}
-			</div>
-		</div>
-	</section>
-	<FinalCta title="No necesitas tener la solución. Empecemos por entender el problema." secondaryHref="/soluciones" secondaryLabel="Explorar soluciones" />
+	<ProcessTimeline />
+	<FinalCta title="No necesitas tener la solución." description="Empecemos por entender el problema." />
 </BaseLayout>

@@ -2,52 +2,36 @@
 import FinalCta from "../components/sections/FinalCta.astro";
 import FounderCards from "../components/sections/FounderCards.astro";
 import PageHero from "../components/sections/PageHero.astro";
-import InlineIcon from "../components/ui/InlineIcon.astro";
-import SectionIntro from "../components/ui/SectionIntro.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 
 const principles = [
-	{ icon: "customer", title: "El negocio primero", text: "La tecnología es el medio. La operación, las personas y la experiencia definen la dirección." },
-	{ icon: "control", title: "Claridad sobre ruido", text: "Preferimos decisiones comprensibles, interfaces útiles y procesos que puedan explicarse." },
-	{ icon: "automation", title: "Automatizar con criterio", text: "No todo debe automatizarse. Elegimos los puntos donde la tecnología reduce fricción real." },
-	{ icon: "workflow", title: "Construir para evolucionar", text: "Cada solución parte de lo necesario y deja una base ordenada para crecer." },
+	{ title: "Negocio antes que tecnología", text: "Construimos desde la necesidad real, no desde una herramienta de moda." },
+	{ title: "Claridad en cada decisión", text: "El alcance, la interfaz y los siguientes pasos deben poder explicarse." },
+	{ title: "Automatización con criterio", text: "Conectamos procesos solo cuando reduce una fricción concreta." },
 ] as const;
 ---
 
 <BaseLayout
-	title="Quiénes somos y cómo pensamos | TinKode"
-	description="Conoce a Moisés Sánchez Naranjo y Valeria López Chávez, las personas detrás de TinKode y su enfoque de ingeniería aplicada a negocios."
+	title="Quiénes somos | TinKode"
+	description="Conoce a Moisés Sánchez Naranjo y Valeria López Chávez, las personas detrás de TinKode y su enfoque de ingeniería aplicada."
 	path="/nosotros"
 >
 	<PageHero
 		eyebrow="Nosotros"
-		title="Dos perspectivas de ingeniería. Una forma más clara de construir."
-		description="TinKode es una startup tecnológica colombiana creada para ayudar a negocios a organizar, automatizar y mejorar su operación."
-		focus="Equipo"
-		icon="users"
-		secondaryHref="/proceso"
-		secondaryLabel="Cómo trabajamos"
-		nodes={["Negocio", "Ingeniería", "Experiencia"]}
+		title="Ingeniería aplicada a negocios reales."
+		description="TinKode es una startup tecnológica colombiana que crea soluciones claras para mejorar la forma de trabajar."
 	/>
-	<section class="v2-section v2-philosophy" aria-labelledby="v2-philosophy-title">
-		<div class="container v2-philosophy__grid">
-			<SectionIntro
-				eyebrow="Nuestra filosofía"
-				title="No vendemos software. Diseñamos la forma en que funcionan los negocios."
-				description="Eso significa mirar primero la operación, entender dónde se pierde tiempo y construir solo lo que aporta claridad, continuidad o una mejor experiencia."
-				titleId="v2-philosophy-title"
-			/>
-			<div class="v2-philosophy__visual" aria-hidden="true"><span>Proceso</span><i></i><strong>TinKode</strong><i></i><span>Crecimiento</span></div>
-		</div>
-	</section>
 	<FounderCards />
-	<section class="v2-section v2-method" aria-labelledby="v2-about-principles-title">
+	<section class="section principles" aria-labelledby="principles-title">
 		<div class="container">
-			<SectionIntro eyebrow="Cómo pensamos" title="Criterios que guían cada solución." titleId="v2-about-principles-title" />
-			<div class="v2-method__grid">
-				{principles.map((principle) => <article><InlineIcon name={principle.icon} /><h3>{principle.title}</h3><p>{principle.text}</p></article>)}
+			<div class="section-heading">
+				<p class="eyebrow">Nuestro criterio</p>
+				<h2 id="principles-title">Cómo tomamos decisiones</h2>
+			</div>
+			<div class="principles__list">
+				{principles.map((principle) => <article><h3>{principle.title}</h3><p>{principle.text}</p></article>)}
 			</div>
 		</div>
 	</section>
-	<FinalCta title="Conversemos sobre la forma en que funciona tu negocio." secondaryHref="/proyectos" secondaryLabel="Ver proyectos" />
+	<FinalCta title="Hablemos de tu negocio." description="Cuéntanos qué quieres mejorar." />
 </BaseLayout>

@@ -147,3 +147,12 @@ Nunca debe exigirse ni publicarse:
 - Arquitectura sensible.
 
 Las capturas deben estar autorizadas y todavía faltan datos definitivos de proyectos.
+
+## Planes para restaurantes confirmados
+
+- Básico: `$425.000 COP`.
+- Intermedio: `$810.000 COP`, identificado como recomendado.
+- Avanzado: `$1.087.000 COP`.
+- Los alcances publicados se conservan en `src/data/site.ts`.
+- Los CTA de los tres planes utilizan Instagram porque continúa siendo el único canal oficial confirmado de TinKode.
+- No se publican números de WhatsApp, costos adicionales, descuentos ni condiciones no confirmadas.

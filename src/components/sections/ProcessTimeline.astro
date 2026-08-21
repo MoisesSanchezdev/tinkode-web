@@ -1,38 +1,20 @@
 ---
 import { processSteps } from "../../data/site";
-import Button from "../ui/Button.astro";
-import SectionIntro from "../ui/SectionIntro.astro";
-
-interface Props {
-	home?: boolean;
-	detailed?: boolean;
-}
-
-const { home = false, detailed = false } = Astro.props as Props;
 ---
 
-<section id="proceso" class="v2-section v2-process" aria-labelledby="v2-process-title">
+<section class="section process-timeline" aria-labelledby="process-timeline-title">
 	<div class="container">
-		<div class="v2-section-heading-row">
-			<SectionIntro
-				eyebrow="Proceso"
-				title="Primero entendemos. Después construimos."
-				description="No necesitas llegar con la solución definida. Diseñamos el recorrido contigo y validamos cada decisión importante."
-				titleId="v2-process-title"
-			/>
-			{home && <Button href="/proceso" variant="secondary">Conocer el proceso</Button>}
+		<div class="section-heading">
+			<p class="eyebrow">Método</p>
+			<h2 id="process-timeline-title">Cuatro pasos, una ruta clara</h2>
 		</div>
 
-		<ol class="v2-process__steps">
+		<ol>
 			{
-				processSteps.map((step, index) => (
+				processSteps.map((step) => (
 					<li>
-						<div class="v2-process-step__number"><span>{step.number}</span>{index < processSteps.length - 1 && <i aria-hidden="true"></i>}</div>
-						<div class="v2-process-step__body">
-							<h3>{step.title}</h3>
-							<p>{step.description}</p>
-							{detailed && <small>{step.deliverable}</small>}
-						</div>
+						<span>{step.number}</span>
+						<div><h3>{step.title}</h3><p>{step.description}</p></div>
 					</li>
 				))
 			}

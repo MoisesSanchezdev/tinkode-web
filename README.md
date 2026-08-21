@@ -8,7 +8,7 @@ TinKode es una startup tecnológica colombiana que diseña tecnología para que 
 
 ## Estado actual
 
-Rediseño premium mobile-first preparado para publicación. La experiencia comercial, navegación responsive, footer, SEO técnico, datos estructurados y arquitectura multipágina están unificados desde 320 px hasta escritorio. El Home presenta el recorrido completo y las rutas internas desarrollan soluciones, proceso, proyectos y equipo fundador. El contacto confirmado continúa centralizado en Instagram.
+Experiencia minimalista mobile-first preparada para publicación. El Home concentra la propuesta, tres capacidades, proyectos seleccionados y planes para restaurantes; las rutas internas conservan el detalle de soluciones, proceso, proyectos y equipo fundador. El contacto confirmado continúa centralizado en Instagram.
 
 ## Objetivo
 
@@ -51,11 +51,11 @@ npm run dev
 
 ## Rutas
 
-- `/`: propuesta comercial, beneficios, problemas, soluciones, proyectos, proceso, fundadores, FAQ y CTA hacia Instagram.
-- `/soluciones`: presencia digital, automatización, sistemas, integraciones, datos, software personalizado y NFC.
-- `/proceso`: etapas y principios de trabajo de TinKode.
-- `/proyectos`: LPT, Robot Explota Globos UTP y Experiencias NFC con contexto, estado y evidencia honesta.
-- `/nosotros`: filosofía, equipo fundador y criterios de trabajo.
+- `/`: propuesta de valor, capacidades, proyectos seleccionados, planes para restaurantes y contacto.
+- `/soluciones`: presencia digital, sistemas para negocios y automatización.
+- `/proceso`: cuatro etapas concretas de trabajo.
+- `/proyectos`: LPT, Robot Explota Globos UTP y Experiencias NFC con estado y contexto verificable.
+- `/nosotros`: presentación breve, equipo fundador y criterios de trabajo.
 
 ## Estructura principal
 
@@ -67,8 +67,8 @@ npm run dev
 - `src/pages/`: páginas del sitio.
 - `src/styles/`: estilos globales y base CSS.
 - `src/components/layout/`: componentes de layout.
-- `src/components/sections/`: componentes de secciones de página como hero, resúmenes del home, problemas, soluciones, proceso y proyectos.
-- `src/components/ui/`: componentes pequeños de interfaz como `Button`, `Badge` y `SurfaceCard`.
+- `src/components/sections/`: secciones editoriales, proyectos, proceso y planes para restaurantes.
+- `src/components/ui/`: piezas mínimas de interfaz: `Button` e `InlineIcon`.
 - `src/layouts/`: layouts Astro.
 - `src/data/`: datos y contenido confirmado.
 - `src/scripts/`: scripts del lado cliente cuando sean necesarios.
@@ -83,6 +83,7 @@ npm run dev
 - `docs/content/content-status.md`: estado del contenido pendiente.
 - `docs/development/roadmap.md`: fases futuras del proyecto.
 - `docs/release/mobile-first-redesign.md`: auditoría, decisiones, matriz responsive y resultados de Lighthouse del rediseño actual.
+- `docs/release/minimal-content-audit.md`: auditoría editorial y decisiones de simplificación.
 
 ## Flujo de trabajo
 

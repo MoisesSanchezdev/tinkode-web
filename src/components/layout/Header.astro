@@ -3,10 +3,9 @@ import Button from "../ui/Button.astro";
 import { INSTAGRAM_LABEL, INSTAGRAM_URL } from "../../data/contact";
 
 const navItems = [
-	{ label: "Inicio", href: "/" },
 	{ label: "Soluciones", href: "/soluciones" },
 	{ label: "Proyectos", href: "/proyectos" },
-	{ label: "Proceso", href: "/proceso" },
+	{ label: "Planes", href: "/#planes-restaurantes" },
 	{ label: "Nosotros", href: "/nosotros" },
 ];
 
@@ -15,25 +14,23 @@ const isCurrent = (href: string) => href === currentPath;
 ---
 
 <header class="site-header" data-site-header>
-	<div class="container site-header__shell">
-		<div class="site-header__inner">
-			<a class="site-logo" href="/" aria-label="TinKode, inicio">
-				<img class="site-logo__image" src="/images/brand/tinkode-symbol.png" alt="" width="192" height="192" decoding="async" />
-				<span>TinKode</span>
-			</a>
+	<div class="container site-header__inner">
+		<a class="site-logo" href="/" aria-label="TinKode, inicio">
+			<img src="/images/brand/tinkode-symbol.png" alt="" width="192" height="192" decoding="async" />
+			<span>TinKode</span>
+		</a>
 
-			<nav class="site-nav" aria-label="Navegación principal">
-				<ul class="site-nav__list">
-					{navItems.map((item) => <li><a href={item.href} aria-current={isCurrent(item.href) ? "page" : undefined}>{item.label}</a></li>)}
-				</ul>
-			</nav>
+		<nav class="site-nav" aria-label="Navegación principal">
+			<ul>
+				{navItems.map((item) => <li><a href={item.href} aria-current={isCurrent(item.href) ? "page" : undefined}>{item.label}</a></li>)}
+			</ul>
+		</nav>
 
-			<div class="site-header__actions">
-				<Button href={INSTAGRAM_URL} variant="primary" size="small" external ariaLabel={`Hablemos por ${INSTAGRAM_LABEL}`}>Hablemos</Button>
-				<button class="menu-toggle" type="button" aria-label="Abrir menú principal" aria-controls="mobile-menu" aria-expanded="false" data-menu-toggle>
-					<span aria-hidden="true"></span><span aria-hidden="true"></span>
-				</button>
-			</div>
+		<div class="site-header__actions">
+			<Button href={INSTAGRAM_URL} variant="primary" size="small" external ariaLabel={`Hablemos por ${INSTAGRAM_LABEL}`}>Hablemos</Button>
+			<button class="menu-toggle" type="button" aria-label="Abrir menú principal" aria-controls="mobile-menu" aria-expanded="false" data-menu-toggle>
+				<span aria-hidden="true"></span><span aria-hidden="true"></span>
+			</button>
 		</div>
 	</div>
 
@@ -41,14 +38,13 @@ const isCurrent = (href: string) => href === currentPath;
 		<button class="mobile-nav__backdrop" type="button" aria-label="Cerrar menú principal" data-menu-dismiss></button>
 		<nav class="mobile-nav__panel" aria-label="Navegación móvil">
 			<div class="mobile-nav__head">
-				<span>Menú</span>
+				<strong>Menú</strong>
 				<button type="button" aria-label="Cerrar menú principal" data-menu-dismiss><span aria-hidden="true"></span><span aria-hidden="true"></span></button>
 			</div>
-			<ul class="mobile-nav__list">
+			<ul>
 				{navItems.map((item) => <li><a href={item.href} aria-current={isCurrent(item.href) ? "page" : undefined}>{item.label}</a></li>)}
 				<li><a class="mobile-nav__cta" href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" aria-label={`Hablemos por ${INSTAGRAM_LABEL}`}>Hablemos</a></li>
 			</ul>
-			<p>Diseñamos tecnología para que los negocios funcionen mejor.</p>
 		</nav>
 	</div>
 </header>
@@ -97,7 +93,9 @@ const isCurrent = (href: string) => href === currentPath;
 			}
 		});
 
-		window.matchMedia("(min-width: 900px)").addEventListener("change", (event) => { if (event.matches) setMenuState(false, false); });
-		window.addEventListener("scroll", () => header.classList.toggle("is-scrolled", window.scrollY > 16), { passive: true });
+		window.matchMedia("(min-width: 900px)").addEventListener("change", (event) => {
+			if (event.matches) setMenuState(false, false);
+		});
+		window.addEventListener("scroll", () => header.classList.toggle("is-scrolled", window.scrollY > 12), { passive: true });
 	}
 </script>

@@ -1,0 +1,28 @@
+---
+import { capabilities } from "../../data/site";
+import Button from "../ui/Button.astro";
+import InlineIcon from "../ui/InlineIcon.astro";
+---
+
+<section class="section capabilities" aria-labelledby="capabilities-title">
+	<div class="container">
+		<div class="section-heading">
+			<p class="eyebrow">Qué hacemos</p>
+			<h2 id="capabilities-title">Lo que podemos construir contigo</h2>
+		</div>
+
+		<div class="capabilities__list">
+			{
+				capabilities.map((capability) => (
+					<article>
+						<InlineIcon name={capability.icon} />
+						<h3>{capability.title}</h3>
+						<p>{capability.description}</p>
+					</article>
+				))
+			}
+		</div>
+
+		<Button href="/soluciones" variant="ghost">Explorar soluciones</Button>
+	</div>
+</section>

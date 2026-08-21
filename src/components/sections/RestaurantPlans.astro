@@ -1,0 +1,64 @@
+---
+import { INSTAGRAM_URL } from "../../data/contact";
+import { restaurantComplements, restaurantPlans } from "../../data/site";
+import Button from "../ui/Button.astro";
+---
+
+<section id="planes-restaurantes" class="section restaurant-plans" aria-labelledby="restaurant-plans-title">
+	<div class="container">
+		<div class="section-heading restaurant-plans__heading">
+			<p class="eyebrow">Oferta para restaurantes</p>
+			<h2 id="restaurant-plans-title">Planes para restaurantes</h2>
+			<p>Una presencia digital pensada para mostrar tu menú, facilitar pedidos y convertir visitas en clientes.</p>
+		</div>
+
+		<div class="plans-grid">
+			{
+				restaurantPlans.map((plan) => (
+					<article class:list={["plan-card", `plan-card--${plan.accent}`]} aria-labelledby={`plan-${plan.id}-title`}>
+						<div class="plan-card__head">
+							<div class="plan-card__name">
+								<h3 id={`plan-${plan.id}-title`}>{plan.name}</h3>
+								{"badge" in plan && <span>{plan.badge}</span>}
+							</div>
+							<p class="plan-card__price">{plan.price}</p>
+							<p class="plan-card__description">{plan.description}</p>
+						</div>
+
+						<ul class="plan-card__highlights" aria-label={`Beneficios principales del plan ${plan.name}`}>
+							{plan.highlights.map((item) => <li>{item}</li>)}
+						</ul>
+
+						<div class="plan-card__objective">
+							<strong>Objetivo</strong>
+							<p>{plan.objective}</p>
+						</div>
+
+						<details class="plan-card__details">
+							<summary>Ver todo lo que incluye</summary>
+							<div>
+								<strong>{plan.includesLabel}</strong>
+								<ul>{plan.includes.map((item) => <li>{item}</li>)}</ul>
+							</div>
+						</details>
+
+						<Button
+							href={INSTAGRAM_URL}
+							variant={plan.accent === "recommended" ? "primary" : "secondary"}
+							size="large"
+							external
+							ariaLabel={`Consultar plan ${plan.name} por Instagram`}
+						>
+							{plan.cta}
+						</Button>
+					</article>
+				))
+			}
+		</div>
+
+		<div class="restaurant-complements" aria-labelledby="restaurant-complements-title">
+			<h3 id="restaurant-complements-title">También puedes complementar tu proyecto</h3>
+			<ul>{restaurantComplements.map((item) => <li>{item}</li>)}</ul>
+		</div>
+	</div>
+</section>

@@ -1,39 +1,30 @@
 ---
 import { INSTAGRAM_LABEL, INSTAGRAM_URL } from "../../data/contact";
-import Badge from "../ui/Badge.astro";
 import Button from "../ui/Button.astro";
 import InlineIcon from "../ui/InlineIcon.astro";
-import BusinessInterface from "./BusinessInterface.astro";
 ---
 
-<section class="v2-hero" aria-labelledby="v2-hero-title">
-	<div class="v2-hero__ambient" aria-hidden="true"></div>
-	<div class="container v2-hero__grid">
-		<div class="v2-hero__content">
-			<Badge variant="accent">Tecnología diseñada para hacer crecer negocios</Badge>
-			<div class="v2-hero__copy">
-				<h1 id="v2-hero-title">Diseñamos la tecnología que hace avanzar tu negocio.</h1>
-				<p>Creamos páginas, sistemas y automatizaciones que organizan procesos, mejoran la experiencia de tus clientes y preparan tu empresa para crecer.</p>
-			</div>
-			<div class="v2-hero__actions" aria-label="Acciones principales">
-				<Button href={INSTAGRAM_URL} variant="primary" size="large" external ariaLabel={`Hablemos de tu negocio por ${INSTAGRAM_LABEL}`}>
-					Hablemos de tu negocio
+<section class="home-hero" aria-labelledby="home-hero-title">
+	<div class="container home-hero__grid">
+		<div class="home-hero__content">
+			<h1 id="home-hero-title">Tecnología que hace avanzar tu negocio.</h1>
+			<p>Creamos páginas, sistemas y automatizaciones claras, útiles y preparadas para crecer.</p>
+			<div class="home-hero__actions" aria-label="Acciones principales">
+				<Button href={INSTAGRAM_URL} variant="primary" size="large" external ariaLabel={`Hablemos por ${INSTAGRAM_LABEL}`}>
+					Hablemos
 					<InlineIcon slot="icon-end" name="arrow" />
 				</Button>
-				<Button href="/proyectos" variant="ghost" size="large">Ver nuestros proyectos</Button>
+				<Button href="/proyectos" variant="ghost" size="large">Ver proyectos</Button>
 			</div>
-			<ul class="v2-hero__signals" aria-label="Enfoque de TinKode">
-				<li><span aria-hidden="true"></span>Software útil</li>
-				<li><span aria-hidden="true"></span>Procesos conectados</li>
-				<li><span aria-hidden="true"></span>Decisiones con claridad</li>
-			</ul>
 		</div>
 
-		<div class="v2-hero__visual">
-			<BusinessInterface />
-			<div class="v2-hero__visual-note">
-				<InlineIcon name="automation" />
-				<span>Menos tareas repetitivas</span>
+		<div class="home-hero__visual" aria-hidden="true">
+			<div class="brand-orbit brand-orbit--outer"></div>
+			<div class="brand-orbit brand-orbit--inner"></div>
+			<span class="brand-node brand-node--green"></span>
+			<span class="brand-node brand-node--blue"></span>
+			<div class="brand-core">
+				<img src="/images/brand/tinkode-symbol.png" alt="" width="192" height="192" decoding="async" />
 			</div>
 		</div>
 	</div>

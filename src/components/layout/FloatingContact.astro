@@ -3,7 +3,18 @@ import { INSTAGRAM_LABEL, INSTAGRAM_URL } from "../../data/contact";
 import InlineIcon from "../ui/InlineIcon.astro";
 ---
 
-<a class="v2-floating-contact" href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" aria-label={`Escríbenos por Instagram · ${INSTAGRAM_LABEL}`}>
+<a class="floating-contact" href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" aria-label={`Escríbenos por Instagram · ${INSTAGRAM_LABEL}`} data-floating-contact>
 	<InlineIcon name="message" />
-	<span>Escríbenos</span>
+	<span>Instagram</span>
 </a>
+
+<script>
+	const contact = document.querySelector("[data-floating-contact]");
+	const plans = document.querySelector("#planes-restaurantes");
+	if (contact instanceof HTMLElement && plans instanceof HTMLElement && "IntersectionObserver" in window) {
+		const observer = new IntersectionObserver(([entry]) => {
+			contact.classList.toggle("is-hidden", Boolean(entry?.isIntersecting));
+		}, { threshold: 0.04 });
+		observer.observe(plans);
+	}
+</script>

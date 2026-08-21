@@ -1,140 +1,39 @@
-export type IconName =
-	| "api"
-	| "automation"
-	| "briefcase"
-	| "calendar"
-	| "clinic"
-	| "coffee"
-	| "control"
-	| "customer"
-	| "database"
-	| "event"
-	| "fitness"
-	| "form"
-	| "integration"
-	| "interface"
-	| "inventory"
-	| "message"
-	| "nfc"
-	| "report"
-	| "shield"
-	| "software"
-	| "store"
-	| "users"
-	| "website"
-	| "whatsapp"
-	| "workflow";
-
-export const benefits = [
+export const capabilities = [
 	{
-		code: "01",
-		title: "Estrategia antes que tecnología",
-		description: "Primero entendemos el negocio, después definimos qué vale la pena construir.",
-	},
-	{
-		code: "02",
-		title: "Experiencias responsive",
-		description: "Diseñadas para funcionar con claridad desde el celular hasta el escritorio.",
-	},
-	{
-		code: "03",
-		title: "Automatización con propósito",
-		description: "Conectamos tareas y datos cuando hacerlo reduce fricción de verdad.",
-	},
-	{
-		code: "04",
-		title: "Acompañamiento cercano",
-		description: "Decisiones claras, validación directa y evolución ordenada de la solución.",
-	},
-] as const;
-
-export const problems = [
-	{
-		number: "01",
-		title: "Todo depende de tareas manuales",
-		description: "Copiar información, confirmar solicitudes y repetir seguimientos consume tiempo que podría dedicarse al negocio.",
-		icon: "automation",
-	},
-	{
-		number: "02",
-		title: "La información está dispersa",
-		description: "Clientes, reservas, inventario y documentos viven en chats, archivos y hojas que no conversan entre sí.",
-		icon: "database",
-	},
-	{
-		number: "03",
-		title: "Las respuestas tardan demasiado",
-		description: "Tus clientes no encuentran rápido lo que necesitan y el equipo termina resolviendo las mismas dudas una y otra vez.",
-		icon: "message",
-	},
-	{
-		number: "04",
-		title: "Tu presencia digital no genera confianza",
-		description: "Una experiencia confusa, lenta o incompleta hace más difícil explicar el valor del negocio y recibir nuevas oportunidades.",
-		icon: "website",
-	},
-	{
-		number: "05",
-		title: "Tus herramientas no están conectadas",
-		description: "La misma información se registra varias veces y cada canal muestra solo una parte de la operación.",
-		icon: "integration",
-	},
-	{
-		number: "06",
-		title: "Crecer complica la operación",
-		description: "Más clientes y más movimiento exponen procesos que antes podían resolverse de forma improvisada.",
-		icon: "workflow",
-	},
-] as const;
-
-export const solutions = [
-	{
-		code: "S01",
 		title: "Presencia digital",
-		problem: "Tu oferta no se entiende o no transmite confianza en internet.",
-		benefit: "Presenta el negocio con claridad y facilita que las personas den el siguiente paso.",
-		type: "Landing pages, sitios empresariales y experiencias web.",
+		description: "Páginas claras que presentan tu negocio y facilitan el contacto.",
 		icon: "website",
 	},
 	{
-		code: "S02",
-		title: "Automatización de procesos",
-		problem: "El equipo invierte tiempo en tareas repetitivas y seguimientos manuales.",
-		benefit: "Reduce pasos innecesarios y mantiene los flujos operando con mayor continuidad.",
-		type: "Formularios conectados, notificaciones y flujos automáticos.",
-		icon: "automation",
-	},
-	{
-		code: "S03",
 		title: "Sistemas para negocios",
-		problem: "La operación depende de archivos aislados o herramientas que no encajan.",
-		benefit: "Centraliza información y permite gestionar el trabajo con más orden.",
-		type: "Inventarios, agendamiento, bases de datos y sistemas internos.",
+		description: "Herramientas que organizan información, clientes, pedidos o procesos.",
 		icon: "interface",
 	},
 	{
-		code: "S04",
-		title: "Integraciones y WhatsApp",
-		problem: "Los canales funcionan separados y el equipo termina copiando datos.",
-		benefit: "Conecta conversaciones, formularios y herramientas para reducir duplicación.",
-		type: "Integraciones autorizadas, APIs y flujos asociados a WhatsApp.",
-		icon: "whatsapp",
+		title: "Automatización",
+		description: "Flujos que reducen tareas repetitivas y conectan mejor tu operación.",
+		icon: "automation",
+	},
+] as const;
+
+export const solutionCategories = [
+	{
+		title: "Presencia digital",
+		description: "Sitios y experiencias web que explican tu oferta con claridad y convierten visitas en conversaciones.",
+		scope: "Landing pages, sitios empresariales, menús digitales y experiencias web.",
+		icon: "website",
 	},
 	{
-		code: "S05",
-		title: "Datos y dashboards",
-		problem: "La información existe, pero consultarla o entenderla toma demasiado tiempo.",
-		benefit: "Organiza indicadores y reportes para tomar decisiones con mayor contexto.",
-		type: "Paneles, reportes, bases centralizadas y vistas operativas.",
-		icon: "report",
+		title: "Sistemas para negocios",
+		description: "Herramientas a la medida para centralizar información y operar con menos fricción.",
+		scope: "Inventarios, pedidos, agendamiento, bases de datos, paneles e integraciones.",
+		icon: "interface",
 	},
 	{
-		code: "S06",
-		title: "Soluciones personalizadas y NFC",
-		problem: "Una necesidad específica no cabe en una plantilla o producto estándar.",
-		benefit: "Diseña una experiencia alrededor del proceso real y su forma de crecer.",
-		type: "Software a medida, NFC y conexión entre experiencias físicas y digitales.",
-		icon: "nfc",
+		title: "Automatización",
+		description: "Flujos que conectan tareas, datos y canales cuando hacerlo ahorra pasos de verdad.",
+		scope: "Formularios, notificaciones, reportes, APIs y experiencias NFC.",
+		icon: "automation",
 	},
 ] as const;
 
@@ -144,9 +43,7 @@ export const projects = [
 		name: "Robot Explota Globos UTP",
 		status: "En preparación y pruebas",
 		category: "Sistema de gestión de competencia",
-		situation: "Una competencia universitaria necesita organizar participantes, grupos, fases, batallas y correcciones operativas durante el evento.",
-		solution: "Una plataforma web con áreas públicas y administrativas para controlar el avance y aplicar ajustes sin perder el progreso.",
-		benefit: "Demuestra capacidad para modelar reglas de negocio, administrar información y validar un sistema en un contexto real.",
+		summary: "Plataforma web para organizar participantes, fases, batallas y ajustes durante una competencia universitaria.",
 		technologies: ["Python", "Django", "JavaScript", "Bases de datos"],
 		visual: "competition",
 		note: "Proyecto para la Universidad Tecnológica de Pereira. Capturas y demostración disponibles próximamente.",
@@ -156,51 +53,43 @@ export const projects = [
 		name: "LPT",
 		status: "Proyecto desarrollado",
 		category: "Experiencia web corporativa",
-		situation: "Una empresa real necesitaba organizar sus líneas de servicio y presentarlas dentro de una presencia digital clara.",
-		solution: "Un sitio responsive con arquitectura de información, navegación estructurada y canales de contacto.",
-		benefit: "Demuestra capacidad para convertir información empresarial en una experiencia web comprensible y profesional.",
+		summary: "Sitio responsive que organiza servicios empresariales y facilita el acceso a sus canales de contacto.",
 		technologies: ["Django", "HTML", "CSS", "JavaScript"],
 		visual: "website",
-		note: "Desarrollado por uno de los fundadores antes de la consolidación de TinKode. No publicado y con código privado.",
+		note: "Desarrollado por uno de los fundadores antes de TinKode. No publicado y con código privado.",
 	},
 	{
 		id: "nfc",
 		name: "Experiencias NFC para negocios",
 		status: "Proyecto en desarrollo",
 		category: "Conexión físico-digital",
-		situation: "Muchos puntos de contacto físicos obligan a las personas a buscar información o completar procesos poco directos.",
-		solution: "Experiencias que abren contenido y acciones desde etiquetas, tarjetas u objetos con NFC.",
-		benefit: "Explora una transición más simple entre un espacio físico y una experiencia digital actualizable.",
+		summary: "Experiencias que conectan etiquetas, tarjetas u objetos con contenido y acciones digitales.",
 		technologies: ["NFC", "Experiencias web", "Contenido centralizado"],
 		visual: "nfc",
-		note: "Concepto y desarrollo en evolución. No representa clientes, métricas ni resultados comerciales confirmados.",
+		note: "Concepto en evolución; no representa clientes, métricas ni resultados comerciales confirmados.",
 	},
 ] as const;
 
 export const processSteps = [
 	{
 		number: "01",
-		title: "Entendemos el negocio",
-		description: "Conversamos sobre el problema, las personas involucradas y la forma actual de trabajar.",
-		deliverable: "Necesidad, contexto y prioridades compartidas.",
+		title: "Entender",
+		description: "Aclaramos el problema, el contexto y las prioridades del negocio.",
 	},
 	{
 		number: "02",
-		title: "Diseñamos la solución",
-		description: "Ordenamos el recorrido, la información y las decisiones antes de construir.",
-		deliverable: "Alcance y experiencia definidos con claridad.",
+		title: "Diseñar",
+		description: "Ordenamos el recorrido, la información y el alcance de la solución.",
 	},
 	{
 		number: "03",
-		title: "Construimos y validamos",
-		description: "Desarrollamos por etapas y revisamos que cada parte responda a la necesidad real.",
-		deliverable: "Avances verificables y ajustes con contexto.",
+		title: "Construir",
+		description: "Desarrollamos por etapas y validamos las decisiones importantes.",
 	},
 	{
 		number: "04",
-		title: "Lanzamos y acompañamos",
-		description: "Preparamos la salida, revisamos la experiencia y dejamos una base que pueda evolucionar.",
-		deliverable: "Solución publicada y siguientes pasos ordenados.",
+		title: "Evolucionar",
+		description: "Publicamos una base clara y definimos los siguientes pasos.",
 	},
 ] as const;
 
@@ -211,7 +100,7 @@ export const founders = [
 		role: "Fundador",
 		study: "Estudiante de Ingeniería Electrónica",
 		institution: "Universidad Tecnológica de Pereira",
-		description: "Aporta pensamiento de ingeniería y una mirada orientada a conectar software, automatización e integración entre sistemas.",
+		description: "Conecta software, automatización e integración de sistemas desde una mirada de ingeniería.",
 		accent: "green",
 	},
 	{
@@ -220,51 +109,88 @@ export const founders = [
 		role: "Cofundadora",
 		study: "Estudiante de Ingeniería de Sistemas",
 		institution: "Universidad Tecnológica de Pereira",
-		description: "Aporta estructura y una visión enfocada en construir software claro, útil y coherente con la experiencia digital.",
+		description: "Aporta estructura y una visión enfocada en software claro, útil y coherente con la experiencia digital.",
 		accent: "blue",
 	},
 ] as const;
 
-export const faqs = [
+export const restaurantPlans = [
 	{
-		question: "¿Qué tipo de negocios atiende TinKode?",
-		answer: "Trabajamos con restaurantes, cafeterías, bares, clínicas, gimnasios, tiendas, pymes, profesionales y emprendimientos que necesitan ordenar información, mejorar procesos o construir una experiencia digital útil.",
+		id: "basico",
+		name: "Básico",
+		price: "$425.000 COP",
+		description: "Para tener presencia digital y mostrar el menú.",
+		highlights: ["Web responsive", "Menú digital", "Contacto directo"],
+		includesLabel: "Incluye",
+		includes: [
+			"Página web responsive para celular y computador.",
+			"Diseño adaptado a la identidad del restaurante.",
+			"Una página de inicio.",
+			"Información del restaurante.",
+			"Menú digital.",
+			"Categorías de productos.",
+			"Nombre, fotografía, descripción y precio de cada producto.",
+			"Horarios.",
+			"Ubicación.",
+			"Botón general de WhatsApp.",
+			"Redes sociales.",
+		],
+		objective: "Que el cliente pueda conocer el restaurante, consultar el menú y contactarlo.",
+		cta: "Elegir Básico",
+		accent: "basic",
 	},
 	{
-		question: "¿TinKode solo desarrolla páginas web?",
-		answer: "No. Las páginas son una de las posibles soluciones. También diseñamos sistemas administrativos, automatizaciones, integraciones, bases de datos, dashboards, experiencias NFC y software personalizado.",
+		id: "intermedio",
+		name: "Intermedio",
+		badge: "Recomendado",
+		price: "$810.000 COP",
+		description: "La opción recomendada para la mayoría de restaurantes.",
+		highlights: ["Menú interactivo", "Pedidos por producto", "Un mes de ajustes"],
+		includesLabel: "Todo lo del plan Básico, más",
+		includes: [
+			"Página de inicio y páginas internas.",
+			"Menú interactivo.",
+			"Galería de hasta cinco productos.",
+			"Productos destacados.",
+			"Sección de promociones actualizable mediante mantenimiento.",
+			"Múltiples ubicaciones.",
+			"WhatsApp independiente por sede.",
+			"Analítica básica del número de visitantes.",
+			"Botón ‘Pedir por WhatsApp’ en cada producto.",
+			"Animaciones e interacciones básicas.",
+			"Diseño con mayor nivel de personalización.",
+			"Un mes de ajustes posteriores a la entrega.",
+		],
+		objective: "Convertir la página en una herramienta que lleve al cliente directamente desde el producto hasta WhatsApp.",
+		cta: "Elegir Intermedio",
+		accent: "recommended",
 	},
 	{
-		question: "¿Cuánto tarda un proyecto?",
-		answer: "Depende del alcance, las integraciones y el nivel de validación necesario. Después de entender la necesidad definimos un plan de trabajo realista; no usamos un tiempo genérico para todos los proyectos.",
-	},
-	{
-		question: "¿Cómo se define el precio?",
-		answer: "Se define según el problema, el alcance, las funcionalidades, las integraciones y el acompañamiento necesario. La primera conversación sirve para ordenar esas variables antes de preparar una propuesta.",
-	},
-	{
-		question: "¿Pueden integrar WhatsApp?",
-		answer: "Sí, cuando el servicio, la cuenta y los accesos autorizados lo permiten. Podemos conectar conversaciones, formularios o notificaciones con otros procesos del negocio según el alcance acordado.",
-	},
-	{
-		question: "¿Pueden automatizar procesos manuales?",
-		answer: "Sí. Primero revisamos el flujo real para identificar qué tareas se repiten, qué información interviene y qué pasos conviene automatizar sin añadir complejidad innecesaria.",
-	},
-	{
-		question: "¿La solución puede crecer después?",
-		answer: "Ese es uno de los criterios de diseño. Definimos una base ordenada para que nuevas funciones, datos o integraciones puedan incorporarse cuando el negocio realmente las necesite.",
-	},
-	{
-		question: "¿Ofrecen acompañamiento?",
-		answer: "Sí. El acompañamiento se define según cada proyecto y puede incluir validación, preparación del lanzamiento, ajustes acordados y orientación para los siguientes pasos.",
+		id: "avanzado",
+		name: "Avanzado",
+		price: "$1.087.000 COP",
+		description: "Para restaurantes que quieren una experiencia digital más completa.",
+		highlights: ["Diseño avanzado", "Analítica de conversión", "Dos meses de soporte"],
+		includesLabel: "Todo lo del plan Intermedio, más",
+		includes: [
+			"Diseño web avanzado con secciones personalizadas al gusto del cliente.",
+			"Animaciones avanzadas.",
+			"Menú con presentación más dinámica.",
+			"Galería ampliada de hasta nueve productos.",
+			"Sección especial para promociones.",
+			"WhatsApp personalizado según el producto.",
+			"Botones de acción ubicados estratégicamente para facilitar el contacto o la compra.",
+			"Analítica sobre el menú, visitas a la ubicación y clics en WhatsApp.",
+			"Dos meses de soporte y pequeños ajustes.",
+		],
+		objective: "Ofrecer una experiencia digital más completa y enfocada en conversión.",
+		cta: "Elegir Avanzado",
+		accent: "premium",
 	},
 ] as const;
 
-export const audiences = [
-	{ label: "Restaurantes y cafeterías", icon: "coffee" },
-	{ label: "Bares y eventos", icon: "event" },
-	{ label: "Clínicas y profesionales", icon: "clinic" },
-	{ label: "Gimnasios", icon: "fitness" },
-	{ label: "Tiendas", icon: "store" },
-	{ label: "Pymes y emprendimientos", icon: "briefcase" },
+export const restaurantComplements = [
+	"SEO básico",
+	"Plantillas para reseñas",
+	"Inventario de productos con stickers",
 ] as const;

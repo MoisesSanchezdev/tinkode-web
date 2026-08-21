@@ -1,29 +1,20 @@
 ---
-import AudienceGrid from "../components/sections/AudienceGrid.astro";
 import FinalCta from "../components/sections/FinalCta.astro";
 import PageHero from "../components/sections/PageHero.astro";
-import ProblemsGrid from "../components/sections/ProblemsGrid.astro";
-import SolutionsGrid from "../components/sections/SolutionsGrid.astro";
+import SolutionsOverview from "../components/sections/SolutionsOverview.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
 <BaseLayout
-	title="Soluciones para ordenar, automatizar y crecer | TinKode"
-	description="Conoce las soluciones de TinKode en presencia digital, automatización, sistemas, integraciones, datos, software personalizado y NFC."
+	title="Soluciones digitales para negocios | TinKode"
+	description="Páginas, sistemas y automatizaciones creadas por TinKode para ordenar operaciones, facilitar el contacto y reducir tareas repetitivas."
 	path="/soluciones"
 >
 	<PageHero
-		eyebrow="Soluciones para negocios"
-		title="Tecnología que encaja con la forma real de trabajar."
-		description="No partimos de un paquete cerrado. Entendemos la fricción, diseñamos el flujo y elegimos la tecnología que aporta más claridad al negocio."
-		focus="Soluciones"
-		icon="software"
-		secondaryHref="/proceso"
-		secondaryLabel="Cómo trabajamos"
-		nodes={["Diagnóstico", "Arquitectura", "Implementación"]}
+		eyebrow="Soluciones"
+		title="Tecnología útil para tu negocio."
+		description="Construimos la herramienta que tu operación necesita, sin forzarla dentro de un paquete genérico."
 	/>
-	<ProblemsGrid />
-	<SolutionsGrid />
-	<AudienceGrid />
-	<FinalCta secondaryHref="/proyectos" secondaryLabel="Ver proyectos" />
+	<SolutionsOverview />
+	<FinalCta title="¿Qué necesitas mejorar?" description="Empecemos por entenderlo." />
 </BaseLayout>
