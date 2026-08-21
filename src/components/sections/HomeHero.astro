@@ -1,5 +1,5 @@
 ---
-import { INSTAGRAM_LABEL, INSTAGRAM_URL } from "../../data/contact";
+import { PRIMARY_CONTACT_URL } from "../../data/contact";
 import Button from "../ui/Button.astro";
 import InlineIcon from "../ui/InlineIcon.astro";
 ---
@@ -10,7 +10,7 @@ import InlineIcon from "../ui/InlineIcon.astro";
 			<h1 id="home-hero-title">Tecnología que hace avanzar tu negocio.</h1>
 			<p>Creamos páginas, sistemas y automatizaciones claras, útiles y preparadas para crecer.</p>
 			<div class="home-hero__actions" aria-label="Acciones principales">
-				<Button href={INSTAGRAM_URL} variant="primary" size="large" external ariaLabel={`Hablemos por ${INSTAGRAM_LABEL}`}>
+				<Button href={PRIMARY_CONTACT_URL} variant="primary" size="large" external ariaLabel="Hablemos por WhatsApp">
 					Hablemos
 					<InlineIcon slot="icon-end" name="arrow" />
 				</Button>

@@ -1,11 +1,11 @@
 ---
 import Button from "../ui/Button.astro";
-import { INSTAGRAM_LABEL, INSTAGRAM_URL } from "../../data/contact";
+import { PRIMARY_CONTACT_URL } from "../../data/contact";
 
 const navItems = [
 	{ label: "Soluciones", href: "/soluciones" },
 	{ label: "Proyectos", href: "/proyectos" },
-	{ label: "Planes", href: "/#planes-restaurantes" },
+	{ label: "Planes", href: "/#planes-negocios" },
 	{ label: "Nosotros", href: "/nosotros" },
 ];
 
@@ -27,7 +27,7 @@ const isCurrent = (href: string) => href === currentPath;
 		</nav>
 
 		<div class="site-header__actions">
-			<Button href={INSTAGRAM_URL} variant="primary" size="small" external ariaLabel={`Hablemos por ${INSTAGRAM_LABEL}`}>Hablemos</Button>
+			<Button href={PRIMARY_CONTACT_URL} variant="primary" size="small" external ariaLabel="Hablemos por WhatsApp">Hablemos</Button>
 			<button class="menu-toggle" type="button" aria-label="Abrir menú principal" aria-controls="mobile-menu" aria-expanded="false" data-menu-toggle>
 				<span aria-hidden="true"></span><span aria-hidden="true"></span>
 			</button>
@@ -43,7 +43,7 @@ const isCurrent = (href: string) => href === currentPath;
 			</div>
 			<ul>
 				{navItems.map((item) => <li><a href={item.href} aria-current={isCurrent(item.href) ? "page" : undefined}>{item.label}</a></li>)}
-				<li><a class="mobile-nav__cta" href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" aria-label={`Hablemos por ${INSTAGRAM_LABEL}`}>Hablemos</a></li>
+				<li><a class="mobile-nav__cta" href={PRIMARY_CONTACT_URL} target="_blank" rel="noopener noreferrer" aria-label="Hablemos por WhatsApp">Hablemos</a></li>
 			</ul>
 		</nav>
 	</div>

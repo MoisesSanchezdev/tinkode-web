@@ -9,12 +9,12 @@
 5. Fase 5 — Forma de trabajo: completada.
 6. Fase 6 — Proyectos reales: completada.
 7. Fase 7 — Fundadores: completada.
-8. Contacto: pendiente.
+8. Contacto: completado mediante el WhatsApp oficial.
 9. Footer definitivo: completado para primera publicación.
 10. Responsive y accesibilidad: auditado para primera publicación.
 11. Optimización: auditada para primera publicación.
-12. GitHub: pendiente de push final.
-13. Publicación en Cloudflare Pages: pendiente de verificación posterior al push.
+12. GitHub: publicación continua en `main`.
+13. Publicación en Cloudflare Pages: conectada a GitHub y verificada por despliegue.
 14. Dominio propio: pendiente.
 15. Evolución futura: pendiente.
 

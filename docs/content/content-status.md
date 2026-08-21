@@ -12,10 +12,10 @@ La información de esta lista está pendiente de confirmación. No debe publicar
 - Proyectos autorizados: pendiente.
 - Capturas de proyectos: pendiente.
 - Enlaces públicos: pendiente.
-- Número de WhatsApp: pendiente.
+- Enlace oficial de WhatsApp: definido como canal actual de contacto.
 - Mensaje predeterminado de WhatsApp: pendiente.
 - Correo: pendiente.
-- Instagram: definido como canal actual de contacto.
+- Instagram: ya no se utiliza como canal principal de contacto.
 - Logotipo oficial: definido para uso principal en header.
 - Favicon definitivo: pendiente.
 - Datos institucionales: pendiente.
@@ -90,21 +90,20 @@ La información de esta lista está pendiente de confirmación. No debe publicar
 
 - Placeholders grandes: eliminados cuando no hay evidencia real disponible.
 - Demostraciones: algunos trabajos pueden compartirse durante una asesoría.
-- CTA de asesoría: apunta al Instagram oficial de TinKode.
+- CTA de asesoría: apunta al WhatsApp oficial de TinKode.
 - Oferta comercial: orientación, cotización o presentación de planes según la necesidad.
 - Privacidad: no se publican repositorios, código fuente, documentación sensible ni evidencia no autorizada.
 
 ## Compactación para publicación
 
-- Instagram actual: `https://www.instagram.com/tinkode__?igsh=cmthb3diMWJ4Z2Fk&utm_source=qr`.
-- WhatsApp comercial: no disponible todavía.
+- WhatsApp comercial actual: `https://wa.me/message/75U7JXL5YN2SD1`.
 - `/soluciones`: separada de `/proceso`; no incluye la forma completa de trabajo.
 - `/proceso`: página independiente para explicar entender, diseñar, construir y evolucionar.
 - `/proyectos`: compacta, sin placeholders grandes ni textos redundantes.
 - Imagen de conexiones del negocio: ilustrativa, local y autorizada en `public/images/home/business-connections.webp`.
 - Las imágenes NFC y de conexiones no representan implementaciones comerciales activas ni casos de éxito publicados.
 - Nosotros: ruta compacta preparada; fotografías pendientes.
-- No inventar ni cambiar el usuario de Instagram sin confirmación.
+- No alterar el enlace oficial de WhatsApp ni añadir parámetros sin confirmación.
 
 ## Contenido definido en Fase 7
 
@@ -115,7 +114,7 @@ La información de esta lista está pendiente de confirmación. No debe publicar
 - Fotografías: pendientes; se usan iniciales temporales `VL` y `MS`.
 - Roles ejecutivos: no definidos; no usar CEO, CTO, dirección, gerencia ni años de experiencia no confirmados.
 - `/nosotros`: ruta compacta para explicar quiénes están detrás de TinKode, enfoque de trabajo y razones de confianza.
-- Contacto: Instagram sigue siendo el canal comercial actual.
+- Contacto: WhatsApp es el canal comercial actual.
 
 ## Reglas para proyectos futuros
 
@@ -148,11 +147,11 @@ Nunca debe exigirse ni publicarse:
 
 Las capturas deben estar autorizadas y todavía faltan datos definitivos de proyectos.
 
-## Planes para restaurantes confirmados
+## Planes para negocios confirmados
 
 - Básico: `$425.000 COP`.
 - Intermedio: `$810.000 COP`, identificado como recomendado.
 - Avanzado: `$1.087.000 COP`.
 - Los alcances publicados se conservan en `src/data/site.ts`.
-- Los CTA de los tres planes utilizan Instagram porque continúa siendo el único canal oficial confirmado de TinKode.
-- No se publican números de WhatsApp, costos adicionales, descuentos ni condiciones no confirmadas.
+- Los CTA de los tres planes utilizan el enlace oficial de WhatsApp centralizado en `src/data/contact.ts`.
+- No se publican números telefónicos, costos adicionales, descuentos ni condiciones no confirmadas.

@@ -1,3 +1,3 @@
-export const INSTAGRAM_URL = "https://www.instagram.com/tinkode__?igsh=cmthb3diMWJ4Z2Fk&utm_source=qr";
+export const PRIMARY_CONTACT_URL = "https://wa.me/message/75U7JXL5YN2SD1";
 
-export const INSTAGRAM_LABEL = "Instagram oficial de TinKode";
+export const PRIMARY_CONTACT_LABEL = "WhatsApp oficial de TinKode";

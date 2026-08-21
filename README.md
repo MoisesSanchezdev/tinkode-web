@@ -8,7 +8,7 @@ TinKode es una startup tecnológica colombiana que diseña tecnología para que 
 
 ## Estado actual
 
-Experiencia minimalista mobile-first preparada para publicación. El Home concentra la propuesta, tres capacidades, proyectos seleccionados y planes para restaurantes; las rutas internas conservan el detalle de soluciones, proceso, proyectos y equipo fundador. El contacto confirmado continúa centralizado en Instagram.
+Experiencia minimalista mobile-first preparada para publicación. El Home concentra la propuesta, tres capacidades, proyectos seleccionados y planes para negocios; las rutas internas conservan el detalle de soluciones, proceso, proyectos y equipo fundador. El contacto confirmado está centralizado en el WhatsApp oficial de TinKode.
 
 ## Objetivo
 
@@ -51,7 +51,7 @@ npm run dev
 
 ## Rutas
 
-- `/`: propuesta de valor, capacidades, proyectos seleccionados, planes para restaurantes y contacto.
+- `/`: propuesta de valor, capacidades, proyectos seleccionados, planes para negocios y contacto.
 - `/soluciones`: presencia digital, sistemas para negocios y automatización.
 - `/proceso`: cuatro etapas concretas de trabajo.
 - `/proyectos`: LPT, Robot Explota Globos UTP y Experiencias NFC con estado y contexto verificable.
@@ -67,7 +67,7 @@ npm run dev
 - `src/pages/`: páginas del sitio.
 - `src/styles/`: estilos globales y base CSS.
 - `src/components/layout/`: componentes de layout.
-- `src/components/sections/`: secciones editoriales, proyectos, proceso y planes para restaurantes.
+- `src/components/sections/`: secciones editoriales, proyectos, proceso y planes para negocios.
 - `src/components/ui/`: piezas mínimas de interfaz: `Button` e `InlineIcon`.
 - `src/layouts/`: layouts Astro.
 - `src/data/`: datos y contenido confirmado.
@@ -106,7 +106,7 @@ No hay variables de entorno requeridas en esta fase. No guardar secretos en el r
 
 ## Próxima fase
 
-Verificar la publicación conectada a GitHub en Cloudflare Pages y preparar mejoras posteriores como WhatsApp comercial, fotografías autorizadas, contenido legal si aplica, formulario propio y dominio personalizado cuando se autoricen.
+Mantener verificada la publicación conectada a GitHub en Cloudflare Pages y preparar mejoras posteriores como fotografías autorizadas, contenido legal si aplica, formulario propio y dominio personalizado cuando se autoricen.
 
 ## Nota
 

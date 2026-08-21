@@ -1,20 +1,20 @@
 ---
-import { INSTAGRAM_URL } from "../../data/contact";
-import { restaurantComplements, restaurantPlans } from "../../data/site";
+import { PRIMARY_CONTACT_URL } from "../../data/contact";
+import { businessComplements, businessPlans } from "../../data/site";
 import Button from "../ui/Button.astro";
 ---
 
-<section id="planes-restaurantes" class="section restaurant-plans" aria-labelledby="restaurant-plans-title">
+<section id="planes-negocios" class="section business-plans" aria-labelledby="business-plans-title">
 	<div class="container">
-		<div class="section-heading restaurant-plans__heading">
-			<p class="eyebrow">Oferta para restaurantes</p>
-			<h2 id="restaurant-plans-title">Planes para restaurantes</h2>
-			<p>Una presencia digital pensada para mostrar tu menú, facilitar pedidos y convertir visitas en clientes.</p>
+		<div class="section-heading business-plans__heading">
+			<p class="eyebrow">Soluciones para negocios</p>
+			<h2 id="business-plans-title">Planes para tu negocio</h2>
+			<p>Soluciones digitales para presentar tu negocio, organizar tu oferta y convertir visitas en oportunidades de contacto.</p>
 		</div>
 
 		<div class="plans-grid">
 			{
-				restaurantPlans.map((plan) => (
+				businessPlans.map((plan) => (
 					<article class:list={["plan-card", `plan-card--${plan.accent}`]} aria-labelledby={`plan-${plan.id}-title`}>
 						<div class="plan-card__head">
 							<div class="plan-card__name">
@@ -43,11 +43,11 @@ import Button from "../ui/Button.astro";
 						</details>
 
 						<Button
-							href={INSTAGRAM_URL}
+							href={PRIMARY_CONTACT_URL}
 							variant={plan.accent === "recommended" ? "primary" : "secondary"}
 							size="large"
 							external
-							ariaLabel={`Consultar plan ${plan.name} por Instagram`}
+							ariaLabel={`Consultar plan ${plan.name} por WhatsApp`}
 						>
 							{plan.cta}
 						</Button>
@@ -56,9 +56,9 @@ import Button from "../ui/Button.astro";
 			}
 		</div>
 
-		<div class="restaurant-complements" aria-labelledby="restaurant-complements-title">
-			<h3 id="restaurant-complements-title">También puedes complementar tu proyecto</h3>
-			<ul>{restaurantComplements.map((item) => <li>{item}</li>)}</ul>
+		<div class="business-complements" aria-labelledby="business-complements-title">
+			<h3 id="business-complements-title">También puedes complementar tu proyecto</h3>
+			<ul>{businessComplements.map((item) => <li>{item}</li>)}</ul>
 		</div>
 	</div>
 </section>

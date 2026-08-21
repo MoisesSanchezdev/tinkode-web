@@ -223,11 +223,11 @@ El favicon actual se mantiene mientras no exista una versión específica aproba
 
 Las rutas principales son `/`, `/soluciones`, `/proceso`, `/proyectos` y `/nosotros`. Cada página debe concentrarse en un solo propósito y evitar mezclar secciones completas de otras rutas.
 
-El home debe ser corto: hero, resumen de soluciones con una imagen conceptual, resumen de experiencia y CTA hacia Instagram. `/soluciones` debe explicar qué puede construir TinKode. `/proceso` debe explicar las cuatro etapas de trabajo. `/proyectos` debe demostrar experiencia y generar confianza. `/nosotros` debe presentar al equipo fundador con información confirmada.
+El home debe ser corto: hero, resumen de soluciones con una imagen conceptual, resumen de experiencia, planes para negocios y CTA hacia WhatsApp. `/soluciones` debe explicar qué puede construir TinKode. `/proceso` debe explicar las cuatro etapas de trabajo. `/proyectos` debe demostrar experiencia y generar confianza. `/nosotros` debe presentar al equipo fundador con información confirmada.
 
 Las páginas internas no deben convertirse en landing pages extensas. Como orientación, usar encabezado breve, contenido concreto y un CTA final. Evitar introducciones largas, tarjetas altas, frases flotantes, placeholders visibles y cierres sin acción.
 
-El CTA comercial principal se centraliza en el Instagram oficial de TinKode. Los enlaces externos deben abrir en pestaña nueva con `target="_blank"` y `rel="noopener noreferrer"`.
+El CTA comercial principal se centraliza en el WhatsApp oficial de TinKode. Los enlaces externos deben abrir en pestaña nueva con `target="_blank"` y `rel="noopener noreferrer"`.
 
 ## Hero
 

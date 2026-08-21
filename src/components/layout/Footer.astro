@@ -1,10 +1,10 @@
 ---
-import { INSTAGRAM_LABEL, INSTAGRAM_URL } from "../../data/contact";
+import { PRIMARY_CONTACT_LABEL, PRIMARY_CONTACT_URL } from "../../data/contact";
 
 const navItems = [
 	{ label: "Soluciones", href: "/soluciones" },
 	{ label: "Proyectos", href: "/proyectos" },
-	{ label: "Planes", href: "/#planes-restaurantes" },
+	{ label: "Planes", href: "/#planes-negocios" },
 	{ label: "Proceso", href: "/proceso" },
 	{ label: "Nosotros", href: "/nosotros" },
 ];
@@ -25,7 +25,7 @@ const year = new Date().getFullYear();
 			<nav aria-label="Navegación del pie de página">
 				{navItems.map((item) => <a href={item.href}>{item.label}</a>)}
 			</nav>
-			<a class="site-footer__instagram" href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" aria-label={INSTAGRAM_LABEL}>Instagram</a>
+			<a class="site-footer__contact" href={PRIMARY_CONTACT_URL} target="_blank" rel="noopener noreferrer" aria-label={PRIMARY_CONTACT_LABEL}>WhatsApp</a>
 		</div>
 		<div class="site-footer__bottom">© {year} TinKode. Todos los derechos reservados.</div>
 	</div>

@@ -2,6 +2,7 @@
 import Footer from "../components/layout/Footer.astro";
 import FloatingContact from "../components/layout/FloatingContact.astro";
 import Header from "../components/layout/Header.astro";
+import { PRIMARY_CONTACT_URL } from "../data/contact";
 import "../styles/global.css";
 import "../styles/redesign.css";
 
@@ -34,7 +35,12 @@ const graph: Record<string, unknown>[] = [
 		url: SITE_URL,
 		logo: new URL("/images/brand/tinkode-symbol.png", SITE_URL).toString(),
 		description: DEFAULT_DESCRIPTION,
-		sameAs: ["https://www.instagram.com/tinkode__/"],
+		sameAs: [PRIMARY_CONTACT_URL],
+		contactPoint: {
+			"@type": "ContactPoint",
+			contactType: "customer service",
+			url: PRIMARY_CONTACT_URL,
+		},
 		founder: [
 			{ "@id": `${SITE_URL}/nosotros#moises-sanchez-naranjo` },
 			{ "@id": `${SITE_URL}/nosotros#valeria-lopez-chavez` },
