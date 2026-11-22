@@ -2,19 +2,20 @@
 import { PRIMARY_CONTACT_URL } from "../../data/contact";
 import InlineIcon from "../ui/InlineIcon.astro";
 ---
-
-<a class="floating-contact" href={PRIMARY_CONTACT_URL} target="_blank" rel="noopener noreferrer" aria-label="Escríbenos por WhatsApp" data-floating-contact>
-	<InlineIcon name="whatsapp" />
-	<span>WhatsApp</span>
-</a>
-
+<aside aria-label="Contacto directo">
+  <a class="floating-contact" href={PRIMARY_CONTACT_URL} target="_blank" rel="noopener noreferrer" aria-label="Conversemos por WhatsApp" data-floating-contact><InlineIcon name="whatsapp" /><span>Conversemos</span></a>
+</aside>
 <script>
-	const contact = document.querySelector("[data-floating-contact]");
-	const plans = document.querySelector("#planes-negocios");
-	if (contact instanceof HTMLElement && plans instanceof HTMLElement && "IntersectionObserver" in window) {
-		const observer = new IntersectionObserver(([entry]) => {
-			contact.classList.toggle("is-hidden", Boolean(entry?.isIntersecting));
-		}, { threshold: 0.04 });
-		observer.observe(plans);
-	}
+  const contact = document.querySelector<HTMLAnchorElement>("[data-floating-contact]");
+  const targets = document.querySelectorAll("#planes-negocios, .final-cta, .site-footer, .home-hero__actions");
+  if (contact && "IntersectionObserver" in window) {
+    const visible = new Set<Element>();
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => entry.isIntersecting ? visible.add(entry.target) : visible.delete(entry.target));
+      contact.classList.toggle("is-hidden", visible.size > 0);
+      contact.inert = visible.size > 0;
+    }, { threshold: 0.05 });
+    targets.forEach(target => observer.observe(target));
+    window.addEventListener("pagehide", () => observer.disconnect(), { once: true });
+  }
 </script>

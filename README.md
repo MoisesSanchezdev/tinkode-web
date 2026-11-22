@@ -8,7 +8,7 @@ TinKode es una startup tecnológica colombiana que diseña tecnología para que 
 
 ## Estado actual
 
-Experiencia minimalista mobile-first preparada para publicación. El Home concentra la propuesta, tres capacidades, proyectos seleccionados y planes para negocios; las rutas internas conservan el detalle de soluciones, proceso, proyectos y equipo fundador. El contacto confirmado está centralizado en el WhatsApp oficial de TinKode.
+Rediseño integral con la paleta original, hero geométrico interactivo, capacidades visuales, proceso conectado, proyectos con contexto real, planes y equipo. Las rutas internas comparten el sistema visual. El contacto se centraliza en el WhatsApp oficial indicado para esta versión.
 
 ## Objetivo
 
@@ -19,6 +19,8 @@ Crear una base profesional, limpia, documentada y verificable para construir el 
 - Astro con generación estática.
 - TypeScript en modo estricto.
 - CSS personalizado.
+- GSAP y ScrollTrigger con carga condicional: sin React ni visor 3D.
+- Inter variable local; licencia en `public/fonts/OFL-Inter.txt`.
 - npm como gestor de paquetes.
 - Git para control de versiones.
 
@@ -49,6 +51,8 @@ npm run dev
 - `npm run astro`: ejecuta comandos de Astro.
 - `npm run check`: ejecuta comprobaciones de Astro y TypeScript.
 
+El servidor de revisión de esta entrega se inicia con `npm run dev -- --host 127.0.0.1 --port 4321` y se abre en `http://localhost:4321/`.
+
 ## Rutas
 
 - `/`: propuesta de valor, capacidades, proyectos seleccionados, planes para negocios y contacto.
@@ -56,11 +60,13 @@ npm run dev
 - `/proceso`: cuatro etapas concretas de trabajo.
 - `/proyectos`: LPT, Robot Explota Globos UTP y Experiencias NFC con estado y contexto verificable.
 - `/nosotros`: presentación breve, equipo fundador y criterios de trabajo.
+- `/404.html`: página de recuperación con marca y enlace de regreso.
 
 ## Estructura principal
 
 - `public/`: activos estáticos locales.
 - `public/images/brand/`: identidad visual oficial de TinKode.
+- `src/components/ui/BrandLogo.astro`: logo oficial compartido por header, menú y footer; fuente original preservada y exports en `public/images/brand/`.
 - `public/images/home/`: visuales conceptuales del inicio.
 - `public/images/projects/`: carpeta preparada para capturas futuras de proyectos autorizados.
 - `public/images/projects/nfc/`: visuales conceptuales del proyecto NFC.
@@ -84,6 +90,9 @@ npm run dev
 - `docs/development/roadmap.md`: fases futuras del proyecto.
 - `docs/release/mobile-first-redesign.md`: auditoría, decisiones, matriz responsive y resultados de Lighthouse del rediseño actual.
 - `docs/release/minimal-content-audit.md`: auditoría editorial y decisiones de simplificación.
+- `docs/design/redesign-2026.md`: auditoría inicial, referencias, tokens y decisiones del nuevo sistema.
+- `docs/release/ui-ux-redesign-2026.md`: entrega, validación, pendientes y preview actual.
+- `docs/qa/`: auditorías independientes, scripts reproducibles y evidencia visual.
 
 ## Flujo de trabajo
 

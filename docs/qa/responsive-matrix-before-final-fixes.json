@@ -1,0 +1,1512 @@
+{
+  "routes": [
+    "/",
+    "/soluciones",
+    "/proceso",
+    "/proyectos",
+    "/nosotros"
+  ],
+  "widths": [
+    320,
+    360,
+    390,
+    430,
+    768,
+    1024,
+    1280,
+    1440,
+    1920
+  ],
+  "results": [
+    {
+      "route": "/",
+      "width": 320,
+      "status": 200,
+      "documentWidth": 320,
+      "viewport": 320,
+      "pageHeight": 9222,
+      "outside": [
+        {
+          "element": "p.: Automatización",
+          "left": 249.421875,
+          "right": 337.59375
+        }
+      ],
+      "clippedText": [
+        {
+          "element": "p.: Automatización",
+          "container": "section.home-hero: Ingeniería para tu siguiente etapaTu negocio.Mejor conectado.Diseñamos sitios, sistemas y "
+        }
+      ],
+      "smallControls": [
+        {
+          "element": "a.: Planes",
+          "width": 38.234375,
+          "height": 44
+        }
+      ],
+      "headerCollisions": [],
+      "h1": "Tu negocio.Mejor conectado.",
+      "horizontalOverflow": false,
+      "menu": {
+        "open": true,
+        "expanded": "true",
+        "scrollWidth": 280,
+        "width": 280,
+        "lock": true,
+        "closed": true,
+        "focusRestored": true
+      },
+      "errors": []
+    },
+    {
+      "route": "/",
+      "width": 360,
+      "status": 200,
+      "documentWidth": 360,
+      "viewport": 360,
+      "pageHeight": 8992,
+      "outside": [],
+      "clippedText": [],
+      "smallControls": [
+        {
+          "element": "a.: Planes",
+          "width": 38.234375,
+          "height": 44
+        }
+      ],
+      "headerCollisions": [],
+      "h1": "Tu negocio.Mejor conectado.",
+      "horizontalOverflow": false,
+      "menu": {
+        "open": true,
+        "expanded": "true",
+        "scrollWidth": 320,
+        "width": 320,
+        "lock": true,
+        "closed": true,
+        "focusRestored": true
+      },
+      "errors": []
+    },
+    {
+      "route": "/",
+      "width": 390,
+      "status": 200,
+      "documentWidth": 390,
+      "viewport": 390,
+      "pageHeight": 8926,
+      "outside": [],
+      "clippedText": [],
+      "smallControls": [
+        {
+          "element": "a.: Planes",
+          "width": 38.234375,
+          "height": 44
+        }
+      ],
+      "headerCollisions": [],
+      "h1": "Tu negocio.Mejor conectado.",
+      "horizontalOverflow": false,
+      "menu": {
+        "open": true,
+        "expanded": "true",
+        "scrollWidth": 350,
+        "width": 350,
+        "lock": true,
+        "closed": true,
+        "focusRestored": true
+      },
+      "errors": []
+    },
+    {
+      "route": "/",
+      "width": 430,
+      "status": 200,
+      "documentWidth": 430,
+      "viewport": 430,
+      "pageHeight": 8929,
+      "outside": [],
+      "clippedText": [],
+      "smallControls": [
+        {
+          "element": "a.: Planes",
+          "width": 38.234375,
+          "height": 44
+        }
+      ],
+      "headerCollisions": [],
+      "h1": "Tu negocio.Mejor conectado.",
+      "horizontalOverflow": false,
+      "menu": {
+        "open": true,
+        "expanded": "true",
+        "scrollWidth": 390,
+        "width": 390,
+        "lock": true,
+        "closed": true,
+        "focusRestored": true
+      },
+      "errors": []
+    },
+    {
+      "route": "/",
+      "width": 768,
+      "status": 200,
+      "documentWidth": 768,
+      "viewport": 768,
+      "pageHeight": 6699,
+      "outside": [],
+      "clippedText": [],
+      "smallControls": [
+        {
+          "element": "a.: Planes",
+          "width": 38.234375,
+          "height": 44
+        }
+      ],
+      "headerCollisions": [],
+      "h1": "Tu negocio.Mejor conectado.",
+      "horizontalOverflow": false,
+      "menu": {
+        "open": true,
+        "expanded": "true",
+        "scrollWidth": 418,
+        "width": 418,
+        "lock": true,
+        "closed": true,
+        "focusRestored": true
+      },
+      "errors": []
+    },
+    {
+      "route": "/",
+      "width": 1024,
+      "status": 200,
+      "documentWidth": 1024,
+      "viewport": 1024,
+      "pageHeight": 4790,
+      "outside": [],
+      "clippedText": [],
+      "smallControls": [
+        {
+          "element": "a.: Planes",
+          "width": 37.734375,
+          "height": 44
+        },
+        {
+          "element": "a.: Planes",
+          "width": 38.234375,
+          "height": 44
+        }
+      ],
+      "headerCollisions": [],
+      "h1": "Tu negocio.Mejor conectado.",
+      "horizontalOverflow": false,
+      "menu": null,
+      "errors": []
+    },
+    {
+      "route": "/",
+      "width": 1280,
+      "status": 200,
+      "documentWidth": 1280,
+      "viewport": 1280,
+      "pageHeight": 5069,
+      "outside": [],
+      "clippedText": [],
+      "smallControls": [
+        {
+          "element": "a.: Planes",
+          "width": 37.734375,
+          "height": 44
+        },
+        {
+          "element": "a.: Planes",
+          "width": 38.234375,
+          "height": 44
+        }
+      ],
+      "headerCollisions": [],
+      "h1": "Tu negocio.Mejor conectado.",
+      "horizontalOverflow": false,
+      "menu": null,
+      "errors": []
+    },
+    {
+      "route": "/",
+      "width": 1440,
+      "status": 200,
+      "documentWidth": 1440,
+      "viewport": 1440,
+      "pageHeight": 5301,
+      "outside": [],
+      "clippedText": [],
+      "smallControls": [
+        {
+          "element": "a.: Planes",
+          "width": 37.734375,
+          "height": 44
+        },
+        {
+          "element": "a.: Planes",
+          "width": 38.234375,
+          "height": 44
+        }
+      ],
+      "headerCollisions": [],
+      "h1": "Tu negocio.Mejor conectado.",
+      "horizontalOverflow": false,
+      "menu": null,
+      "errors": []
+    },
+    {
+      "route": "/",
+      "width": 1920,
+      "status": 200,
+      "documentWidth": 1920,
+      "viewport": 1920,
+      "pageHeight": 5333,
+      "outside": [],
+      "clippedText": [],
+      "smallControls": [
+        {
+          "element": "a.: Planes",
+          "width": 37.734375,
+          "height": 44
+        },
+        {
+          "element": "a.: Planes",
+          "width": 38.234375,
+          "height": 44
+        }
+      ],
+      "headerCollisions": [],
+      "h1": "Tu negocio.Mejor conectado.",
+      "horizontalOverflow": false,
+      "menu": null,
+      "errors": []
+    },
+    {
+      "route": "/soluciones",
+      "width": 320,
+      "status": 200,
+      "documentWidth": 320,
+      "viewport": 320,
+      "pageHeight": 3943,
+      "outside": [],
+      "clippedText": [],
+      "smallControls": [
+        {
+          "element": "a.: Planes",
+          "width": 38.234375,
+          "height": 44
+        }
+      ],
+      "headerCollisions": [],
+      "h1": "Tecnología útil para tu negocio.",
+      "horizontalOverflow": false,
+      "menu": {
+        "open": true,
+        "expanded": "true",
+        "scrollWidth": 280,
+        "width": 280,
+        "lock": true,
+        "closed": true,
+        "focusRestored": true
+      },
+      "errors": []
+    },
+    {
+      "route": "/soluciones",
+      "width": 360,
+      "status": 200,
+      "documentWidth": 360,
+      "viewport": 360,
+      "pageHeight": 3838,
+      "outside": [],
+      "clippedText": [],
+      "smallControls": [
+        {
+          "element": "a.: Planes",
+          "width": 38.234375,
+          "height": 44
+        }
+      ],
+      "headerCollisions": [],
+      "h1": "Tecnología útil para tu negocio.",
+      "horizontalOverflow": false,
+      "menu": {
+        "open": true,
+        "expanded": "true",
+        "scrollWidth": 320,
+        "width": 320,
+        "lock": true,
+        "closed": true,
+        "focusRestored": true
+      },
+      "errors": []
+    },
+    {
+      "route": "/soluciones",
+      "width": 390,
+      "status": 200,
+      "documentWidth": 390,
+      "viewport": 390,
+      "pageHeight": 3757,
+      "outside": [],
+      "clippedText": [],
+      "smallControls": [
+        {
+          "element": "a.: Planes",
+          "width": 38.234375,
+          "height": 44
+        }
+      ],
+      "headerCollisions": [],
+      "h1": "Tecnología útil para tu negocio.",
+      "horizontalOverflow": false,
+      "menu": {
+        "open": true,
+        "expanded": "true",
+        "scrollWidth": 350,
+        "width": 350,
+        "lock": true,
+        "closed": true,
+        "focusRestored": true
+      },
+      "errors": []
+    },
+    {
+      "route": "/soluciones",
+      "width": 430,
+      "status": 200,
+      "documentWidth": 430,
+      "viewport": 430,
+      "pageHeight": 3710,
+      "outside": [],
+      "clippedText": [],
+      "smallControls": [
+        {
+          "element": "a.: Planes",
+          "width": 38.234375,
+          "height": 44
+        }
+      ],
+      "headerCollisions": [],
+      "h1": "Tecnología útil para tu negocio.",
+      "horizontalOverflow": false,
+      "menu": {
+        "open": true,
+        "expanded": "true",
+        "scrollWidth": 390,
+        "width": 390,
+        "lock": true,
+        "closed": true,
+        "focusRestored": true
+      },
+      "errors": []
+    },
+    {
+      "route": "/soluciones",
+      "width": 768,
+      "status": 200,
+      "documentWidth": 768,
+      "viewport": 768,
+      "pageHeight": 2633,
+      "outside": [],
+      "clippedText": [],
+      "smallControls": [
+        {
+          "element": "a.: Planes",
+          "width": 38.234375,
+          "height": 44
+        }
+      ],
+      "headerCollisions": [],
+      "h1": "Tecnología útil para tu negocio.",
+      "horizontalOverflow": false,
+      "menu": {
+        "open": true,
+        "expanded": "true",
+        "scrollWidth": 418,
+        "width": 418,
+        "lock": true,
+        "closed": true,
+        "focusRestored": true
+      },
+      "errors": []
+    },
+    {
+      "route": "/soluciones",
+      "width": 1024,
+      "status": 200,
+      "documentWidth": 1024,
+      "viewport": 1024,
+      "pageHeight": 2526,
+      "outside": [],
+      "clippedText": [],
+      "smallControls": [
+        {
+          "element": "a.: Planes",
+          "width": 37.734375,
+          "height": 44
+        },
+        {
+          "element": "a.: Planes",
+          "width": 38.234375,
+          "height": 44
+        }
+      ],
+      "headerCollisions": [],
+      "h1": "Tecnología útil para tu negocio.",
+      "horizontalOverflow": false,
+      "menu": null,
+      "errors": []
+    },
+    {
+      "route": "/soluciones",
+      "width": 1280,
+      "status": 200,
+      "documentWidth": 1280,
+      "viewport": 1280,
+      "pageHeight": 2582,
+      "outside": [],
+      "clippedText": [],
+      "smallControls": [
+        {
+          "element": "a.: Planes",
+          "width": 37.734375,
+          "height": 44
+        },
+        {
+          "element": "a.: Planes",
+          "width": 38.234375,
+          "height": 44
+        }
+      ],
+      "headerCollisions": [],
+      "h1": "Tecnología útil para tu negocio.",
+      "horizontalOverflow": false,
+      "menu": null,
+      "errors": []
+    },
+    {
+      "route": "/soluciones",
+      "width": 1440,
+      "status": 200,
+      "documentWidth": 1440,
+      "viewport": 1440,
+      "pageHeight": 2617,
+      "outside": [],
+      "clippedText": [],
+      "smallControls": [
+        {
+          "element": "a.: Planes",
+          "width": 37.734375,
+          "height": 44
+        },
+        {
+          "element": "a.: Planes",
+          "width": 38.234375,
+          "height": 44
+        }
+      ],
+      "headerCollisions": [],
+      "h1": "Tecnología útil para tu negocio.",
+      "horizontalOverflow": false,
+      "menu": null,
+      "errors": []
+    },
+    {
+      "route": "/soluciones",
+      "width": 1920,
+      "status": 200,
+      "documentWidth": 1920,
+      "viewport": 1920,
+      "pageHeight": 2620,
+      "outside": [],
+      "clippedText": [],
+      "smallControls": [
+        {
+          "element": "a.: Planes",
+          "width": 37.734375,
+          "height": 44
+        },
+        {
+          "element": "a.: Planes",
+          "width": 38.234375,
+          "height": 44
+        }
+      ],
+      "headerCollisions": [],
+      "h1": "Tecnología útil para tu negocio.",
+      "horizontalOverflow": false,
+      "menu": null,
+      "errors": []
+    },
+    {
+      "route": "/proceso",
+      "width": 320,
+      "status": 200,
+      "documentWidth": 320,
+      "viewport": 320,
+      "pageHeight": 2250,
+      "outside": [],
+      "clippedText": [],
+      "smallControls": [
+        {
+          "element": "a.: Planes",
+          "width": 38.234375,
+          "height": 44
+        }
+      ],
+      "headerCollisions": [],
+      "h1": "De una necesidad a una solución clara.",
+      "horizontalOverflow": false,
+      "menu": {
+        "open": true,
+        "expanded": "true",
+        "scrollWidth": 280,
+        "width": 280,
+        "lock": true,
+        "closed": true,
+        "focusRestored": true
+      },
+      "errors": []
+    },
+    {
+      "route": "/proceso",
+      "width": 360,
+      "status": 200,
+      "documentWidth": 360,
+      "viewport": 360,
+      "pageHeight": 2133,
+      "outside": [],
+      "clippedText": [],
+      "smallControls": [
+        {
+          "element": "a.: Planes",
+          "width": 38.234375,
+          "height": 44
+        }
+      ],
+      "headerCollisions": [],
+      "h1": "De una necesidad a una solución clara.",
+      "horizontalOverflow": false,
+      "menu": {
+        "open": true,
+        "expanded": "true",
+        "scrollWidth": 320,
+        "width": 320,
+        "lock": true,
+        "closed": true,
+        "focusRestored": true
+      },
+      "errors": []
+    },
+    {
+      "route": "/proceso",
+      "width": 390,
+      "status": 200,
+      "documentWidth": 390,
+      "viewport": 390,
+      "pageHeight": 2028,
+      "outside": [],
+      "clippedText": [],
+      "smallControls": [
+        {
+          "element": "a.: Planes",
+          "width": 38.234375,
+          "height": 44
+        }
+      ],
+      "headerCollisions": [],
+      "h1": "De una necesidad a una solución clara.",
+      "horizontalOverflow": false,
+      "menu": {
+        "open": true,
+        "expanded": "true",
+        "scrollWidth": 350,
+        "width": 350,
+        "lock": true,
+        "closed": true,
+        "focusRestored": true
+      },
+      "errors": []
+    },
+    {
+      "route": "/proceso",
+      "width": 430,
+      "status": 200,
+      "documentWidth": 430,
+      "viewport": 430,
+      "pageHeight": 2028,
+      "outside": [],
+      "clippedText": [],
+      "smallControls": [
+        {
+          "element": "a.: Planes",
+          "width": 38.234375,
+          "height": 44
+        }
+      ],
+      "headerCollisions": [],
+      "h1": "De una necesidad a una solución clara.",
+      "horizontalOverflow": false,
+      "menu": {
+        "open": true,
+        "expanded": "true",
+        "scrollWidth": 390,
+        "width": 390,
+        "lock": true,
+        "closed": true,
+        "focusRestored": true
+      },
+      "errors": []
+    },
+    {
+      "route": "/proceso",
+      "width": 768,
+      "status": 200,
+      "documentWidth": 768,
+      "viewport": 768,
+      "pageHeight": 1549,
+      "outside": [],
+      "clippedText": [],
+      "smallControls": [
+        {
+          "element": "a.: Planes",
+          "width": 38.234375,
+          "height": 44
+        }
+      ],
+      "headerCollisions": [],
+      "h1": "De una necesidad a una solución clara.",
+      "horizontalOverflow": false,
+      "menu": {
+        "open": true,
+        "expanded": "true",
+        "scrollWidth": 418,
+        "width": 418,
+        "lock": true,
+        "closed": true,
+        "focusRestored": true
+      },
+      "errors": []
+    },
+    {
+      "route": "/proceso",
+      "width": 1024,
+      "status": 200,
+      "documentWidth": 1024,
+      "viewport": 1024,
+      "pageHeight": 1478,
+      "outside": [],
+      "clippedText": [],
+      "smallControls": [
+        {
+          "element": "a.: Planes",
+          "width": 37.734375,
+          "height": 44
+        },
+        {
+          "element": "a.: Planes",
+          "width": 38.234375,
+          "height": 44
+        }
+      ],
+      "headerCollisions": [],
+      "h1": "De una necesidad a una solución clara.",
+      "horizontalOverflow": false,
+      "menu": null,
+      "errors": []
+    },
+    {
+      "route": "/proceso",
+      "width": 1280,
+      "status": 200,
+      "documentWidth": 1280,
+      "viewport": 1280,
+      "pageHeight": 1576,
+      "outside": [],
+      "clippedText": [],
+      "smallControls": [
+        {
+          "element": "a.: Planes",
+          "width": 37.734375,
+          "height": 44
+        },
+        {
+          "element": "a.: Planes",
+          "width": 38.234375,
+          "height": 44
+        }
+      ],
+      "headerCollisions": [],
+      "h1": "De una necesidad a una solución clara.",
+      "horizontalOverflow": false,
+      "menu": null,
+      "errors": []
+    },
+    {
+      "route": "/proceso",
+      "width": 1440,
+      "status": 200,
+      "documentWidth": 1440,
+      "viewport": 1440,
+      "pageHeight": 1693,
+      "outside": [],
+      "clippedText": [],
+      "smallControls": [
+        {
+          "element": "a.: Planes",
+          "width": 37.734375,
+          "height": 44
+        },
+        {
+          "element": "a.: Planes",
+          "width": 38.234375,
+          "height": 44
+        }
+      ],
+      "headerCollisions": [],
+      "h1": "De una necesidad a una solución clara.",
+      "horizontalOverflow": false,
+      "menu": null,
+      "errors": []
+    },
+    {
+      "route": "/proceso",
+      "width": 1920,
+      "status": 200,
+      "documentWidth": 1920,
+      "viewport": 1920,
+      "pageHeight": 1699,
+      "outside": [],
+      "clippedText": [],
+      "smallControls": [
+        {
+          "element": "a.: Planes",
+          "width": 37.734375,
+          "height": 44
+        },
+        {
+          "element": "a.: Planes",
+          "width": 38.234375,
+          "height": 44
+        }
+      ],
+      "headerCollisions": [],
+      "h1": "De una necesidad a una solución clara.",
+      "horizontalOverflow": false,
+      "menu": null,
+      "errors": []
+    },
+    {
+      "route": "/proyectos",
+      "width": 320,
+      "status": 200,
+      "documentWidth": 320,
+      "viewport": 320,
+      "pageHeight": 3411,
+      "outside": [],
+      "clippedText": [],
+      "smallControls": [
+        {
+          "element": "a.: Planes",
+          "width": 38.234375,
+          "height": 44
+        }
+      ],
+      "headerCollisions": [],
+      "h1": "Trabajo que podemos explicar con claridad.",
+      "horizontalOverflow": false,
+      "menu": {
+        "open": true,
+        "expanded": "true",
+        "scrollWidth": 280,
+        "width": 280,
+        "lock": true,
+        "closed": true,
+        "focusRestored": true
+      },
+      "errors": []
+    },
+    {
+      "route": "/proyectos",
+      "width": 360,
+      "status": 200,
+      "documentWidth": 360,
+      "viewport": 360,
+      "pageHeight": 3218,
+      "outside": [],
+      "clippedText": [],
+      "smallControls": [
+        {
+          "element": "a.: Planes",
+          "width": 38.234375,
+          "height": 44
+        }
+      ],
+      "headerCollisions": [],
+      "h1": "Trabajo que podemos explicar con claridad.",
+      "horizontalOverflow": false,
+      "menu": {
+        "open": true,
+        "expanded": "true",
+        "scrollWidth": 320,
+        "width": 320,
+        "lock": true,
+        "closed": true,
+        "focusRestored": true
+      },
+      "errors": []
+    },
+    {
+      "route": "/proyectos",
+      "width": 390,
+      "status": 200,
+      "documentWidth": 390,
+      "viewport": 390,
+      "pageHeight": 3187,
+      "outside": [],
+      "clippedText": [],
+      "smallControls": [
+        {
+          "element": "a.: Planes",
+          "width": 38.234375,
+          "height": 44
+        }
+      ],
+      "headerCollisions": [],
+      "h1": "Trabajo que podemos explicar con claridad.",
+      "horizontalOverflow": false,
+      "menu": {
+        "open": true,
+        "expanded": "true",
+        "scrollWidth": 350,
+        "width": 350,
+        "lock": true,
+        "closed": true,
+        "focusRestored": true
+      },
+      "errors": []
+    },
+    {
+      "route": "/proyectos",
+      "width": 430,
+      "status": 200,
+      "documentWidth": 430,
+      "viewport": 430,
+      "pageHeight": 3169,
+      "outside": [],
+      "clippedText": [],
+      "smallControls": [
+        {
+          "element": "a.: Planes",
+          "width": 38.234375,
+          "height": 44
+        }
+      ],
+      "headerCollisions": [],
+      "h1": "Trabajo que podemos explicar con claridad.",
+      "horizontalOverflow": false,
+      "menu": {
+        "open": true,
+        "expanded": "true",
+        "scrollWidth": 390,
+        "width": 390,
+        "lock": true,
+        "closed": true,
+        "focusRestored": true
+      },
+      "errors": []
+    },
+    {
+      "route": "/proyectos",
+      "width": 768,
+      "status": 200,
+      "documentWidth": 817,
+      "viewport": 768,
+      "pageHeight": 2431,
+      "outside": [
+        {
+          "element": "div.project-card__visual: TK / 02LPT↗EXPERIENCIA WEB CORPORATIVADiagrama conceptual · No es una captura",
+          "left": 416.984375,
+          "right": 816.984375
+        }
+      ],
+      "clippedText": [],
+      "smallControls": [
+        {
+          "element": "a.: Planes",
+          "width": 38.234375,
+          "height": 44
+        }
+      ],
+      "headerCollisions": [],
+      "h1": "Trabajo que podemos explicar con claridad.",
+      "horizontalOverflow": true,
+      "menu": {
+        "open": true,
+        "expanded": "true",
+        "scrollWidth": 418,
+        "width": 418,
+        "lock": true,
+        "closed": true,
+        "focusRestored": true
+      },
+      "errors": []
+    },
+    {
+      "route": "/proyectos",
+      "width": 1024,
+      "status": 200,
+      "documentWidth": 1024,
+      "viewport": 1024,
+      "pageHeight": 2474,
+      "outside": [],
+      "clippedText": [],
+      "smallControls": [
+        {
+          "element": "a.: Planes",
+          "width": 37.734375,
+          "height": 44
+        },
+        {
+          "element": "a.: Planes",
+          "width": 38.234375,
+          "height": 44
+        }
+      ],
+      "headerCollisions": [],
+      "h1": "Trabajo que podemos explicar con claridad.",
+      "horizontalOverflow": false,
+      "menu": null,
+      "errors": []
+    },
+    {
+      "route": "/proyectos",
+      "width": 1280,
+      "status": 200,
+      "documentWidth": 1280,
+      "viewport": 1280,
+      "pageHeight": 2934,
+      "outside": [],
+      "clippedText": [],
+      "smallControls": [
+        {
+          "element": "a.: Planes",
+          "width": 37.734375,
+          "height": 44
+        },
+        {
+          "element": "a.: Planes",
+          "width": 38.234375,
+          "height": 44
+        }
+      ],
+      "headerCollisions": [],
+      "h1": "Trabajo que podemos explicar con claridad.",
+      "horizontalOverflow": false,
+      "menu": null,
+      "errors": []
+    },
+    {
+      "route": "/proyectos",
+      "width": 1440,
+      "status": 200,
+      "documentWidth": 1440,
+      "viewport": 1440,
+      "pageHeight": 3023,
+      "outside": [],
+      "clippedText": [],
+      "smallControls": [
+        {
+          "element": "a.: Planes",
+          "width": 37.734375,
+          "height": 44
+        },
+        {
+          "element": "a.: Planes",
+          "width": 38.234375,
+          "height": 44
+        }
+      ],
+      "headerCollisions": [],
+      "h1": "Trabajo que podemos explicar con claridad.",
+      "horizontalOverflow": false,
+      "menu": null,
+      "errors": []
+    },
+    {
+      "route": "/proyectos",
+      "width": 1920,
+      "status": 200,
+      "documentWidth": 1920,
+      "viewport": 1920,
+      "pageHeight": 3030,
+      "outside": [],
+      "clippedText": [],
+      "smallControls": [
+        {
+          "element": "a.: Planes",
+          "width": 37.734375,
+          "height": 44
+        },
+        {
+          "element": "a.: Planes",
+          "width": 38.234375,
+          "height": 44
+        }
+      ],
+      "headerCollisions": [],
+      "h1": "Trabajo que podemos explicar con claridad.",
+      "horizontalOverflow": false,
+      "menu": null,
+      "errors": []
+    },
+    {
+      "route": "/nosotros",
+      "width": 320,
+      "status": 200,
+      "documentWidth": 320,
+      "viewport": 320,
+      "pageHeight": 2883,
+      "outside": [],
+      "clippedText": [],
+      "smallControls": [
+        {
+          "element": "a.: Planes",
+          "width": 38.234375,
+          "height": 44
+        }
+      ],
+      "headerCollisions": [],
+      "h1": "Ingeniería aplicada a negocios reales.",
+      "horizontalOverflow": false,
+      "menu": {
+        "open": true,
+        "expanded": "true",
+        "scrollWidth": 280,
+        "width": 280,
+        "lock": true,
+        "closed": true,
+        "focusRestored": true
+      },
+      "errors": []
+    },
+    {
+      "route": "/nosotros",
+      "width": 360,
+      "status": 200,
+      "documentWidth": 360,
+      "viewport": 360,
+      "pageHeight": 2793,
+      "outside": [],
+      "clippedText": [],
+      "smallControls": [
+        {
+          "element": "a.: Planes",
+          "width": 38.234375,
+          "height": 44
+        }
+      ],
+      "headerCollisions": [],
+      "h1": "Ingeniería aplicada a negocios reales.",
+      "horizontalOverflow": false,
+      "menu": {
+        "open": true,
+        "expanded": "true",
+        "scrollWidth": 320,
+        "width": 320,
+        "lock": true,
+        "closed": true,
+        "focusRestored": true
+      },
+      "errors": []
+    },
+    {
+      "route": "/nosotros",
+      "width": 390,
+      "status": 200,
+      "documentWidth": 390,
+      "viewport": 390,
+      "pageHeight": 2726,
+      "outside": [],
+      "clippedText": [],
+      "smallControls": [
+        {
+          "element": "a.: Planes",
+          "width": 38.234375,
+          "height": 44
+        }
+      ],
+      "headerCollisions": [],
+      "h1": "Ingeniería aplicada a negocios reales.",
+      "horizontalOverflow": false,
+      "menu": {
+        "open": true,
+        "expanded": "true",
+        "scrollWidth": 350,
+        "width": 350,
+        "lock": true,
+        "closed": true,
+        "focusRestored": true
+      },
+      "errors": []
+    },
+    {
+      "route": "/nosotros",
+      "width": 430,
+      "status": 200,
+      "documentWidth": 430,
+      "viewport": 430,
+      "pageHeight": 2654,
+      "outside": [],
+      "clippedText": [],
+      "smallControls": [
+        {
+          "element": "a.: Planes",
+          "width": 38.234375,
+          "height": 44
+        }
+      ],
+      "headerCollisions": [],
+      "h1": "Ingeniería aplicada a negocios reales.",
+      "horizontalOverflow": false,
+      "menu": {
+        "open": true,
+        "expanded": "true",
+        "scrollWidth": 390,
+        "width": 390,
+        "lock": true,
+        "closed": true,
+        "focusRestored": true
+      },
+      "errors": []
+    },
+    {
+      "route": "/nosotros",
+      "width": 768,
+      "status": 200,
+      "documentWidth": 768,
+      "viewport": 768,
+      "pageHeight": 1954,
+      "outside": [],
+      "clippedText": [],
+      "smallControls": [
+        {
+          "element": "a.: Planes",
+          "width": 38.234375,
+          "height": 44
+        }
+      ],
+      "headerCollisions": [],
+      "h1": "Ingeniería aplicada a negocios reales.",
+      "horizontalOverflow": false,
+      "menu": {
+        "open": true,
+        "expanded": "true",
+        "scrollWidth": 418,
+        "width": 418,
+        "lock": true,
+        "closed": true,
+        "focusRestored": true
+      },
+      "errors": []
+    },
+    {
+      "route": "/nosotros",
+      "width": 1024,
+      "status": 200,
+      "documentWidth": 1024,
+      "viewport": 1024,
+      "pageHeight": 1853,
+      "outside": [],
+      "clippedText": [],
+      "smallControls": [
+        {
+          "element": "a.: Planes",
+          "width": 37.734375,
+          "height": 44
+        },
+        {
+          "element": "a.: Planes",
+          "width": 38.234375,
+          "height": 44
+        }
+      ],
+      "headerCollisions": [],
+      "h1": "Ingeniería aplicada a negocios reales.",
+      "horizontalOverflow": false,
+      "menu": null,
+      "errors": []
+    },
+    {
+      "route": "/nosotros",
+      "width": 1280,
+      "status": 200,
+      "documentWidth": 1280,
+      "viewport": 1280,
+      "pageHeight": 2001,
+      "outside": [],
+      "clippedText": [],
+      "smallControls": [
+        {
+          "element": "a.: Planes",
+          "width": 37.734375,
+          "height": 44
+        },
+        {
+          "element": "a.: Planes",
+          "width": 38.234375,
+          "height": 44
+        }
+      ],
+      "headerCollisions": [],
+      "h1": "Ingeniería aplicada a negocios reales.",
+      "horizontalOverflow": false,
+      "menu": null,
+      "errors": []
+    },
+    {
+      "route": "/nosotros",
+      "width": 1440,
+      "status": 200,
+      "documentWidth": 1440,
+      "viewport": 1440,
+      "pageHeight": 2075,
+      "outside": [],
+      "clippedText": [],
+      "smallControls": [
+        {
+          "element": "a.: Planes",
+          "width": 37.734375,
+          "height": 44
+        },
+        {
+          "element": "a.: Planes",
+          "width": 38.234375,
+          "height": 44
+        }
+      ],
+      "headerCollisions": [],
+      "h1": "Ingeniería aplicada a negocios reales.",
+      "horizontalOverflow": false,
+      "menu": null,
+      "errors": []
+    },
+    {
+      "route": "/nosotros",
+      "width": 1920,
+      "status": 200,
+      "documentWidth": 1920,
+      "viewport": 1920,
+      "pageHeight": 2084,
+      "outside": [],
+      "clippedText": [],
+      "smallControls": [
+        {
+          "element": "a.: Planes",
+          "width": 37.734375,
+          "height": 44
+        },
+        {
+          "element": "a.: Planes",
+          "width": 38.234375,
+          "height": 44
+        }
+      ],
+      "headerCollisions": [],
+      "h1": "Ingeniería aplicada a negocios reales.",
+      "horizontalOverflow": false,
+      "menu": null,
+      "errors": []
+    }
+  ],
+  "motionRequests": [
+    {
+      "url": "/fonts/inter-latin-variable.woff2",
+      "size": 48256,
+      "transfer": 48556,
+      "type": "link"
+    },
+    {
+      "url": "/_astro/BaseLayout.xAuqfs2o.css",
+      "size": 35960,
+      "transfer": 8232,
+      "type": "link"
+    },
+    {
+      "url": "/images/brand/tinkode-symbol.png",
+      "size": 13924,
+      "transfer": 14224,
+      "type": "img"
+    },
+    {
+      "url": "/_astro/BaseLayout.astro_astro_type_script_index_0_lang.CBSdKPZd.js",
+      "size": 3521,
+      "transfer": 1902,
+      "type": "script"
+    },
+    {
+      "url": "/_astro/gsap.D1O2useh.js",
+      "size": 69941,
+      "transfer": 27481,
+      "type": "script"
+    },
+    {
+      "url": "/_astro/ScrollTrigger.D7MWR7hw.js",
+      "size": 42754,
+      "transfer": 17725,
+      "type": "script"
+    },
+    {
+      "url": "/favicon.svg",
+      "size": 328,
+      "transfer": 628,
+      "type": "other"
+    }
+  ],
+  "reduced": {
+    "animations": 0,
+    "scrollBehavior": "auto",
+    "progress": "none",
+    "sceneTransform": "none"
+  },
+  "nojs": {
+    "mainVisible": "visible",
+    "h1Visible": "1",
+    "navVisible": "none",
+    "menuToggleVisible": "grid"
+  },
+  "assets": [
+    {
+      "path": "404.html",
+      "bytes": 11835,
+      "gzipBytes": 3368
+    },
+    {
+      "path": "favicon/.gitkeep",
+      "bytes": 57,
+      "gzipBytes": 75
+    },
+    {
+      "path": "favicon.svg",
+      "bytes": 328,
+      "gzipBytes": 236
+    },
+    {
+      "path": "fonts/.gitkeep",
+      "bytes": 64,
+      "gzipBytes": 79
+    },
+    {
+      "path": "fonts/inter-latin-variable.woff2",
+      "bytes": 48256,
+      "gzipBytes": 48254
+    },
+    {
+      "path": "fonts/OFL-Inter.txt",
+      "bytes": 4380,
+      "gzipBytes": 1969
+    },
+    {
+      "path": "icons/.gitkeep",
+      "bytes": 51,
+      "gzipBytes": 71
+    },
+    {
+      "path": "images/.gitkeep",
+      "bytes": 57,
+      "gzipBytes": 77
+    },
+    {
+      "path": "images/brand/tinkode-logo.png",
+      "bytes": 819376,
+      "gzipBytes": 805913
+    },
+    {
+      "path": "images/brand/tinkode-symbol.png",
+      "bytes": 13924,
+      "gzipBytes": 13947
+    },
+    {
+      "path": "images/home/business-connections.webp",
+      "bytes": 45446,
+      "gzipBytes": 45479
+    },
+    {
+      "path": "images/projects/nfc/nfc-experience.webp",
+      "bytes": 38032,
+      "gzipBytes": 38065
+    },
+    {
+      "path": "images/projects/README.md",
+      "bytes": 826,
+      "gzipBytes": 470
+    },
+    {
+      "path": "index.html",
+      "bytes": 34292,
+      "gzipBytes": 7925
+    },
+    {
+      "path": "nosotros/index.html",
+      "bytes": 15869,
+      "gzipBytes": 4133
+    },
+    {
+      "path": "og.png",
+      "bytes": 56814,
+      "gzipBytes": 40569
+    },
+    {
+      "path": "proceso/index.html",
+      "bytes": 14750,
+      "gzipBytes": 3851
+    },
+    {
+      "path": "proyectos/index.html",
+      "bytes": 17271,
+      "gzipBytes": 4603
+    },
+    {
+      "path": "robots.txt",
+      "bytes": 75,
+      "gzipBytes": 91
+    },
+    {
+      "path": "sitemap.xml",
+      "bytes": 439,
+      "gzipBytes": 189
+    },
+    {
+      "path": "soluciones/index.html",
+      "bytes": 21406,
+      "gzipBytes": 4581
+    },
+    {
+      "path": "_astro/BaseLayout.astro_astro_type_script_index_0_lang.CBSdKPZd.js",
+      "bytes": 3521,
+      "gzipBytes": 1602
+    },
+    {
+      "path": "_astro/BaseLayout.xAuqfs2o.css",
+      "bytes": 35960,
+      "gzipBytes": 7932
+    },
+    {
+      "path": "_astro/gsap.D1O2useh.js",
+      "bytes": 69941,
+      "gzipBytes": 27181
+    },
+    {
+      "path": "_astro/ScrollTrigger.D7MWR7hw.js",
+      "bytes": 42754,
+      "gzipBytes": 17425
+    }
+  ]
+}

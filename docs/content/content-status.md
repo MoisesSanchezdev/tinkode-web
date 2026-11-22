@@ -1,5 +1,13 @@
 # Estado de contenido
 
+## Estado vigente · 24 de octubre de 2026
+
+- WhatsApp oficial para todos los CTA comerciales: `https://wa.me/qr/N7DH57UUDVPNI1?s=p`. Sustituye los enlaces históricos de las fases siguientes.
+- Se conservan los precios y alcances confirmados, nombres/estudios de fundadores y estados/autoría de proyectos.
+- Los diagramas de proyectos son conceptuales, señalados como tales; no son capturas de producto ni resultados comerciales.
+- Nuevo logo recibido e integrado: `public/images/brand/tinkode-logo-original.jpg`. Header, menú, footer, favicon, icono Apple, Open Graph/Twitter, JSON-LD y concepto NFC usan la nueva identidad. Se conserva la composición, los colores y la proporción originales; los exports web solo recortan márgenes vacíos y ajustan resolución.
+- El texto restante documenta fases anteriores y puede mencionar canales de contacto ya sustituidos.
+
 La información de esta lista está pendiente de confirmación. No debe publicarse como contenido final hasta contar con autorización o fuente confirmada.
 
 - Equipo fundador: definido para Valeria López Chávez y Moisés Sánchez Naranjo.

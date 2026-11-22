@@ -2,14 +2,15 @@
 import { PRIMARY_CONTACT_URL } from "../../data/contact";
 import { businessComplements, businessPlans } from "../../data/site";
 import Button from "../ui/Button.astro";
+import InlineIcon from "../ui/InlineIcon.astro";
 ---
 
 <section id="planes-negocios" class="section business-plans" aria-labelledby="business-plans-title">
 	<div class="container">
 		<div class="section-heading business-plans__heading">
-			<p class="eyebrow">Soluciones para negocios</p>
-			<h2 id="business-plans-title">Planes para tu negocio</h2>
-			<p>Soluciones digitales para presentar tu negocio, organizar tu oferta y convertir visitas en oportunidades de contacto.</p>
+			<p class="eyebrow">04 / Un punto de partida</p>
+			<h2 id="business-plans-title">Tu siguiente paso, a tu medida.</h2>
+			<p>Planes de presencia digital para negocios de cualquier sector. Para sistemas y automatizaciones, definimos el alcance contigo.</p>
 		</div>
 
 		<div class="plans-grid">
@@ -21,7 +22,7 @@ import Button from "../ui/Button.astro";
 								<h3 id={`plan-${plan.id}-title`}>{plan.name}</h3>
 								{"badge" in plan && <span>{plan.badge}</span>}
 							</div>
-							<p class="plan-card__price">{plan.price}</p>
+							<p class="plan-card__price">{plan.price.replace(" COP", "")} <span>COP</span></p>
 							<p class="plan-card__description">{plan.description}</p>
 						</div>
 
@@ -29,16 +30,12 @@ import Button from "../ui/Button.astro";
 							{plan.highlights.map((item) => <li>{item}</li>)}
 						</ul>
 
-						<div class="plan-card__objective">
-							<strong>Objetivo</strong>
-							<p>{plan.objective}</p>
-						</div>
-
 						<details class="plan-card__details">
 							<summary>Ver todo lo que incluye</summary>
 							<div>
 								<strong>{plan.includesLabel}</strong>
 								<ul>{plan.includes.map((item) => <li>{item}</li>)}</ul>
+								<p>{plan.objective}</p>
 							</div>
 						</details>
 
@@ -47,9 +44,10 @@ import Button from "../ui/Button.astro";
 							variant={plan.accent === "recommended" ? "primary" : "secondary"}
 							size="large"
 							external
-							ariaLabel={`Consultar plan ${plan.name} por WhatsApp`}
+							ariaLabel={`${plan.cta} por WhatsApp`}
 						>
 							{plan.cta}
+							<InlineIcon slot="icon-end" name="whatsapp" />
 						</Button>
 					</article>
 				))
@@ -57,8 +55,9 @@ import Button from "../ui/Button.astro";
 		</div>
 
 		<div class="business-complements" aria-labelledby="business-complements-title">
-			<h3 id="business-complements-title">También puedes complementar tu proyecto</h3>
+			<h3 id="business-complements-title">Complementa tu proyecto</h3>
 			<ul>{businessComplements.map((item) => <li>{item}</li>)}</ul>
 		</div>
+		<div class="plans-custom"><p><strong>¿Necesitas algo diferente?</strong> Diseñemos un sistema alrededor de tu operación.</p><a class="text-link" href={PRIMARY_CONTACT_URL} target="_blank" rel="noopener noreferrer">Consultar solución a medida <span aria-hidden="true">↗</span></a></div>
 	</div>
 </section>

@@ -1,0 +1,50 @@
+[
+  {
+    "width": 390,
+    "reducedMotion": "reduce",
+    "directTop": 224.125,
+    "hash": "#planes-negocios",
+    "targetTop": 224.125,
+    "headerBottom": 73,
+    "dialogOpen": false,
+    "focus": "Abrir menú principal",
+    "scrollY": 3724,
+    "aligned": true
+  },
+  {
+    "width": 390,
+    "reducedMotion": "no-preference",
+    "directTop": 224.125,
+    "hash": "#planes-negocios",
+    "targetTop": 224.125,
+    "headerBottom": 73,
+    "dialogOpen": false,
+    "focus": "Abrir menú principal",
+    "scrollY": 3724,
+    "aligned": true
+  },
+  {
+    "width": 768,
+    "reducedMotion": "reduce",
+    "directTop": 224.171875,
+    "hash": "#planes-negocios",
+    "targetTop": 224.171875,
+    "headerBottom": 83,
+    "dialogOpen": false,
+    "focus": "Abrir menú principal",
+    "scrollY": 3477,
+    "aligned": true
+  },
+  {
+    "width": 768,
+    "reducedMotion": "no-preference",
+    "directTop": 224.171875,
+    "hash": "#planes-negocios",
+    "targetTop": 224.171875,
+    "headerBottom": 83,
+    "dialogOpen": false,
+    "focus": "Abrir menú principal",
+    "scrollY": 3477,
+    "aligned": true
+  }
+]

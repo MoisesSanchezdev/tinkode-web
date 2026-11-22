@@ -10,17 +10,19 @@ interface Props {
 	title?: string;
 	description?: string;
 	path?: string;
+	noindex?: boolean;
 }
 
 const SITE_URL = "https://tinkode-web.pages.dev";
 const DEFAULT_TITLE = "TinKode | Tecnología para que los negocios funcionen mejor";
 const DEFAULT_DESCRIPTION = "TinKode crea páginas, sistemas y automatizaciones claras para que los negocios trabajen mejor y sigan creciendo.";
-const OG_IMAGE = "/og.png";
+const OG_IMAGE = "/og.png?v=tk-2026";
 
 const {
 	title = DEFAULT_TITLE,
 	description = DEFAULT_DESCRIPTION,
 	path,
+	noindex = false,
 } = Astro.props as Props;
 
 const pathname = path ?? Astro.url.pathname;
@@ -33,7 +35,7 @@ const graph: Record<string, unknown>[] = [
 		"@id": `${SITE_URL}/#organization`,
 		name: "TinKode",
 		url: SITE_URL,
-		logo: new URL("/images/brand/tinkode-symbol.png", SITE_URL).toString(),
+		logo: new URL("/images/brand/tinkode-logo.png", SITE_URL).toString(),
 		description: DEFAULT_DESCRIPTION,
 		sameAs: [PRIMARY_CONTACT_URL],
 		contactPoint: {
@@ -94,10 +96,14 @@ const structuredData = { "@context": "https://schema.org", "@graph": graph };
 <html lang="es">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg?v=tk-2026" />
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png?v=tk-2026" />
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=tk-2026" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="preload" href="/fonts/inter-latin-variable.woff2" as="font" type="font/woff2" crossorigin />
 		<meta name="theme-color" content="#05070b" />
 		<meta name="description" content={description} />
+		{noindex && <meta name="robots" content="noindex, follow" />}
 		<link rel="canonical" href={canonicalUrl} />
 		<meta property="og:type" content="website" />
 		<meta property="og:title" content={title} />
@@ -128,5 +134,8 @@ const structuredData = { "@context": "https://schema.org", "@graph": graph };
 			<Footer />
 			<FloatingContact />
 		</div>
+		<script>
+			import "../scripts/motion";
+		</script>
 	</body>
 </html>

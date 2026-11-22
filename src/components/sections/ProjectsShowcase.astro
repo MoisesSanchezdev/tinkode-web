@@ -1,74 +1,30 @@
 ---
 import { projects } from "../../data/site";
 import InlineIcon from "../ui/InlineIcon.astro";
-
-interface Props {
-	home?: boolean;
-}
-
-const { home = false } = Astro.props as Props;
+import NfcVisual from "../ui/NfcVisual.astro";
+interface Props { home?: boolean; }
+const { home = false } = Astro.props;
 ---
-
 <section id="proyectos" class="section projects-showcase" aria-labelledby="projects-showcase-title">
-	<div class="container">
-		<div class="section-heading">
-			<p class="eyebrow">Trabajo real</p>
-			<h2 id="projects-showcase-title">{home ? "Proyectos seleccionados" : "Tres proyectos reales"}</h2>
-			{!home && <p>Software, experiencias web y conexiones físico-digitales presentadas con su estado real.</p>}
-		</div>
-
-		<div class:list={["projects-grid", !home && "projects-grid--detailed"]}>
-			{
-				projects.map((project) => (
-					<article id={project.id} class="project-card">
-						<div class="project-card__visual">
-							{project.visual === "competition" && (
-								<div class="competition-visual" aria-label="Representación conceptual del sistema Robot Explota Globos">
-									<span>UTP</span>
-									<div><strong>08</strong><i></i><strong>06</strong></div>
-									<small>Gestión de competencia</small>
-								</div>
-							)}
-							{project.visual === "website" && (
-								<div class="website-visual" aria-label="Representación conceptual del sitio corporativo LPT">
-									<div><span></span><span></span><span></span></div>
-									<strong>LPT</strong>
-									<small>Servicios empresariales</small>
-								</div>
-							)}
-							{project.visual === "nfc" && (
-								<img
-									src="/images/projects/nfc/nfc-experience.webp"
-									alt="Etiqueta NFC conectando un objeto físico con una experiencia digital en un celular."
-									width="1000"
-									height="1010"
-									loading="lazy"
-									decoding="async"
-								/>
-							)}
-						</div>
-
-						<div class="project-card__content">
-							<div class="project-card__meta">
-								<span>{project.category}</span>
-								{!home && <small>{project.status}</small>}
-							</div>
-							<h3>{project.name}</h3>
-							<p>{project.summary}</p>
-							{home ? (
-								<a class="text-link" href={`/proyectos#${project.id}`}>Ver proyecto <InlineIcon name="arrow" /></a>
-							) : (
-								<>
-									<ul class="tag-list" aria-label={`Tecnologías de ${project.name}`}>
-										{project.technologies.map((technology) => <li>{technology}</li>)}
-									</ul>
-									<p class="project-card__note"><InlineIcon name="shield" />{project.note}</p>
-								</>
-							)}
-						</div>
-					</article>
-				))
-			}
-		</div>
-	</div>
+  <div class="container">
+    <div class="section-heading section-heading--split" data-reveal><div><p class="eyebrow">{home ? "03 / Ingeniería en práctica" : "Trabajo real"}</p><h2 id="projects-showcase-title">{home ? "Ideas que toman forma." : "Cada proyecto, su contexto."}</h2></div>{home ? <a class="text-link" href="/proyectos">Todos los proyectos <InlineIcon name="arrow" /></a> : <p>Software, web y conexiones físico-digitales. Con su alcance y su estado real.</p>}</div>
+    <div class:list={["projects-grid", !home && "projects-grid--detailed"]} data-stagger>
+      {projects.map((project, index) => <article id={project.id} class={`project-card project-card--${project.visual}`}>
+        <div class="project-card__visual">
+          <span class="project-card__index">TK / 0{index + 1}</span>
+          {project.visual === "competition" && <div class="competition-visual" aria-hidden="true"><span>UTP</span><div class="bracket"><i></i><i></i><i></i><i></i><span></span><span></span><b>↗</b></div><small>Participantes → Fases → Batallas</small></div>}
+          {project.visual === "website" && <div class="website-visual" aria-hidden="true"><div class="website-visual__frame"></div><strong>LPT<span>↗</span></strong><small>EXPERIENCIA WEB CORPORATIVA</small><div class="website-visual__lines"><i></i><i></i><i></i></div></div>}
+          {project.visual === "nfc" && <NfcVisual />}
+          <span class="project-card__visual-note">{project.visual === "nfc" ? "Ilustración conceptual" : "Diagrama conceptual · No es una captura"}</span>
+        </div>
+        <div class="project-card__content">
+          <div class="project-card__meta"><span class="status-dot"></span><span>{project.status}</span></div>
+          <p class="project-card__category">{project.category}</p><h3>{project.name}</h3><p>{project.summary}</p>
+          {!home && <ul class="tag-list" aria-label={`Tecnologías de ${project.name}`}>{project.technologies.map(item => <li>{item}</li>)}</ul>}
+          <p class="project-card__note">{home && <span class="project-card__concept">Visual conceptual. </span>}{project.note}</p>
+          {home && <a class="text-link" href={`/proyectos#${project.id}`}>Conocer proyecto <InlineIcon name="arrow" /></a>}
+        </div>
+      </article>)}
+    </div>
+  </div>
 </section>

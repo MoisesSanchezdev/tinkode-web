@@ -1,0 +1,354 @@
+[
+  {
+    "width": 360,
+    "route": "/",
+    "scrollWidth": 360,
+    "logos": [
+      {
+        "src": "/images/brand/tinkode-logo.webp",
+        "complete": true,
+        "naturalWidth": 364,
+        "width": 94,
+        "height": 56.8125
+      },
+      {
+        "src": "/images/brand/tinkode-logo.webp",
+        "complete": true,
+        "naturalWidth": 364,
+        "width": 0,
+        "height": 0
+      },
+      {
+        "src": "/images/brand/tinkode-logo.webp",
+        "complete": true,
+        "naturalWidth": 364,
+        "width": 130,
+        "height": 78.5625
+      }
+    ],
+    "clipped": [],
+    "icon": [
+      {
+        "rel": "icon",
+        "href": "/favicon.svg?v=tk-2026"
+      },
+      {
+        "rel": "icon",
+        "href": "/favicon-32.png?v=tk-2026"
+      },
+      {
+        "rel": "apple-touch-icon",
+        "href": "/apple-touch-icon.png?v=tk-2026"
+      }
+    ],
+    "ogImage": "https://tinkode-web.pages.dev/og.png?v=tk-2026"
+  },
+  {
+    "width": 360,
+    "route": "/proyectos",
+    "scrollWidth": 360,
+    "logos": [
+      {
+        "src": "/images/brand/tinkode-logo.webp",
+        "complete": true,
+        "naturalWidth": 364,
+        "width": 94,
+        "height": 56.8125
+      },
+      {
+        "src": "/images/brand/tinkode-logo.webp",
+        "complete": true,
+        "naturalWidth": 364,
+        "width": 0,
+        "height": 0
+      },
+      {
+        "src": "/images/brand/tinkode-logo.webp",
+        "complete": true,
+        "naturalWidth": 364,
+        "width": 130,
+        "height": 78.5625
+      }
+    ],
+    "clipped": [],
+    "icon": [
+      {
+        "rel": "icon",
+        "href": "/favicon.svg?v=tk-2026"
+      },
+      {
+        "rel": "icon",
+        "href": "/favicon-32.png?v=tk-2026"
+      },
+      {
+        "rel": "apple-touch-icon",
+        "href": "/apple-touch-icon.png?v=tk-2026"
+      }
+    ],
+    "ogImage": "https://tinkode-web.pages.dev/og.png?v=tk-2026"
+  },
+  {
+    "width": 390,
+    "route": "/",
+    "scrollWidth": 390,
+    "logos": [
+      {
+        "src": "/images/brand/tinkode-logo.webp",
+        "complete": true,
+        "naturalWidth": 364,
+        "width": 94,
+        "height": 56.8125
+      },
+      {
+        "src": "/images/brand/tinkode-logo.webp",
+        "complete": true,
+        "naturalWidth": 364,
+        "width": 0,
+        "height": 0
+      },
+      {
+        "src": "/images/brand/tinkode-logo.webp",
+        "complete": true,
+        "naturalWidth": 364,
+        "width": 130,
+        "height": 78.5625
+      }
+    ],
+    "clipped": [],
+    "icon": [
+      {
+        "rel": "icon",
+        "href": "/favicon.svg?v=tk-2026"
+      },
+      {
+        "rel": "icon",
+        "href": "/favicon-32.png?v=tk-2026"
+      },
+      {
+        "rel": "apple-touch-icon",
+        "href": "/apple-touch-icon.png?v=tk-2026"
+      }
+    ],
+    "ogImage": "https://tinkode-web.pages.dev/og.png?v=tk-2026"
+  },
+  {
+    "width": 390,
+    "route": "/proyectos",
+    "scrollWidth": 390,
+    "logos": [
+      {
+        "src": "/images/brand/tinkode-logo.webp",
+        "complete": true,
+        "naturalWidth": 364,
+        "width": 94,
+        "height": 56.8125
+      },
+      {
+        "src": "/images/brand/tinkode-logo.webp",
+        "complete": true,
+        "naturalWidth": 364,
+        "width": 0,
+        "height": 0
+      },
+      {
+        "src": "/images/brand/tinkode-logo.webp",
+        "complete": true,
+        "naturalWidth": 364,
+        "width": 130,
+        "height": 78.5625
+      }
+    ],
+    "clipped": [],
+    "icon": [
+      {
+        "rel": "icon",
+        "href": "/favicon.svg?v=tk-2026"
+      },
+      {
+        "rel": "icon",
+        "href": "/favicon-32.png?v=tk-2026"
+      },
+      {
+        "rel": "apple-touch-icon",
+        "href": "/apple-touch-icon.png?v=tk-2026"
+      }
+    ],
+    "ogImage": "https://tinkode-web.pages.dev/og.png?v=tk-2026"
+  },
+  {
+    "width": 768,
+    "route": "/",
+    "scrollWidth": 768,
+    "logos": [
+      {
+        "src": "/images/brand/tinkode-logo.webp",
+        "complete": true,
+        "naturalWidth": 364,
+        "width": 110,
+        "height": 66.46875
+      },
+      {
+        "src": "/images/brand/tinkode-logo.webp",
+        "complete": true,
+        "naturalWidth": 364,
+        "width": 0,
+        "height": 0
+      },
+      {
+        "src": "/images/brand/tinkode-logo.webp",
+        "complete": true,
+        "naturalWidth": 364,
+        "width": 140,
+        "height": 84.609375
+      }
+    ],
+    "clipped": [],
+    "icon": [
+      {
+        "rel": "icon",
+        "href": "/favicon.svg?v=tk-2026"
+      },
+      {
+        "rel": "icon",
+        "href": "/favicon-32.png?v=tk-2026"
+      },
+      {
+        "rel": "apple-touch-icon",
+        "href": "/apple-touch-icon.png?v=tk-2026"
+      }
+    ],
+    "ogImage": "https://tinkode-web.pages.dev/og.png?v=tk-2026"
+  },
+  {
+    "width": 768,
+    "route": "/proyectos",
+    "scrollWidth": 768,
+    "logos": [
+      {
+        "src": "/images/brand/tinkode-logo.webp",
+        "complete": true,
+        "naturalWidth": 364,
+        "width": 110,
+        "height": 66.46875
+      },
+      {
+        "src": "/images/brand/tinkode-logo.webp",
+        "complete": true,
+        "naturalWidth": 364,
+        "width": 0,
+        "height": 0
+      },
+      {
+        "src": "/images/brand/tinkode-logo.webp",
+        "complete": true,
+        "naturalWidth": 364,
+        "width": 140,
+        "height": 84.609375
+      }
+    ],
+    "clipped": [],
+    "icon": [
+      {
+        "rel": "icon",
+        "href": "/favicon.svg?v=tk-2026"
+      },
+      {
+        "rel": "icon",
+        "href": "/favicon-32.png?v=tk-2026"
+      },
+      {
+        "rel": "apple-touch-icon",
+        "href": "/apple-touch-icon.png?v=tk-2026"
+      }
+    ],
+    "ogImage": "https://tinkode-web.pages.dev/og.png?v=tk-2026"
+  },
+  {
+    "width": 1440,
+    "route": "/",
+    "scrollWidth": 1440,
+    "logos": [
+      {
+        "src": "/images/brand/tinkode-logo.webp",
+        "complete": true,
+        "naturalWidth": 364,
+        "width": 110,
+        "height": 66.46875
+      },
+      {
+        "src": "/images/brand/tinkode-logo.webp",
+        "complete": true,
+        "naturalWidth": 364,
+        "width": 0,
+        "height": 0
+      },
+      {
+        "src": "/images/brand/tinkode-logo.webp",
+        "complete": true,
+        "naturalWidth": 364,
+        "width": 140,
+        "height": 84.609375
+      }
+    ],
+    "clipped": [],
+    "icon": [
+      {
+        "rel": "icon",
+        "href": "/favicon.svg?v=tk-2026"
+      },
+      {
+        "rel": "icon",
+        "href": "/favicon-32.png?v=tk-2026"
+      },
+      {
+        "rel": "apple-touch-icon",
+        "href": "/apple-touch-icon.png?v=tk-2026"
+      }
+    ],
+    "ogImage": "https://tinkode-web.pages.dev/og.png?v=tk-2026"
+  },
+  {
+    "width": 1440,
+    "route": "/proyectos",
+    "scrollWidth": 1440,
+    "logos": [
+      {
+        "src": "/images/brand/tinkode-logo.webp",
+        "complete": true,
+        "naturalWidth": 364,
+        "width": 110,
+        "height": 66.46875
+      },
+      {
+        "src": "/images/brand/tinkode-logo.webp",
+        "complete": true,
+        "naturalWidth": 364,
+        "width": 0,
+        "height": 0
+      },
+      {
+        "src": "/images/brand/tinkode-logo.webp",
+        "complete": true,
+        "naturalWidth": 364,
+        "width": 140,
+        "height": 84.609375
+      }
+    ],
+    "clipped": [],
+    "icon": [
+      {
+        "rel": "icon",
+        "href": "/favicon.svg?v=tk-2026"
+      },
+      {
+        "rel": "icon",
+        "href": "/favicon-32.png?v=tk-2026"
+      },
+      {
+        "rel": "apple-touch-icon",
+        "href": "/apple-touch-icon.png?v=tk-2026"
+      }
+    ],
+    "ogImage": "https://tinkode-web.pages.dev/og.png?v=tk-2026"
+  }
+]

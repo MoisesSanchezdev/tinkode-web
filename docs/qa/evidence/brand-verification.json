@@ -1,0 +1,1033 @@
+{
+  "views": [
+    {
+      "route": "/",
+      "width": 360,
+      "overflow": false,
+      "logos": [
+        {
+          "src": "/images/brand/tinkode-logo.webp",
+          "loaded": true,
+          "width": 94,
+          "height": 56.8125,
+          "filter": "none",
+          "transform": "none"
+        },
+        {
+          "src": "/images/brand/tinkode-logo.webp",
+          "loaded": true,
+          "width": 0,
+          "height": 0,
+          "filter": "none",
+          "transform": "none"
+        },
+        {
+          "src": "/images/brand/tinkode-logo.webp",
+          "loaded": false,
+          "width": 130,
+          "height": 78.5625,
+          "filter": "none",
+          "transform": "none"
+        }
+      ],
+      "og": "https://tinkode-web.pages.dev/og.png?v=tk-2026",
+      "schemaLogo": "https://tinkode-web.pages.dev/images/brand/tinkode-logo.png"
+    },
+    {
+      "route": "/",
+      "width": 390,
+      "overflow": false,
+      "logos": [
+        {
+          "src": "/images/brand/tinkode-logo.webp",
+          "loaded": true,
+          "width": 94,
+          "height": 56.8125,
+          "filter": "none",
+          "transform": "none"
+        },
+        {
+          "src": "/images/brand/tinkode-logo.webp",
+          "loaded": true,
+          "width": 0,
+          "height": 0,
+          "filter": "none",
+          "transform": "none"
+        },
+        {
+          "src": "/images/brand/tinkode-logo.webp",
+          "loaded": false,
+          "width": 130,
+          "height": 78.5625,
+          "filter": "none",
+          "transform": "none"
+        }
+      ],
+      "og": "https://tinkode-web.pages.dev/og.png?v=tk-2026",
+      "schemaLogo": "https://tinkode-web.pages.dev/images/brand/tinkode-logo.png"
+    },
+    {
+      "route": "/",
+      "width": 430,
+      "overflow": false,
+      "logos": [
+        {
+          "src": "/images/brand/tinkode-logo.webp",
+          "loaded": true,
+          "width": 94,
+          "height": 56.8125,
+          "filter": "none",
+          "transform": "none"
+        },
+        {
+          "src": "/images/brand/tinkode-logo.webp",
+          "loaded": true,
+          "width": 0,
+          "height": 0,
+          "filter": "none",
+          "transform": "none"
+        },
+        {
+          "src": "/images/brand/tinkode-logo.webp",
+          "loaded": true,
+          "width": 130,
+          "height": 78.5625,
+          "filter": "none",
+          "transform": "none"
+        }
+      ],
+      "og": "https://tinkode-web.pages.dev/og.png?v=tk-2026",
+      "schemaLogo": "https://tinkode-web.pages.dev/images/brand/tinkode-logo.png"
+    },
+    {
+      "route": "/",
+      "width": 768,
+      "overflow": false,
+      "logos": [
+        {
+          "src": "/images/brand/tinkode-logo.webp",
+          "loaded": true,
+          "width": 110,
+          "height": 66.46875,
+          "filter": "none",
+          "transform": "none"
+        },
+        {
+          "src": "/images/brand/tinkode-logo.webp",
+          "loaded": true,
+          "width": 0,
+          "height": 0,
+          "filter": "none",
+          "transform": "none"
+        },
+        {
+          "src": "/images/brand/tinkode-logo.webp",
+          "loaded": false,
+          "width": 140,
+          "height": 84.609375,
+          "filter": "none",
+          "transform": "none"
+        }
+      ],
+      "og": "https://tinkode-web.pages.dev/og.png?v=tk-2026",
+      "schemaLogo": "https://tinkode-web.pages.dev/images/brand/tinkode-logo.png"
+    },
+    {
+      "route": "/",
+      "width": 1024,
+      "overflow": false,
+      "logos": [
+        {
+          "src": "/images/brand/tinkode-logo.webp",
+          "loaded": true,
+          "width": 110,
+          "height": 66.46875,
+          "filter": "none",
+          "transform": "none"
+        },
+        {
+          "src": "/images/brand/tinkode-logo.webp",
+          "loaded": true,
+          "width": 0,
+          "height": 0,
+          "filter": "none",
+          "transform": "none"
+        },
+        {
+          "src": "/images/brand/tinkode-logo.webp",
+          "loaded": false,
+          "width": 140,
+          "height": 84.609375,
+          "filter": "none",
+          "transform": "none"
+        }
+      ],
+      "og": "https://tinkode-web.pages.dev/og.png?v=tk-2026",
+      "schemaLogo": "https://tinkode-web.pages.dev/images/brand/tinkode-logo.png"
+    },
+    {
+      "route": "/",
+      "width": 1440,
+      "overflow": false,
+      "logos": [
+        {
+          "src": "/images/brand/tinkode-logo.webp",
+          "loaded": true,
+          "width": 110,
+          "height": 66.46875,
+          "filter": "none",
+          "transform": "none"
+        },
+        {
+          "src": "/images/brand/tinkode-logo.webp",
+          "loaded": true,
+          "width": 0,
+          "height": 0,
+          "filter": "none",
+          "transform": "none"
+        },
+        {
+          "src": "/images/brand/tinkode-logo.webp",
+          "loaded": false,
+          "width": 140,
+          "height": 84.609375,
+          "filter": "none",
+          "transform": "none"
+        }
+      ],
+      "og": "https://tinkode-web.pages.dev/og.png?v=tk-2026",
+      "schemaLogo": "https://tinkode-web.pages.dev/images/brand/tinkode-logo.png"
+    },
+    {
+      "route": "/soluciones",
+      "width": 360,
+      "overflow": false,
+      "logos": [
+        {
+          "src": "/images/brand/tinkode-logo.webp",
+          "loaded": true,
+          "width": 94,
+          "height": 56.8125,
+          "filter": "none",
+          "transform": "none"
+        },
+        {
+          "src": "/images/brand/tinkode-logo.webp",
+          "loaded": true,
+          "width": 0,
+          "height": 0,
+          "filter": "none",
+          "transform": "none"
+        },
+        {
+          "src": "/images/brand/tinkode-logo.webp",
+          "loaded": false,
+          "width": 130,
+          "height": 78.5625,
+          "filter": "none",
+          "transform": "none"
+        }
+      ],
+      "og": "https://tinkode-web.pages.dev/og.png?v=tk-2026",
+      "schemaLogo": "https://tinkode-web.pages.dev/images/brand/tinkode-logo.png"
+    },
+    {
+      "route": "/soluciones",
+      "width": 390,
+      "overflow": false,
+      "logos": [
+        {
+          "src": "/images/brand/tinkode-logo.webp",
+          "loaded": true,
+          "width": 94,
+          "height": 56.8125,
+          "filter": "none",
+          "transform": "none"
+        },
+        {
+          "src": "/images/brand/tinkode-logo.webp",
+          "loaded": true,
+          "width": 0,
+          "height": 0,
+          "filter": "none",
+          "transform": "none"
+        },
+        {
+          "src": "/images/brand/tinkode-logo.webp",
+          "loaded": false,
+          "width": 130,
+          "height": 78.5625,
+          "filter": "none",
+          "transform": "none"
+        }
+      ],
+      "og": "https://tinkode-web.pages.dev/og.png?v=tk-2026",
+      "schemaLogo": "https://tinkode-web.pages.dev/images/brand/tinkode-logo.png"
+    },
+    {
+      "route": "/soluciones",
+      "width": 430,
+      "overflow": false,
+      "logos": [
+        {
+          "src": "/images/brand/tinkode-logo.webp",
+          "loaded": true,
+          "width": 94,
+          "height": 56.8125,
+          "filter": "none",
+          "transform": "none"
+        },
+        {
+          "src": "/images/brand/tinkode-logo.webp",
+          "loaded": true,
+          "width": 0,
+          "height": 0,
+          "filter": "none",
+          "transform": "none"
+        },
+        {
+          "src": "/images/brand/tinkode-logo.webp",
+          "loaded": false,
+          "width": 130,
+          "height": 78.5625,
+          "filter": "none",
+          "transform": "none"
+        }
+      ],
+      "og": "https://tinkode-web.pages.dev/og.png?v=tk-2026",
+      "schemaLogo": "https://tinkode-web.pages.dev/images/brand/tinkode-logo.png"
+    },
+    {
+      "route": "/soluciones",
+      "width": 768,
+      "overflow": false,
+      "logos": [
+        {
+          "src": "/images/brand/tinkode-logo.webp",
+          "loaded": true,
+          "width": 110,
+          "height": 66.46875,
+          "filter": "none",
+          "transform": "none"
+        },
+        {
+          "src": "/images/brand/tinkode-logo.webp",
+          "loaded": true,
+          "width": 0,
+          "height": 0,
+          "filter": "none",
+          "transform": "none"
+        },
+        {
+          "src": "/images/brand/tinkode-logo.webp",
+          "loaded": false,
+          "width": 140,
+          "height": 84.609375,
+          "filter": "none",
+          "transform": "none"
+        }
+      ],
+      "og": "https://tinkode-web.pages.dev/og.png?v=tk-2026",
+      "schemaLogo": "https://tinkode-web.pages.dev/images/brand/tinkode-logo.png"
+    },
+    {
+      "route": "/soluciones",
+      "width": 1024,
+      "overflow": false,
+      "logos": [
+        {
+          "src": "/images/brand/tinkode-logo.webp",
+          "loaded": true,
+          "width": 110,
+          "height": 66.46875,
+          "filter": "none",
+          "transform": "none"
+        },
+        {
+          "src": "/images/brand/tinkode-logo.webp",
+          "loaded": true,
+          "width": 0,
+          "height": 0,
+          "filter": "none",
+          "transform": "none"
+        },
+        {
+          "src": "/images/brand/tinkode-logo.webp",
+          "loaded": false,
+          "width": 140,
+          "height": 84.609375,
+          "filter": "none",
+          "transform": "none"
+        }
+      ],
+      "og": "https://tinkode-web.pages.dev/og.png?v=tk-2026",
+      "schemaLogo": "https://tinkode-web.pages.dev/images/brand/tinkode-logo.png"
+    },
+    {
+      "route": "/soluciones",
+      "width": 1440,
+      "overflow": false,
+      "logos": [
+        {
+          "src": "/images/brand/tinkode-logo.webp",
+          "loaded": true,
+          "width": 110,
+          "height": 66.46875,
+          "filter": "none",
+          "transform": "none"
+        },
+        {
+          "src": "/images/brand/tinkode-logo.webp",
+          "loaded": true,
+          "width": 0,
+          "height": 0,
+          "filter": "none",
+          "transform": "none"
+        },
+        {
+          "src": "/images/brand/tinkode-logo.webp",
+          "loaded": false,
+          "width": 140,
+          "height": 84.609375,
+          "filter": "none",
+          "transform": "none"
+        }
+      ],
+      "og": "https://tinkode-web.pages.dev/og.png?v=tk-2026",
+      "schemaLogo": "https://tinkode-web.pages.dev/images/brand/tinkode-logo.png"
+    },
+    {
+      "route": "/proceso",
+      "width": 360,
+      "overflow": false,
+      "logos": [
+        {
+          "src": "/images/brand/tinkode-logo.webp",
+          "loaded": true,
+          "width": 94,
+          "height": 56.8125,
+          "filter": "none",
+          "transform": "none"
+        },
+        {
+          "src": "/images/brand/tinkode-logo.webp",
+          "loaded": true,
+          "width": 0,
+          "height": 0,
+          "filter": "none",
+          "transform": "none"
+        },
+        {
+          "src": "/images/brand/tinkode-logo.webp",
+          "loaded": true,
+          "width": 130,
+          "height": 78.5625,
+          "filter": "none",
+          "transform": "none"
+        }
+      ],
+      "og": "https://tinkode-web.pages.dev/og.png?v=tk-2026",
+      "schemaLogo": "https://tinkode-web.pages.dev/images/brand/tinkode-logo.png"
+    },
+    {
+      "route": "/proceso",
+      "width": 390,
+      "overflow": false,
+      "logos": [
+        {
+          "src": "/images/brand/tinkode-logo.webp",
+          "loaded": true,
+          "width": 94,
+          "height": 56.8125,
+          "filter": "none",
+          "transform": "none"
+        },
+        {
+          "src": "/images/brand/tinkode-logo.webp",
+          "loaded": true,
+          "width": 0,
+          "height": 0,
+          "filter": "none",
+          "transform": "none"
+        },
+        {
+          "src": "/images/brand/tinkode-logo.webp",
+          "loaded": true,
+          "width": 130,
+          "height": 78.5625,
+          "filter": "none",
+          "transform": "none"
+        }
+      ],
+      "og": "https://tinkode-web.pages.dev/og.png?v=tk-2026",
+      "schemaLogo": "https://tinkode-web.pages.dev/images/brand/tinkode-logo.png"
+    },
+    {
+      "route": "/proceso",
+      "width": 430,
+      "overflow": false,
+      "logos": [
+        {
+          "src": "/images/brand/tinkode-logo.webp",
+          "loaded": true,
+          "width": 94,
+          "height": 56.8125,
+          "filter": "none",
+          "transform": "none"
+        },
+        {
+          "src": "/images/brand/tinkode-logo.webp",
+          "loaded": true,
+          "width": 0,
+          "height": 0,
+          "filter": "none",
+          "transform": "none"
+        },
+        {
+          "src": "/images/brand/tinkode-logo.webp",
+          "loaded": true,
+          "width": 130,
+          "height": 78.5625,
+          "filter": "none",
+          "transform": "none"
+        }
+      ],
+      "og": "https://tinkode-web.pages.dev/og.png?v=tk-2026",
+      "schemaLogo": "https://tinkode-web.pages.dev/images/brand/tinkode-logo.png"
+    },
+    {
+      "route": "/proceso",
+      "width": 768,
+      "overflow": false,
+      "logos": [
+        {
+          "src": "/images/brand/tinkode-logo.webp",
+          "loaded": true,
+          "width": 110,
+          "height": 66.46875,
+          "filter": "none",
+          "transform": "none"
+        },
+        {
+          "src": "/images/brand/tinkode-logo.webp",
+          "loaded": true,
+          "width": 0,
+          "height": 0,
+          "filter": "none",
+          "transform": "none"
+        },
+        {
+          "src": "/images/brand/tinkode-logo.webp",
+          "loaded": true,
+          "width": 140,
+          "height": 84.609375,
+          "filter": "none",
+          "transform": "none"
+        }
+      ],
+      "og": "https://tinkode-web.pages.dev/og.png?v=tk-2026",
+      "schemaLogo": "https://tinkode-web.pages.dev/images/brand/tinkode-logo.png"
+    },
+    {
+      "route": "/proceso",
+      "width": 1024,
+      "overflow": false,
+      "logos": [
+        {
+          "src": "/images/brand/tinkode-logo.webp",
+          "loaded": true,
+          "width": 110,
+          "height": 66.46875,
+          "filter": "none",
+          "transform": "none"
+        },
+        {
+          "src": "/images/brand/tinkode-logo.webp",
+          "loaded": true,
+          "width": 0,
+          "height": 0,
+          "filter": "none",
+          "transform": "none"
+        },
+        {
+          "src": "/images/brand/tinkode-logo.webp",
+          "loaded": true,
+          "width": 140,
+          "height": 84.609375,
+          "filter": "none",
+          "transform": "none"
+        }
+      ],
+      "og": "https://tinkode-web.pages.dev/og.png?v=tk-2026",
+      "schemaLogo": "https://tinkode-web.pages.dev/images/brand/tinkode-logo.png"
+    },
+    {
+      "route": "/proceso",
+      "width": 1440,
+      "overflow": false,
+      "logos": [
+        {
+          "src": "/images/brand/tinkode-logo.webp",
+          "loaded": true,
+          "width": 110,
+          "height": 66.46875,
+          "filter": "none",
+          "transform": "none"
+        },
+        {
+          "src": "/images/brand/tinkode-logo.webp",
+          "loaded": true,
+          "width": 0,
+          "height": 0,
+          "filter": "none",
+          "transform": "none"
+        },
+        {
+          "src": "/images/brand/tinkode-logo.webp",
+          "loaded": true,
+          "width": 140,
+          "height": 84.609375,
+          "filter": "none",
+          "transform": "none"
+        }
+      ],
+      "og": "https://tinkode-web.pages.dev/og.png?v=tk-2026",
+      "schemaLogo": "https://tinkode-web.pages.dev/images/brand/tinkode-logo.png"
+    },
+    {
+      "route": "/proyectos",
+      "width": 360,
+      "overflow": false,
+      "logos": [
+        {
+          "src": "/images/brand/tinkode-logo.webp",
+          "loaded": true,
+          "width": 94,
+          "height": 56.8125,
+          "filter": "none",
+          "transform": "none"
+        },
+        {
+          "src": "/images/brand/tinkode-logo.webp",
+          "loaded": true,
+          "width": 0,
+          "height": 0,
+          "filter": "none",
+          "transform": "none"
+        },
+        {
+          "src": "/images/brand/tinkode-logo.webp",
+          "loaded": false,
+          "width": 130,
+          "height": 78.5625,
+          "filter": "none",
+          "transform": "none"
+        }
+      ],
+      "og": "https://tinkode-web.pages.dev/og.png?v=tk-2026",
+      "schemaLogo": "https://tinkode-web.pages.dev/images/brand/tinkode-logo.png"
+    },
+    {
+      "route": "/proyectos",
+      "width": 390,
+      "overflow": false,
+      "logos": [
+        {
+          "src": "/images/brand/tinkode-logo.webp",
+          "loaded": true,
+          "width": 94,
+          "height": 56.8125,
+          "filter": "none",
+          "transform": "none"
+        },
+        {
+          "src": "/images/brand/tinkode-logo.webp",
+          "loaded": true,
+          "width": 0,
+          "height": 0,
+          "filter": "none",
+          "transform": "none"
+        },
+        {
+          "src": "/images/brand/tinkode-logo.webp",
+          "loaded": false,
+          "width": 130,
+          "height": 78.5625,
+          "filter": "none",
+          "transform": "none"
+        }
+      ],
+      "og": "https://tinkode-web.pages.dev/og.png?v=tk-2026",
+      "schemaLogo": "https://tinkode-web.pages.dev/images/brand/tinkode-logo.png"
+    },
+    {
+      "route": "/proyectos",
+      "width": 430,
+      "overflow": false,
+      "logos": [
+        {
+          "src": "/images/brand/tinkode-logo.webp",
+          "loaded": true,
+          "width": 94,
+          "height": 56.8125,
+          "filter": "none",
+          "transform": "none"
+        },
+        {
+          "src": "/images/brand/tinkode-logo.webp",
+          "loaded": true,
+          "width": 0,
+          "height": 0,
+          "filter": "none",
+          "transform": "none"
+        },
+        {
+          "src": "/images/brand/tinkode-logo.webp",
+          "loaded": false,
+          "width": 130,
+          "height": 78.5625,
+          "filter": "none",
+          "transform": "none"
+        }
+      ],
+      "og": "https://tinkode-web.pages.dev/og.png?v=tk-2026",
+      "schemaLogo": "https://tinkode-web.pages.dev/images/brand/tinkode-logo.png"
+    },
+    {
+      "route": "/proyectos",
+      "width": 768,
+      "overflow": false,
+      "logos": [
+        {
+          "src": "/images/brand/tinkode-logo.webp",
+          "loaded": true,
+          "width": 110,
+          "height": 66.46875,
+          "filter": "none",
+          "transform": "none"
+        },
+        {
+          "src": "/images/brand/tinkode-logo.webp",
+          "loaded": true,
+          "width": 0,
+          "height": 0,
+          "filter": "none",
+          "transform": "none"
+        },
+        {
+          "src": "/images/brand/tinkode-logo.webp",
+          "loaded": false,
+          "width": 140,
+          "height": 84.609375,
+          "filter": "none",
+          "transform": "none"
+        }
+      ],
+      "og": "https://tinkode-web.pages.dev/og.png?v=tk-2026",
+      "schemaLogo": "https://tinkode-web.pages.dev/images/brand/tinkode-logo.png"
+    },
+    {
+      "route": "/proyectos",
+      "width": 1024,
+      "overflow": false,
+      "logos": [
+        {
+          "src": "/images/brand/tinkode-logo.webp",
+          "loaded": true,
+          "width": 110,
+          "height": 66.46875,
+          "filter": "none",
+          "transform": "none"
+        },
+        {
+          "src": "/images/brand/tinkode-logo.webp",
+          "loaded": true,
+          "width": 0,
+          "height": 0,
+          "filter": "none",
+          "transform": "none"
+        },
+        {
+          "src": "/images/brand/tinkode-logo.webp",
+          "loaded": false,
+          "width": 140,
+          "height": 84.609375,
+          "filter": "none",
+          "transform": "none"
+        }
+      ],
+      "og": "https://tinkode-web.pages.dev/og.png?v=tk-2026",
+      "schemaLogo": "https://tinkode-web.pages.dev/images/brand/tinkode-logo.png"
+    },
+    {
+      "route": "/proyectos",
+      "width": 1440,
+      "overflow": false,
+      "logos": [
+        {
+          "src": "/images/brand/tinkode-logo.webp",
+          "loaded": true,
+          "width": 110,
+          "height": 66.46875,
+          "filter": "none",
+          "transform": "none"
+        },
+        {
+          "src": "/images/brand/tinkode-logo.webp",
+          "loaded": true,
+          "width": 0,
+          "height": 0,
+          "filter": "none",
+          "transform": "none"
+        },
+        {
+          "src": "/images/brand/tinkode-logo.webp",
+          "loaded": false,
+          "width": 140,
+          "height": 84.609375,
+          "filter": "none",
+          "transform": "none"
+        }
+      ],
+      "og": "https://tinkode-web.pages.dev/og.png?v=tk-2026",
+      "schemaLogo": "https://tinkode-web.pages.dev/images/brand/tinkode-logo.png"
+    },
+    {
+      "route": "/nosotros",
+      "width": 360,
+      "overflow": false,
+      "logos": [
+        {
+          "src": "/images/brand/tinkode-logo.webp",
+          "loaded": true,
+          "width": 94,
+          "height": 56.8125,
+          "filter": "none",
+          "transform": "none"
+        },
+        {
+          "src": "/images/brand/tinkode-logo.webp",
+          "loaded": true,
+          "width": 0,
+          "height": 0,
+          "filter": "none",
+          "transform": "none"
+        },
+        {
+          "src": "/images/brand/tinkode-logo.webp",
+          "loaded": false,
+          "width": 130,
+          "height": 78.5625,
+          "filter": "none",
+          "transform": "none"
+        }
+      ],
+      "og": "https://tinkode-web.pages.dev/og.png?v=tk-2026",
+      "schemaLogo": "https://tinkode-web.pages.dev/images/brand/tinkode-logo.png"
+    },
+    {
+      "route": "/nosotros",
+      "width": 390,
+      "overflow": false,
+      "logos": [
+        {
+          "src": "/images/brand/tinkode-logo.webp",
+          "loaded": true,
+          "width": 94,
+          "height": 56.8125,
+          "filter": "none",
+          "transform": "none"
+        },
+        {
+          "src": "/images/brand/tinkode-logo.webp",
+          "loaded": true,
+          "width": 0,
+          "height": 0,
+          "filter": "none",
+          "transform": "none"
+        },
+        {
+          "src": "/images/brand/tinkode-logo.webp",
+          "loaded": false,
+          "width": 130,
+          "height": 78.5625,
+          "filter": "none",
+          "transform": "none"
+        }
+      ],
+      "og": "https://tinkode-web.pages.dev/og.png?v=tk-2026",
+      "schemaLogo": "https://tinkode-web.pages.dev/images/brand/tinkode-logo.png"
+    },
+    {
+      "route": "/nosotros",
+      "width": 430,
+      "overflow": false,
+      "logos": [
+        {
+          "src": "/images/brand/tinkode-logo.webp",
+          "loaded": true,
+          "width": 94,
+          "height": 56.8125,
+          "filter": "none",
+          "transform": "none"
+        },
+        {
+          "src": "/images/brand/tinkode-logo.webp",
+          "loaded": true,
+          "width": 0,
+          "height": 0,
+          "filter": "none",
+          "transform": "none"
+        },
+        {
+          "src": "/images/brand/tinkode-logo.webp",
+          "loaded": false,
+          "width": 130,
+          "height": 78.5625,
+          "filter": "none",
+          "transform": "none"
+        }
+      ],
+      "og": "https://tinkode-web.pages.dev/og.png?v=tk-2026",
+      "schemaLogo": "https://tinkode-web.pages.dev/images/brand/tinkode-logo.png"
+    },
+    {
+      "route": "/nosotros",
+      "width": 768,
+      "overflow": false,
+      "logos": [
+        {
+          "src": "/images/brand/tinkode-logo.webp",
+          "loaded": true,
+          "width": 110,
+          "height": 66.46875,
+          "filter": "none",
+          "transform": "none"
+        },
+        {
+          "src": "/images/brand/tinkode-logo.webp",
+          "loaded": true,
+          "width": 0,
+          "height": 0,
+          "filter": "none",
+          "transform": "none"
+        },
+        {
+          "src": "/images/brand/tinkode-logo.webp",
+          "loaded": true,
+          "width": 140,
+          "height": 84.609375,
+          "filter": "none",
+          "transform": "none"
+        }
+      ],
+      "og": "https://tinkode-web.pages.dev/og.png?v=tk-2026",
+      "schemaLogo": "https://tinkode-web.pages.dev/images/brand/tinkode-logo.png"
+    },
+    {
+      "route": "/nosotros",
+      "width": 1024,
+      "overflow": false,
+      "logos": [
+        {
+          "src": "/images/brand/tinkode-logo.webp",
+          "loaded": true,
+          "width": 110,
+          "height": 66.46875,
+          "filter": "none",
+          "transform": "none"
+        },
+        {
+          "src": "/images/brand/tinkode-logo.webp",
+          "loaded": true,
+          "width": 0,
+          "height": 0,
+          "filter": "none",
+          "transform": "none"
+        },
+        {
+          "src": "/images/brand/tinkode-logo.webp",
+          "loaded": true,
+          "width": 140,
+          "height": 84.609375,
+          "filter": "none",
+          "transform": "none"
+        }
+      ],
+      "og": "https://tinkode-web.pages.dev/og.png?v=tk-2026",
+      "schemaLogo": "https://tinkode-web.pages.dev/images/brand/tinkode-logo.png"
+    },
+    {
+      "route": "/nosotros",
+      "width": 1440,
+      "overflow": false,
+      "logos": [
+        {
+          "src": "/images/brand/tinkode-logo.webp",
+          "loaded": true,
+          "width": 110,
+          "height": 66.46875,
+          "filter": "none",
+          "transform": "none"
+        },
+        {
+          "src": "/images/brand/tinkode-logo.webp",
+          "loaded": true,
+          "width": 0,
+          "height": 0,
+          "filter": "none",
+          "transform": "none"
+        },
+        {
+          "src": "/images/brand/tinkode-logo.webp",
+          "loaded": true,
+          "width": 140,
+          "height": 84.609375,
+          "filter": "none",
+          "transform": "none"
+        }
+      ],
+      "og": "https://tinkode-web.pages.dev/og.png?v=tk-2026",
+      "schemaLogo": "https://tinkode-web.pages.dev/images/brand/tinkode-logo.png"
+    }
+  ],
+  "assets": [
+    {
+      "asset": "/images/brand/tinkode-logo.webp",
+      "status": 200,
+      "bytes": 20330
+    },
+    {
+      "asset": "/images/brand/tinkode-logo.png",
+      "status": 200,
+      "bytes": 137255
+    },
+    {
+      "asset": "/images/brand/tinkode-symbol.png",
+      "status": 200,
+      "bytes": 22245
+    },
+    {
+      "asset": "/favicon.svg?v=tk-2026",
+      "status": 200,
+      "bytes": 30061
+    },
+    {
+      "asset": "/favicon-32.png",
+      "status": 200,
+      "bytes": 1164
+    },
+    {
+      "asset": "/apple-touch-icon.png",
+      "status": 200,
+      "bytes": 12872
+    },
+    {
+      "asset": "/og.png?v=tk-2026",
+      "status": 200,
+      "bytes": 76372
+    }
+  ],
+  "errors": [],
+  "originalPixelsPreserved": true
+}

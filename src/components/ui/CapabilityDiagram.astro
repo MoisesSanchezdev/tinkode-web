@@ -1,0 +1,9 @@
+---
+interface Props { variant: number; }
+const { variant } = Astro.props;
+---
+<div class:list={["capability-diagram", `capability-diagram--${variant}`]} aria-hidden="true">
+  {variant === 0 && <div class="web-diagram"><div class="web-diagram__bar"><i></i><i></i><i></i><span></span></div><div class="web-diagram__body"><div><b></b><b></b><em></em></div><div class="web-diagram__shape"></div></div><div class="web-diagram__tiles"><i></i><i></i><i></i></div><span class="web-diagram__cursor">↖</span></div>}
+  {variant === 1 && <div class="data-diagram"><div class="data-diagram__side"><i></i><i></i><i></i></div><div class="data-diagram__main"><div class="data-diagram__bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="data-diagram__rows"><span></span><span></span><span></span></div></div><span class="data-diagram__badge">Todo en su lugar <b>✓</b></span></div>}
+  {variant === 2 && <div class="flow-diagram"><span>Entrada</span><i></i><div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="m13 2-8 12h6l-1 8 9-13h-6z"/></svg></div><i></i><span>Acción</span><small>Conectar · simplificar · avanzar</small></div>}
+</div>

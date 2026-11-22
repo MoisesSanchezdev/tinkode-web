@@ -1,0 +1,63 @@
+{
+  "normalMotion": [
+    {
+      "route": "/",
+      "headingCount": 1,
+      "contentVisible": true,
+      "transforms": 0
+    },
+    {
+      "route": "/soluciones",
+      "headingCount": 1,
+      "contentVisible": true,
+      "transforms": 0
+    },
+    {
+      "route": "/proceso",
+      "headingCount": 1,
+      "contentVisible": true,
+      "transforms": 0
+    },
+    {
+      "route": "/proyectos",
+      "headingCount": 1,
+      "contentVisible": true,
+      "transforms": 0
+    },
+    {
+      "route": "/nosotros",
+      "headingCount": 1,
+      "contentVisible": true,
+      "transforms": 0
+    }
+  ],
+  "dynamicReduce": {
+    "query": true,
+    "runningAnimations": 0,
+    "transformedReveals": 0,
+    "sceneTransform": "none",
+    "scrollBehavior": "auto"
+  },
+  "openDialog": {
+    "violations": [],
+    "dialogOpen": true,
+    "backgroundFocusBlocked": true,
+    "toggleExpanded": "true"
+  },
+  "samePagePlans": {
+    "hash": "#planes-negocios",
+    "dialogOpen": false,
+    "targetTop": 224.125,
+    "headerBottom": 73,
+    "focus": {
+      "tag": "BUTTON",
+      "label": "Abrir menú principal"
+    },
+    "settled": {
+      "targetTop": 224.125,
+      "scrollY": 3724,
+      "behavior": "auto"
+    }
+  },
+  "errors": []
+}

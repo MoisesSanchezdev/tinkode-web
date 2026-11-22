@@ -1,0 +1,80 @@
+[
+  {
+    "target": "lighthouse-home-desktop.report.json",
+    "date": "2026-10-24T19:48:28.020Z",
+    "lighthouseVersion": "13.5.0",
+    "performance": 100,
+    "accessibility": 100,
+    "bestPractices": 100,
+    "seo": 100,
+    "lcp": 428.41412499999996,
+    "cls": 0,
+    "tbt": 0,
+    "runtimeError": null
+  },
+  {
+    "target": "lighthouse-home-mobile.report.json",
+    "date": "2026-10-24T19:48:20.160Z",
+    "lighthouseVersion": "13.5.0",
+    "performance": 99,
+    "accessibility": 100,
+    "bestPractices": 100,
+    "seo": 100,
+    "lcp": 1957.9946999999997,
+    "cls": 0,
+    "tbt": 10.5,
+    "runtimeError": null
+  },
+  {
+    "target": "lighthouse-nosotros-mobile.report.json",
+    "date": "2026-10-24T19:36:22.410Z",
+    "lighthouseVersion": "13.5.0",
+    "performance": 100,
+    "accessibility": 100,
+    "bestPractices": 100,
+    "seo": 100,
+    "lcp": 1656.5254,
+    "cls": 0,
+    "tbt": 0,
+    "runtimeError": null
+  },
+  {
+    "target": "lighthouse-proceso-mobile.report.json",
+    "date": "2026-10-24T19:36:08.971Z",
+    "lighthouseVersion": "13.5.0",
+    "performance": 100,
+    "accessibility": 100,
+    "bestPractices": 100,
+    "seo": 100,
+    "lcp": 1655.4293000000002,
+    "cls": 0,
+    "tbt": 0,
+    "runtimeError": null
+  },
+  {
+    "target": "lighthouse-proyectos-mobile.report.json",
+    "date": "2026-10-24T19:36:15.614Z",
+    "lighthouseVersion": "13.5.0",
+    "performance": 100,
+    "accessibility": 100,
+    "bestPractices": 100,
+    "seo": 100,
+    "lcp": 1729.8143,
+    "cls": 0,
+    "tbt": 0,
+    "runtimeError": null
+  },
+  {
+    "target": "lighthouse-soluciones-mobile.report.json",
+    "date": "2026-10-24T19:36:02.285Z",
+    "lighthouseVersion": "13.5.0",
+    "performance": 100,
+    "accessibility": 100,
+    "bestPractices": 100,
+    "seo": 100,
+    "lcp": 1655.2343,
+    "cls": 0,
+    "tbt": 0,
+    "runtimeError": null
+  }
+]

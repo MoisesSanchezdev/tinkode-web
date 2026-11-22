@@ -1,0 +1,9 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import PageHero from "../components/sections/PageHero.astro";
+import Button from "../components/ui/Button.astro";
+---
+<BaseLayout title="Página no encontrada | TinKode" description="Esta ruta no existe. Vuelve al inicio de TinKode." path="/404" noindex>
+  <PageHero eyebrow="404 / Ruta no encontrada" title="Esta conexión no lleva a ninguna parte." description="La página que buscas no está disponible. Sigamos desde el inicio." />
+  <section class="section"><div class="container"><Button href="/">Volver al inicio</Button></div></section>
+</BaseLayout>

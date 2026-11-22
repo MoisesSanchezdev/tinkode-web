@@ -9,20 +9,21 @@ interface Props {
 }
 
 const {
-	title = "Construyamos algo útil para tu negocio.",
-	description = "Cuéntanos qué quieres mejorar.",
+	title = "Tu próxima etapa empieza con una conversación.",
+	description = "Cuéntanos qué quieres mejorar. Diseñemos cómo hacerlo posible.",
 } = Astro.props as Props;
 ---
 
 <section class="final-cta" aria-labelledby="final-cta-title">
 	<div class="container final-cta__inner">
-		<div>
+		<div data-reveal>
+			<p class="eyebrow">Conectemos las piezas</p>
 			<h2 id="final-cta-title">{title}</h2>
 			<p>{description}</p>
 		</div>
 		<Button href={PRIMARY_CONTACT_URL} variant="primary" size="large" external ariaLabel="Hablemos por WhatsApp">
 			Hablemos por WhatsApp
-			<InlineIcon slot="icon-end" name="arrow" />
+			<InlineIcon slot="icon-end" name="whatsapp" />
 		</Button>
 	</div>
 </section>

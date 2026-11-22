@@ -1,0 +1,33 @@
+import { chromium } from 'file:///C:/Users/sanch/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright/index.mjs';
+import { writeFile } from 'node:fs/promises';
+import { fileURLToPath } from 'node:url';
+const browser = await chromium.launch({ channel: 'chrome', headless: true });
+const context = await browser.newContext({ viewport: { width: 1440, height: 900 }, reducedMotion: 'no-preference' });
+const page = await context.newPage();
+const result = { normalMotion: [], dynamicReduce: null, openDialog: null, samePagePlans: null, errors: [] };
+page.on('pageerror', error => result.errors.push(error.message));
+for (const route of ['/', '/soluciones', '/proceso', '/proyectos', '/nosotros']) {
+  await page.goto('http://127.0.0.1:4321' + route, { waitUntil: 'networkidle' });
+  await page.locator('.final-cta').scrollIntoViewIfNeeded();
+  await page.waitForTimeout(750);
+  result.normalMotion.push({ route, ...(await page.evaluate(() => ({ headingCount: document.querySelectorAll('h1').length, contentVisible: [...document.querySelectorAll('main h1, main h2, main p')].every(e => Number(getComputedStyle(e).opacity) > 0), transforms: [...document.querySelectorAll('[data-reveal]')].filter(e => getComputedStyle(e).transform !== 'none').length }))) });
+}
+await page.goto('http://127.0.0.1:4321/', { waitUntil: 'networkidle' });
+await page.mouse.move(1050, 350);
+await page.emulateMedia({ reducedMotion: 'reduce' });
+await page.waitForTimeout(100);
+result.dynamicReduce = await page.evaluate(() => ({ query: matchMedia('(prefers-reduced-motion:reduce)').matches, runningAnimations: document.getAnimations().filter(a => a.playState === 'running').length, transformedReveals: [...document.querySelectorAll('[data-reveal],[data-hero-reveal]')].filter(e => getComputedStyle(e).transform !== 'none').length, sceneTransform: getComputedStyle(document.querySelector('[data-system-scene]')).transform, scrollBehavior: getComputedStyle(document.documentElement).scrollBehavior }));
+await page.setViewportSize({ width: 390, height: 844 });
+await page.goto('http://127.0.0.1:4321/', { waitUntil: 'networkidle' });
+await page.locator('[data-menu-toggle]').click();
+await page.addScriptTag({ path: fileURLToPath(new URL('./axe.min.js', import.meta.url)) });
+const axe = await page.evaluate(async () => window.axe.run(document, { runOnly: { type: 'tag', values: ['wcag2a','wcag2aa','wcag21a','wcag21aa','wcag22aa','best-practice'] }, rules: { 'label-content-name-mismatch': { enabled: true } } }));
+result.openDialog = { violations: axe.violations.map(v => ({ id: v.id, impact: v.impact, nodes: v.nodes.map(n => ({ target: n.target, summary: n.failureSummary })) })), ...(await page.evaluate(() => { const before = document.activeElement; document.querySelector('main a')?.focus(); return { dialogOpen: document.querySelector('dialog').open, backgroundFocusBlocked: document.activeElement === before, toggleExpanded: document.querySelector('[data-menu-toggle]').getAttribute('aria-expanded') }; })) };
+await page.locator('dialog nav a[href="/#planes-negocios"]').click();
+await page.waitForTimeout(100);
+result.samePagePlans = await page.evaluate(() => ({ hash: location.hash, dialogOpen: document.querySelector('dialog').open, targetTop: document.getElementById('planes-negocios').getBoundingClientRect().top, headerBottom: document.querySelector('header').getBoundingClientRect().bottom, focus: { tag: document.activeElement.tagName, label: document.activeElement.getAttribute('aria-label') } }));
+await page.waitForTimeout(900);
+result.samePagePlans.settled = await page.evaluate(() => ({ targetTop: document.getElementById('planes-negocios').getBoundingClientRect().top, scrollY, behavior: getComputedStyle(document.documentElement).scrollBehavior }));
+await writeFile(new URL('./evidence/motion-dialog-supplement.json', import.meta.url), JSON.stringify(result, null, 2));
+console.log(JSON.stringify(result, null, 2));
+await browser.close();

@@ -1,0 +1,1206 @@
+[
+  {
+    "route": "/",
+    "width": 1440,
+    "height": 5301,
+    "scrollWidth": 1440,
+    "sections": [
+      {
+        "tag": "SECTION",
+        "className": "home-hero",
+        "id": "",
+        "top": 83,
+        "height": 747
+      },
+      {
+        "tag": "SECTION",
+        "className": "section capabilities",
+        "id": "capacidades",
+        "top": 830,
+        "height": 777
+      },
+      {
+        "tag": "SECTION",
+        "className": "section process-timeline process-timeline--home",
+        "id": "",
+        "top": 1607,
+        "height": 535
+      },
+      {
+        "tag": "SECTION",
+        "className": "section projects-showcase",
+        "id": "proyectos",
+        "top": 2142,
+        "height": 903
+      },
+      {
+        "tag": "SECTION",
+        "className": "section business-plans",
+        "id": "planes-negocios",
+        "top": 3045,
+        "height": 1115
+      },
+      {
+        "tag": "SECTION",
+        "className": "section founders",
+        "id": "",
+        "top": 4161,
+        "height": 485
+      },
+      {
+        "tag": "SECTION",
+        "className": "final-cta",
+        "id": "",
+        "top": 4646,
+        "height": 394
+      }
+    ],
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "Tu negocio.Mejor conectado.",
+        "fontSize": "74.4px",
+        "top": 249
+      },
+      {
+        "tag": "H2",
+        "text": "Menos piezas sueltas.Más posibilidades.",
+        "fontSize": "48px",
+        "top": 966
+      },
+      {
+        "tag": "H3",
+        "text": "Presencia digital",
+        "fontSize": "20.8px",
+        "top": 1365
+      },
+      {
+        "tag": "H3",
+        "text": "Sistemas para negocios",
+        "fontSize": "20.8px",
+        "top": 1365
+      },
+      {
+        "tag": "H3",
+        "text": "Automatización",
+        "fontSize": "20.8px",
+        "top": 1365
+      },
+      {
+        "tag": "H2",
+        "text": "Del problema al sistema.",
+        "fontSize": "48px",
+        "top": 1743
+      },
+      {
+        "tag": "H3",
+        "text": "Entender",
+        "fontSize": "17.92px",
+        "top": 1910
+      },
+      {
+        "tag": "H3",
+        "text": "Diseñar",
+        "fontSize": "17.92px",
+        "top": 1910
+      },
+      {
+        "tag": "H3",
+        "text": "Construir",
+        "fontSize": "17.92px",
+        "top": 1910
+      },
+      {
+        "tag": "H3",
+        "text": "Evolucionar",
+        "fontSize": "17.92px",
+        "top": 1910
+      },
+      {
+        "tag": "H2",
+        "text": "Ideas que toman forma.",
+        "fontSize": "48px",
+        "top": 2277
+      },
+      {
+        "tag": "H3",
+        "text": "Robot Explota Globos UTP",
+        "fontSize": "24px",
+        "top": 2739
+      },
+      {
+        "tag": "H3",
+        "text": "LPT",
+        "fontSize": "24px",
+        "top": 2739
+      },
+      {
+        "tag": "H3",
+        "text": "Experiencias NFC para negocios",
+        "fontSize": "24px",
+        "top": 2739
+      },
+      {
+        "tag": "H2",
+        "text": "Tu siguiente paso, a tu medida.",
+        "fontSize": "48px",
+        "top": 3197
+      },
+      {
+        "tag": "H3",
+        "text": "Básico",
+        "fontSize": "17.6px",
+        "top": 3449
+      },
+      {
+        "tag": "H3",
+        "text": "Intermedio",
+        "fontSize": "17.6px",
+        "top": 3449
+      },
+      {
+        "tag": "H3",
+        "text": "Avanzado",
+        "fontSize": "17.6px",
+        "top": 3449
+      },
+      {
+        "tag": "H3",
+        "text": "Complementa tu proyecto",
+        "fontSize": "13.12px",
+        "top": 3948
+      },
+      {
+        "tag": "H2",
+        "text": "Ingeniería con nombre propio.",
+        "fontSize": "48px",
+        "top": 4296
+      },
+      {
+        "tag": "H3",
+        "text": "Moisés Sánchez Naranjo",
+        "fontSize": "17.92px",
+        "top": 4459
+      },
+      {
+        "tag": "H3",
+        "text": "Valeria López Chávez",
+        "fontSize": "17.92px",
+        "top": 4459
+      },
+      {
+        "tag": "H2",
+        "text": "Tu próxima etapa empieza con una conversación.",
+        "fontSize": "51.2px",
+        "top": 4781
+      }
+    ],
+    "images": [
+      {
+        "src": "/images/brand/tinkode-symbol.png",
+        "complete": true,
+        "naturalWidth": 192
+      },
+      {
+        "src": "/images/brand/tinkode-symbol.png",
+        "complete": true,
+        "naturalWidth": 192
+      },
+      {
+        "src": "/images/projects/nfc/nfc-experience.webp",
+        "complete": true,
+        "naturalWidth": 1000
+      },
+      {
+        "src": "/images/brand/tinkode-symbol.png",
+        "complete": true,
+        "naturalWidth": 192
+      }
+    ],
+    "clipped": []
+  },
+  {
+    "route": "/soluciones",
+    "width": 1440,
+    "height": 2617,
+    "scrollWidth": 1440,
+    "sections": [
+      {
+        "tag": "SECTION",
+        "className": "page-hero",
+        "id": "",
+        "top": 83,
+        "height": 369
+      },
+      {
+        "tag": "SECTION",
+        "className": "section solutions-overview",
+        "id": "",
+        "top": 452,
+        "height": 1570
+      },
+      {
+        "tag": "SECTION",
+        "className": "final-cta",
+        "id": "",
+        "top": 2022,
+        "height": 334
+      }
+    ],
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "Tecnología útil para tu negocio.",
+        "fontSize": "68.8px",
+        "top": 225
+      },
+      {
+        "tag": "H2",
+        "text": "Nuestras capacidades",
+        "fontSize": "24px",
+        "top": 451
+      },
+      {
+        "tag": "H3",
+        "text": "Presencia digital",
+        "fontSize": "41.6px",
+        "top": 560
+      },
+      {
+        "tag": "H3",
+        "text": "Sistemas para negocios",
+        "fontSize": "41.6px",
+        "top": 997
+      },
+      {
+        "tag": "H3",
+        "text": "Automatización",
+        "fontSize": "41.6px",
+        "top": 1434
+      },
+      {
+        "tag": "H3",
+        "text": "Tu operación no tiene por qué encajar en un molde.",
+        "fontSize": "19.2px",
+        "top": 1838
+      },
+      {
+        "tag": "H2",
+        "text": "¿Qué necesitas mejorar?",
+        "fontSize": "51.2px",
+        "top": 2157
+      }
+    ],
+    "images": [
+      {
+        "src": "/images/brand/tinkode-symbol.png",
+        "complete": true,
+        "naturalWidth": 192
+      },
+      {
+        "src": "/images/brand/tinkode-symbol.png",
+        "complete": true,
+        "naturalWidth": 192
+      },
+      {
+        "src": "/images/brand/tinkode-symbol.png",
+        "complete": true,
+        "naturalWidth": 192
+      }
+    ],
+    "clipped": []
+  },
+  {
+    "route": "/proceso",
+    "width": 1440,
+    "height": 1693,
+    "scrollWidth": 1440,
+    "sections": [
+      {
+        "tag": "SECTION",
+        "className": "page-hero",
+        "id": "",
+        "top": 83,
+        "height": 420
+      },
+      {
+        "tag": "SECTION",
+        "className": "section process-timeline",
+        "id": "",
+        "top": 503,
+        "height": 535
+      },
+      {
+        "tag": "SECTION",
+        "className": "final-cta",
+        "id": "",
+        "top": 1038,
+        "height": 394
+      }
+    ],
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "De una necesidad a una solución clara.",
+        "fontSize": "68.8px",
+        "top": 225
+      },
+      {
+        "tag": "H2",
+        "text": "Del problema al sistema.",
+        "fontSize": "48px",
+        "top": 639
+      },
+      {
+        "tag": "H3",
+        "text": "Entender",
+        "fontSize": "17.92px",
+        "top": 805
+      },
+      {
+        "tag": "H3",
+        "text": "Diseñar",
+        "fontSize": "17.92px",
+        "top": 805
+      },
+      {
+        "tag": "H3",
+        "text": "Construir",
+        "fontSize": "17.92px",
+        "top": 805
+      },
+      {
+        "tag": "H3",
+        "text": "Evolucionar",
+        "fontSize": "17.92px",
+        "top": 805
+      },
+      {
+        "tag": "H2",
+        "text": "No necesitas tener la solución.",
+        "fontSize": "51.2px",
+        "top": 1173
+      }
+    ],
+    "images": [
+      {
+        "src": "/images/brand/tinkode-symbol.png",
+        "complete": true,
+        "naturalWidth": 192
+      },
+      {
+        "src": "/images/brand/tinkode-symbol.png",
+        "complete": true,
+        "naturalWidth": 192
+      },
+      {
+        "src": "/images/brand/tinkode-symbol.png",
+        "complete": true,
+        "naturalWidth": 192
+      }
+    ],
+    "clipped": []
+  },
+  {
+    "route": "/proyectos",
+    "width": 1440,
+    "height": 3023,
+    "scrollWidth": 1440,
+    "sections": [
+      {
+        "tag": "SECTION",
+        "className": "page-hero",
+        "id": "",
+        "top": 83,
+        "height": 420
+      },
+      {
+        "tag": "SECTION",
+        "className": "section projects-showcase",
+        "id": "proyectos",
+        "top": 503,
+        "height": 1866
+      },
+      {
+        "tag": "SECTION",
+        "className": "final-cta",
+        "id": "",
+        "top": 2368,
+        "height": 394
+      }
+    ],
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "Trabajo que podemos explicar con claridad.",
+        "fontSize": "68.8px",
+        "top": 225
+      },
+      {
+        "tag": "H2",
+        "text": "Cada proyecto, su contexto.",
+        "fontSize": "48px",
+        "top": 638
+      },
+      {
+        "tag": "H3",
+        "text": "Robot Explota Globos UTP",
+        "fontSize": "24px",
+        "top": 909
+      },
+      {
+        "tag": "H3",
+        "text": "LPT",
+        "fontSize": "24px",
+        "top": 1448
+      },
+      {
+        "tag": "H3",
+        "text": "Experiencias NFC para negocios",
+        "fontSize": "24px",
+        "top": 1978
+      },
+      {
+        "tag": "H2",
+        "text": "¿Tienes una necesidad parecida?",
+        "fontSize": "51.2px",
+        "top": 2503
+      }
+    ],
+    "images": [
+      {
+        "src": "/images/brand/tinkode-symbol.png",
+        "complete": true,
+        "naturalWidth": 192
+      },
+      {
+        "src": "/images/brand/tinkode-symbol.png",
+        "complete": true,
+        "naturalWidth": 192
+      },
+      {
+        "src": "/images/projects/nfc/nfc-experience.webp",
+        "complete": true,
+        "naturalWidth": 1000
+      },
+      {
+        "src": "/images/brand/tinkode-symbol.png",
+        "complete": true,
+        "naturalWidth": 192
+      }
+    ],
+    "clipped": []
+  },
+  {
+    "route": "/nosotros",
+    "width": 1440,
+    "height": 2075,
+    "scrollWidth": 1440,
+    "sections": [
+      {
+        "tag": "SECTION",
+        "className": "page-hero",
+        "id": "",
+        "top": 83,
+        "height": 446
+      },
+      {
+        "tag": "SECTION",
+        "className": "section founders",
+        "id": "",
+        "top": 529,
+        "height": 551
+      },
+      {
+        "tag": "SECTION",
+        "className": "section principles",
+        "id": "",
+        "top": 1080,
+        "height": 399
+      },
+      {
+        "tag": "SECTION",
+        "className": "final-cta",
+        "id": "",
+        "top": 1480,
+        "height": 334
+      }
+    ],
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "Ingeniería aplicada a negocios reales.",
+        "fontSize": "68.8px",
+        "top": 225
+      },
+      {
+        "tag": "H2",
+        "text": "Ingeniería con nombre propio.",
+        "fontSize": "48px",
+        "top": 664
+      },
+      {
+        "tag": "H3",
+        "text": "Moisés Sánchez Naranjo",
+        "fontSize": "17.92px",
+        "top": 828
+      },
+      {
+        "tag": "H3",
+        "text": "Valeria López Chávez",
+        "fontSize": "17.92px",
+        "top": 828
+      },
+      {
+        "tag": "H2",
+        "text": "Cómo tomamos decisiones",
+        "fontSize": "48px",
+        "top": 1131
+      },
+      {
+        "tag": "H3",
+        "text": "Negocio antes que tecnología",
+        "fontSize": "19.2px",
+        "top": 1301
+      },
+      {
+        "tag": "H3",
+        "text": "Claridad en cada decisión",
+        "fontSize": "19.2px",
+        "top": 1301
+      },
+      {
+        "tag": "H3",
+        "text": "Automatización con criterio",
+        "fontSize": "19.2px",
+        "top": 1301
+      },
+      {
+        "tag": "H2",
+        "text": "Hablemos de tu negocio.",
+        "fontSize": "51.2px",
+        "top": 1615
+      }
+    ],
+    "images": [
+      {
+        "src": "/images/brand/tinkode-symbol.png",
+        "complete": true,
+        "naturalWidth": 192
+      },
+      {
+        "src": "/images/brand/tinkode-symbol.png",
+        "complete": true,
+        "naturalWidth": 192
+      },
+      {
+        "src": "/images/brand/tinkode-symbol.png",
+        "complete": true,
+        "naturalWidth": 192
+      }
+    ],
+    "clipped": []
+  },
+  {
+    "route": "/",
+    "width": 390,
+    "height": 7399,
+    "scrollWidth": 390,
+    "sections": [
+      {
+        "tag": "SECTION",
+        "className": "home-hero",
+        "id": "",
+        "top": 73,
+        "height": 773
+      },
+      {
+        "tag": "SECTION",
+        "className": "section capabilities",
+        "id": "capacidades",
+        "top": 846,
+        "height": 989
+      },
+      {
+        "tag": "SECTION",
+        "className": "section process-timeline process-timeline--home",
+        "id": "",
+        "top": 1835,
+        "height": 776
+      },
+      {
+        "tag": "SECTION",
+        "className": "section projects-showcase",
+        "id": "proyectos",
+        "top": 2611,
+        "height": 1314
+      },
+      {
+        "tag": "SECTION",
+        "className": "section business-plans",
+        "id": "planes-negocios",
+        "top": 3925,
+        "height": 1954
+      },
+      {
+        "tag": "SECTION",
+        "className": "section founders",
+        "id": "",
+        "top": 5879,
+        "height": 664
+      },
+      {
+        "tag": "SECTION",
+        "className": "final-cta",
+        "id": "",
+        "top": 6543,
+        "height": 426
+      }
+    ],
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "Tu negocio.Mejor conectado.",
+        "fontSize": "40.8px",
+        "top": 153
+      },
+      {
+        "tag": "H2",
+        "text": "Menos piezas sueltas.Más posibilidades.",
+        "fontSize": "30.4px",
+        "top": 953
+      },
+      {
+        "tag": "H3",
+        "text": "Presencia digital",
+        "fontSize": "17.92px",
+        "top": 1223
+      },
+      {
+        "tag": "H3",
+        "text": "Sistemas para negocios",
+        "fontSize": "17.92px",
+        "top": 1411
+      },
+      {
+        "tag": "H3",
+        "text": "Automatización",
+        "fontSize": "17.92px",
+        "top": 1620
+      },
+      {
+        "tag": "H2",
+        "text": "Del problema al sistema.",
+        "fontSize": "30.4px",
+        "top": 1942
+      },
+      {
+        "tag": "H3",
+        "text": "Entender",
+        "fontSize": "17.92px",
+        "top": 2068
+      },
+      {
+        "tag": "H3",
+        "text": "Diseñar",
+        "fontSize": "17.92px",
+        "top": 2177
+      },
+      {
+        "tag": "H3",
+        "text": "Construir",
+        "fontSize": "17.92px",
+        "top": 2286
+      },
+      {
+        "tag": "H3",
+        "text": "Evolucionar",
+        "fontSize": "17.92px",
+        "top": 2395
+      },
+      {
+        "tag": "H2",
+        "text": "Ideas que toman forma.",
+        "fontSize": "30.4px",
+        "top": 2717
+      },
+      {
+        "tag": "H3",
+        "text": "Robot Explota Globos UTP",
+        "fontSize": "18.72px",
+        "top": 2895
+      },
+      {
+        "tag": "H3",
+        "text": "LPT",
+        "fontSize": "18.72px",
+        "top": 3235
+      },
+      {
+        "tag": "H3",
+        "text": "Experiencias NFC para negocios",
+        "fontSize": "18.72px",
+        "top": 3574
+      },
+      {
+        "tag": "H2",
+        "text": "Tu siguiente paso, a tu medida.",
+        "fontSize": "30.4px",
+        "top": 4049
+      },
+      {
+        "tag": "H3",
+        "text": "Básico",
+        "fontSize": "17.6px",
+        "top": 4296
+      },
+      {
+        "tag": "H3",
+        "text": "Intermedio",
+        "fontSize": "17.6px",
+        "top": 4721
+      },
+      {
+        "tag": "H3",
+        "text": "Avanzado",
+        "fontSize": "17.6px",
+        "top": 5146
+      },
+      {
+        "tag": "H3",
+        "text": "Complementa tu proyecto",
+        "fontSize": "13.12px",
+        "top": 5567
+      },
+      {
+        "tag": "H2",
+        "text": "Ingeniería con nombre propio.",
+        "fontSize": "30.4px",
+        "top": 5985
+      },
+      {
+        "tag": "H3",
+        "text": "Moisés Sánchez Naranjo",
+        "fontSize": "16px",
+        "top": 6211
+      },
+      {
+        "tag": "H3",
+        "text": "Valeria López Chávez",
+        "fontSize": "16px",
+        "top": 6387
+      },
+      {
+        "tag": "H2",
+        "text": "Tu próxima etapa empieza con una conversación.",
+        "fontSize": "32px",
+        "top": 6647
+      }
+    ],
+    "images": [
+      {
+        "src": "/images/brand/tinkode-symbol.png",
+        "complete": true,
+        "naturalWidth": 192
+      },
+      {
+        "src": "/images/brand/tinkode-symbol.png",
+        "complete": true,
+        "naturalWidth": 192
+      },
+      {
+        "src": "/images/projects/nfc/nfc-experience.webp",
+        "complete": true,
+        "naturalWidth": 1000
+      },
+      {
+        "src": "/images/brand/tinkode-symbol.png",
+        "complete": true,
+        "naturalWidth": 192
+      }
+    ],
+    "clipped": []
+  },
+  {
+    "route": "/soluciones",
+    "width": 390,
+    "height": 3552,
+    "scrollWidth": 390,
+    "sections": [
+      {
+        "tag": "SECTION",
+        "className": "page-hero",
+        "id": "",
+        "top": 73,
+        "height": 393
+      },
+      {
+        "tag": "SECTION",
+        "className": "section solutions-overview",
+        "id": "",
+        "top": 466,
+        "height": 2329
+      },
+      {
+        "tag": "SECTION",
+        "className": "final-cta",
+        "id": "",
+        "top": 2795,
+        "height": 328
+      }
+    ],
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "Tecnología útil para tu negocio.",
+        "fontSize": "36.8px",
+        "top": 215
+      },
+      {
+        "tag": "H2",
+        "text": "Nuestras capacidades",
+        "fontSize": "24px",
+        "top": 465
+      },
+      {
+        "tag": "H3",
+        "text": "Presencia digital",
+        "fontSize": "28.8px",
+        "top": 556
+      },
+      {
+        "tag": "H3",
+        "text": "Sistemas para negocios",
+        "fontSize": "28.8px",
+        "top": 1206
+      },
+      {
+        "tag": "H3",
+        "text": "Automatización",
+        "fontSize": "28.8px",
+        "top": 1832
+      },
+      {
+        "tag": "H3",
+        "text": "Tu operación no tiene por qué encajar en un molde.",
+        "fontSize": "19.2px",
+        "top": 2488
+      },
+      {
+        "tag": "H2",
+        "text": "¿Qué necesitas mejorar?",
+        "fontSize": "32px",
+        "top": 2898
+      }
+    ],
+    "images": [
+      {
+        "src": "/images/brand/tinkode-symbol.png",
+        "complete": true,
+        "naturalWidth": 192
+      },
+      {
+        "src": "/images/brand/tinkode-symbol.png",
+        "complete": true,
+        "naturalWidth": 192
+      },
+      {
+        "src": "/images/brand/tinkode-symbol.png",
+        "complete": true,
+        "naturalWidth": 192
+      }
+    ],
+    "clipped": []
+  },
+  {
+    "route": "/proceso",
+    "width": 390,
+    "height": 2018,
+    "scrollWidth": 390,
+    "sections": [
+      {
+        "tag": "SECTION",
+        "className": "page-hero",
+        "id": "",
+        "top": 73,
+        "height": 340
+      },
+      {
+        "tag": "SECTION",
+        "className": "section process-timeline",
+        "id": "",
+        "top": 413,
+        "height": 811
+      },
+      {
+        "tag": "SECTION",
+        "className": "final-cta",
+        "id": "",
+        "top": 1224,
+        "height": 365
+      }
+    ],
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "De una necesidad a una solución clara.",
+        "fontSize": "36.8px",
+        "top": 215
+      },
+      {
+        "tag": "H2",
+        "text": "Del problema al sistema.",
+        "fontSize": "30.4px",
+        "top": 520
+      },
+      {
+        "tag": "H3",
+        "text": "Entender",
+        "fontSize": "17.92px",
+        "top": 681
+      },
+      {
+        "tag": "H3",
+        "text": "Diseñar",
+        "fontSize": "17.92px",
+        "top": 790
+      },
+      {
+        "tag": "H3",
+        "text": "Construir",
+        "fontSize": "17.92px",
+        "top": 899
+      },
+      {
+        "tag": "H3",
+        "text": "Evolucionar",
+        "fontSize": "17.92px",
+        "top": 1008
+      },
+      {
+        "tag": "H2",
+        "text": "No necesitas tener la solución.",
+        "fontSize": "32px",
+        "top": 1327
+      }
+    ],
+    "images": [
+      {
+        "src": "/images/brand/tinkode-symbol.png",
+        "complete": true,
+        "naturalWidth": 192
+      },
+      {
+        "src": "/images/brand/tinkode-symbol.png",
+        "complete": true,
+        "naturalWidth": 192
+      },
+      {
+        "src": "/images/brand/tinkode-symbol.png",
+        "complete": true,
+        "naturalWidth": 192
+      }
+    ],
+    "clipped": []
+  },
+  {
+    "route": "/proyectos",
+    "width": 390,
+    "height": 3177,
+    "scrollWidth": 390,
+    "sections": [
+      {
+        "tag": "SECTION",
+        "className": "page-hero",
+        "id": "",
+        "top": 73,
+        "height": 408
+      },
+      {
+        "tag": "SECTION",
+        "className": "section projects-showcase",
+        "id": "proyectos",
+        "top": 481,
+        "height": 1902
+      },
+      {
+        "tag": "SECTION",
+        "className": "final-cta",
+        "id": "",
+        "top": 2382,
+        "height": 365
+      }
+    ],
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "Trabajo que podemos explicar con claridad.",
+        "fontSize": "36.8px",
+        "top": 215
+      },
+      {
+        "tag": "H2",
+        "text": "Cada proyecto, su contexto.",
+        "fontSize": "30.4px",
+        "top": 587
+      },
+      {
+        "tag": "H3",
+        "text": "Robot Explota Globos UTP",
+        "fontSize": "22.4px",
+        "top": 1069
+      },
+      {
+        "tag": "H3",
+        "text": "LPT",
+        "fontSize": "22.4px",
+        "top": 1610
+      },
+      {
+        "tag": "H3",
+        "text": "Experiencias NFC para negocios",
+        "fontSize": "22.4px",
+        "top": 2128
+      },
+      {
+        "tag": "H2",
+        "text": "¿Tienes una necesidad parecida?",
+        "fontSize": "32px",
+        "top": 2486
+      }
+    ],
+    "images": [
+      {
+        "src": "/images/brand/tinkode-symbol.png",
+        "complete": true,
+        "naturalWidth": 192
+      },
+      {
+        "src": "/images/brand/tinkode-symbol.png",
+        "complete": true,
+        "naturalWidth": 192
+      },
+      {
+        "src": "/images/projects/nfc/nfc-experience.webp",
+        "complete": true,
+        "naturalWidth": 1000
+      },
+      {
+        "src": "/images/brand/tinkode-symbol.png",
+        "complete": true,
+        "naturalWidth": 192
+      }
+    ],
+    "clipped": []
+  },
+  {
+    "route": "/nosotros",
+    "width": 390,
+    "height": 2716,
+    "scrollWidth": 390,
+    "sections": [
+      {
+        "tag": "SECTION",
+        "className": "page-hero",
+        "id": "",
+        "top": 73,
+        "height": 393
+      },
+      {
+        "tag": "SECTION",
+        "className": "section founders",
+        "id": "",
+        "top": 466,
+        "height": 736
+      },
+      {
+        "tag": "SECTION",
+        "className": "section principles",
+        "id": "",
+        "top": 1202,
+        "height": 720
+      },
+      {
+        "tag": "SECTION",
+        "className": "final-cta",
+        "id": "",
+        "top": 1922,
+        "height": 365
+      }
+    ],
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "Ingeniería aplicada a negocios reales.",
+        "fontSize": "36.8px",
+        "top": 215
+      },
+      {
+        "tag": "H2",
+        "text": "Ingeniería con nombre propio.",
+        "fontSize": "30.4px",
+        "top": 572
+      },
+      {
+        "tag": "H3",
+        "text": "Moisés Sánchez Naranjo",
+        "fontSize": "16px",
+        "top": 738
+      },
+      {
+        "tag": "H3",
+        "text": "Valeria López Chávez",
+        "fontSize": "16px",
+        "top": 979
+      },
+      {
+        "tag": "H2",
+        "text": "Cómo tomamos decisiones",
+        "fontSize": "30.4px",
+        "top": 1252
+      },
+      {
+        "tag": "H3",
+        "text": "Negocio antes que tecnología",
+        "fontSize": "19.2px",
+        "top": 1424
+      },
+      {
+        "tag": "H3",
+        "text": "Claridad en cada decisión",
+        "fontSize": "19.2px",
+        "top": 1598
+      },
+      {
+        "tag": "H3",
+        "text": "Automatización con criterio",
+        "fontSize": "19.2px",
+        "top": 1771
+      },
+      {
+        "tag": "H2",
+        "text": "Hablemos de tu negocio.",
+        "fontSize": "32px",
+        "top": 2025
+      }
+    ],
+    "images": [
+      {
+        "src": "/images/brand/tinkode-symbol.png",
+        "complete": true,
+        "naturalWidth": 192
+      },
+      {
+        "src": "/images/brand/tinkode-symbol.png",
+        "complete": true,
+        "naturalWidth": 192
+      },
+      {
+        "src": "/images/brand/tinkode-symbol.png",
+        "complete": true,
+        "naturalWidth": 192
+      }
+    ],
+    "clipped": []
+  }
+]

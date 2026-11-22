@@ -1,5 +1,7 @@
 # Sistema visual
 
+> Estado vigente: el rediseño de octubre de 2026 se especifica en [redesign-2026.md](redesign-2026.md) y se implementa en `src/styles/global.css`, `src/styles/redesign.css` y `src/scripts/motion.ts`. Conserva los colores de marca. Las restricciones de iteraciones anteriores sobre hero, animaciones y composición se sustituyen por el encargo actual.
+
 Sistema visual base de TinKode para una presencia premium, moderna y comercial controlada por minimalismo.
 
 ## Principios visuales

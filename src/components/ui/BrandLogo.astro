@@ -1,0 +1,7 @@
+---
+interface Props { footer?: boolean; }
+const { footer = false } = Astro.props;
+---
+<a class:list={["site-logo", footer && "site-logo--footer"]} href="/" aria-label="TinKode, inicio">
+  <img src="/images/brand/tinkode-logo.webp" alt="" width="910" height="550" loading={footer ? "lazy" : "eager"} decoding="async" />
+</a>

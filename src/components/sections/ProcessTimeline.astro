@@ -1,23 +1,16 @@
 ---
 import { processSteps } from "../../data/site";
+import InlineIcon from "../ui/InlineIcon.astro";
+interface Props { home?: boolean; }
+const { home = false } = Astro.props;
 ---
-
-<section class="section process-timeline" aria-labelledby="process-timeline-title">
-	<div class="container">
-		<div class="section-heading">
-			<p class="eyebrow">Método</p>
-			<h2 id="process-timeline-title">Cuatro pasos, una ruta clara</h2>
-		</div>
-
-		<ol>
-			{
-				processSteps.map((step) => (
-					<li>
-						<span>{step.number}</span>
-						<div><h3>{step.title}</h3><p>{step.description}</p></div>
-					</li>
-				))
-			}
-		</ol>
-	</div>
+<section class:list={["section", "process-timeline", home && "process-timeline--home"]} aria-labelledby="process-timeline-title">
+  <div class="container">
+    <div class="section-heading section-heading--split" data-reveal><div><p class="eyebrow">{home ? "02 / Cómo trabajamos" : "Método TinKode"}</p><h2 id="process-timeline-title">Del problema al sistema.</h2></div>{home ? <a class="text-link" href="/proceso">Nuestro proceso <InlineIcon name="arrow" /></a> : <p>Un recorrido compartido: entender qué hace falta, tomar decisiones y construir con una dirección clara.</p>}</div>
+    <div class="process-system" data-process>
+      <div class="process-system__line" aria-hidden="true"><span></span></div>
+      <ol>{processSteps.map(step => <li><span class="process-step__number">{step.number}</span><div><h3>{step.title}</h3><p>{step.description}</p></div></li>)}</ol>
+      <div class="process-system__loop" aria-hidden="true"><span>↳</span> Aprender. Ajustar. Seguir creciendo. <span>↰</span></div>
+    </div>
+  </div>
 </section>

@@ -1,28 +1,20 @@
 ---
 import { capabilities } from "../../data/site";
-import Button from "../ui/Button.astro";
 import InlineIcon from "../ui/InlineIcon.astro";
+import CapabilityDiagram from "../ui/CapabilityDiagram.astro";
 ---
-
-<section class="section capabilities" aria-labelledby="capabilities-title">
-	<div class="container">
-		<div class="section-heading">
-			<p class="eyebrow">Qué hacemos</p>
-			<h2 id="capabilities-title">Lo que podemos construir contigo</h2>
-		</div>
-
-		<div class="capabilities__list">
-			{
-				capabilities.map((capability) => (
-					<article>
-						<InlineIcon name={capability.icon} />
-						<h3>{capability.title}</h3>
-						<p>{capability.description}</p>
-					</article>
-				))
-			}
-		</div>
-
-		<Button href="/soluciones" variant="ghost">Explorar soluciones</Button>
-	</div>
+<section id="capacidades" class="section capabilities" aria-labelledby="capabilities-title">
+  <div class="container">
+    <div class="section-heading section-heading--split" data-reveal>
+      <div><p class="eyebrow">01 / Qué hacemos</p><h2 id="capabilities-title">Menos piezas sueltas.<br /><span class="text-muted">Más posibilidades.</span></h2></div>
+      <p>Una web que no conecta. Datos en todas partes. Tareas que se repiten. Transformamos esas fricciones en herramientas que trabajan juntas.</p>
+    </div>
+    <div class="capability-grid" data-stagger>
+      {capabilities.map((item, index) => <a class={`capability capability--${index}`} href={`/soluciones#solucion-${index}`}>
+        <div class="capability__top"><span class="mono">0{index + 1}</span><InlineIcon name="arrow" /></div>
+        <CapabilityDiagram variant={index} />
+        <div class="capability__content"><h3>{item.title}</h3><p>{item.description}</p><span class="capability__link">Explorar solución <span aria-hidden="true">↗</span></span></div>
+      </a>)}
+    </div>
+  </div>
 </section>

@@ -5,6 +5,8 @@ import HomeHero from "../components/sections/HomeHero.astro";
 import ProjectsShowcase from "../components/sections/ProjectsShowcase.astro";
 import BusinessPlans from "../components/sections/BusinessPlans.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
+import ProcessTimeline from "../components/sections/ProcessTimeline.astro";
+import FounderCards from "../components/sections/FounderCards.astro";
 ---
 
 <BaseLayout
@@ -14,7 +16,9 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 >
 	<HomeHero />
 	<CapabilitiesOverview />
+	<ProcessTimeline home />
 	<ProjectsShowcase home />
 	<BusinessPlans />
+	<FounderCards home />
 	<FinalCta />
 </BaseLayout>

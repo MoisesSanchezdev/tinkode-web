@@ -1,5 +1,7 @@
 ---
 import { PRIMARY_CONTACT_LABEL, PRIMARY_CONTACT_URL } from "../../data/contact";
+import InlineIcon from "../ui/InlineIcon.astro";
+import BrandLogo from "../ui/BrandLogo.astro";
 
 const navItems = [
 	{ label: "Soluciones", href: "/soluciones" },
@@ -16,17 +18,14 @@ const year = new Date().getFullYear();
 	<div class="container">
 		<div class="site-footer__main">
 			<div class="site-footer__brand">
-				<a class="site-logo" href="/" aria-label="TinKode, inicio">
-					<img src="/images/brand/tinkode-symbol.png" alt="" width="192" height="192" loading="lazy" decoding="async" />
-					<span>TinKode</span>
-				</a>
-				<p>Tecnología clara para negocios que quieren avanzar.</p>
+				<BrandLogo footer />
+				<p>Diseñamos tecnología.<br />Conectamos posibilidades.</p>
 			</div>
 			<nav aria-label="Navegación del pie de página">
 				{navItems.map((item) => <a href={item.href}>{item.label}</a>)}
 			</nav>
-			<a class="site-footer__contact" href={PRIMARY_CONTACT_URL} target="_blank" rel="noopener noreferrer" aria-label={PRIMARY_CONTACT_LABEL}>WhatsApp</a>
+			<a class="site-footer__contact" href={PRIMARY_CONTACT_URL} target="_blank" rel="noopener noreferrer" aria-label={PRIMARY_CONTACT_LABEL}>WhatsApp <InlineIcon name="whatsapp" /></a>
 		</div>
-		<div class="site-footer__bottom">© {year} TinKode. Todos los derechos reservados.</div>
+		<div class="site-footer__bottom"><span>© {year} TinKode. Todos los derechos reservados.</span><span>Ingeniería desde Colombia <span aria-hidden="true">↗</span></span></div>
 	</div>
 </footer>
